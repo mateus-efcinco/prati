@@ -1,0 +1,24 @@
+{
+  "vtex.menu@2.x:menu#developers": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "footer__developers__menu",
+      "width": "100%"
+    },
+    "children": ["image#vtex"]
+  },
+  "image#vtex": {
+    "props": {
+      "src": "assets/svg/vtex.svg",
+      "blockClass": "footer__developers",
+      "width": "92px"
+    }
+  },
+  "image#maeztra": {
+    "props": {
+      "src": "https://pratidev--luccofit.myvtex.com/arquivos/logo-maeztra-black.png",
+      "blockClass": "footer__developers",
+      "width": "92px"
+    }
+  }
+}

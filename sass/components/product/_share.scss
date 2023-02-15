@@ -1,0 +1,27 @@
+.shareSocialButton {
+    margin-right: 10px;
+  &:first-child,
+  &:last-child {
+    .shareSocialIcon {
+      display: none;
+    }
+  }
+
+  &:first-child {
+    &::before {
+      content: url(assets/svg/share-facebook.svg);
+      display: block;
+      width: 52px;
+      height: 52px;
+    }
+  }
+
+  &:last-child {
+    &::before {
+      content: url(assets/svg/share-whatsapp.svg);
+      display: block;
+      width: 52px;
+      height: 52px;
+    }
+  }
+}

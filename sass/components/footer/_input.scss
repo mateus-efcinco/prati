@@ -1,0 +1,112 @@
+.input {
+  &Group {
+    &--footer__newsletter {
+      @media (min-width: $l) {
+        width: 60%;
+      }
+    }
+
+    &--modal__newsletter {
+      :global(.vtex-styleguide-9-x-input) {
+        width: 226px;
+        text-align: center;
+      }
+    }
+
+    &--footer__newsletter,
+    &--modal__newsletter {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      align-items: end;
+      padding-top: 0;
+
+      @media (max-width: $l) {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      :global(.vtex-input) {
+        margin-right: 20px;
+
+        @media (max-width: $l) {
+          margin-right: 0;
+        }
+      }
+
+      :global(.vtex-input-prefix__group) {
+        border: none;
+        border-radius: 0;
+        padding: 0;
+      }
+
+      :global(.vtex-styleguide-9-x-input) {
+        max-height: 32px;
+        border: none;
+        padding: 0 0.4rem;
+        border-bottom: 1px solid $color-1-500;
+        background-color: transparent;
+        color: $text-color-1-500;
+
+        font-size: $font-size-sm;
+        border-radius: 0;
+
+        @media (max-width: $l) {
+          text-align: center;
+        }
+
+        ::-webkit-input-placeholder {
+          /* Chrome/Opera/Safari */
+          color: $text-color-1-200;
+        }
+        ::-moz-placeholder {
+          /* Firefox 19+ */
+          color: $text-color-1-200;
+        }
+        ::-ms-input-placeholder {
+          /* IE 10+ */
+          color: $text-color-1-200;
+        }
+        ::-moz-placeholder {
+          /* Firefox 18- */
+          color: $text-color-1-200;
+        }
+      }
+
+      :global(.vtex-button) {
+        padding: 0;
+        border-radius: 0;
+        border: none;
+        background-color: transparent;
+      }
+
+      :global(.vtex-button__label) {
+        font-size: $font-size-xs;
+
+        font-weight: 700;
+        color: $text-color-1-500;
+        padding: 0;
+
+        &::after {
+          content: '';
+          display: inline-block;
+          width: 15px;
+          height: 15px;
+          background-image: url('https://hopelingerie.vtexassets.com/assets/vtex/assets-builder/hopelingerie.lingerie-hope-theme/0.6.2/svg/chevron-right___321cdb522677022e4080bc20465a15a2.svg');
+          background-size: cover;
+          background-position: center center;
+          vertical-align: bottom;
+          padding: 0;
+        }
+      }
+    }
+  }
+}
+
+.button {
+  &Container {
+    @media (max-width: $l) {
+      padding: 0;
+    }
+  }
+}

@@ -1,0 +1,190 @@
+{
+  "flex-layout.row#entenda-processo":{
+      "title": "Entenda o Processo",
+    "children":[
+      "flex-layout.row#entenda-processo-row1",
+      "flex-layout.row#entenda-processo-row2",
+      "flex-layout.row#entenda-processo-row3"
+    ],
+    "props":{
+      "blockClass": "entenda-processo-wrap"
+    }
+  },
+  "flex-layout.row#entenda-processo-row1":{
+    "children": [
+      "rich-text#entenda-processo__title"
+    ],
+    "props":{
+      "width": "100%"
+    }
+  },
+  "flex-layout.row#entenda-processo-row2":{
+    "children": [
+      "slider-layout#entenda-processo-slider"
+    ],
+    "props":{
+      "width": "100%",
+      "horizontalAlign": "center",
+      "blockClass": "itens-processo"
+    }
+  },
+  "slider-layout#entenda-processo-slider":{
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "phone": 1
+      },
+      "infinite": false,
+      "fullWidth": true,
+      "showPaginationDots": "never",
+      "showNavigationArrows": "mobileOnly",
+      "blockClass": "mobile-processo",
+      "autoplay":{
+        "timeout": 400000,
+        "stopOnHover": true
+      }
+    },
+    "children":[
+      "flex-layout.col#entenda-processo-col1",
+      "flex-layout.col#entenda-processo-col2",
+      "flex-layout.col#entenda-processo-col3",
+      "flex-layout.col#entenda-processo-col4"
+    ]
+  },
+  "rich-text#entenda-processo__title":{
+    "props": {
+      "text": "## Entenda o processo",
+      "blockClass": "title-entenda-processo",
+      "textPosition": "CENTER"
+    }
+  },
+  "flex-layout.col#entenda-processo-col1":{
+    "children":[
+      "image#entenda-processo-col1",
+      "rich-text#entenda-processo1-1",
+      "rich-text#entenda-processo1-2"
+    ]
+  },
+  "image#entenda-processo-col1": {
+    "props": {
+      "src": "assets/svg/processo-notbook.svg",
+      "blockClass": "processo-img",
+      "width": "223px"
+    }
+  },
+  "rich-text#entenda-processo1-1": {
+    "props": {
+      "text": "Escolha um Delicioso prato",
+      "blockClass": "title-processo",
+      "textPosition": "CENTER"
+    }
+  },
+  "rich-text#entenda-processo1-2": {
+    "props": {
+      "text": "Pratos, kits e porções individuais tudo embalado separadamente a vácuo!",
+      "blockClass": "desc-processo",
+      "textPosition": "CENTER"
+    }
+  },
+  "flex-layout.col#entenda-processo-col2":{
+    "children":[
+      "image#entenda-processo-col2",
+      "rich-text#entenda-processo2-1",
+      "rich-text#entenda-processo2-2"
+    ]
+  },
+  "image#entenda-processo-col2": {
+    "props": {
+      "src": "assets/svg/processo-panela.svg",
+      "blockClass": "processo-img",
+      "width": "223px"
+    }
+  },
+  "rich-text#entenda-processo2-1": {
+    "props": {
+      "text": "Preparamos tudo com amor",
+      "blockClass": "title-processo",
+      "textPosition": "CENTER"
+    }
+  },
+  "rich-text#entenda-processo2-2": {
+    "props": {
+      "text": "De forma caseira 100% natural.Ah!… utilizamos o ultracongelamento que garante qualidade e sabor :)",
+      "blockClass": "desc-processo",
+      "textPosition": "CENTER"
+    }
+  },
+  "flex-layout.col#entenda-processo-col3":{
+    "children":[
+      "image#entenda-processo-col3",
+      "rich-text#entenda-processo3-1",
+      "rich-text#entenda-processo3-2"
+    ]
+  },
+  "image#entenda-processo-col3": {
+    "props": {
+      "src": "assets/svg/processo-delivery moto.svg",
+      "blockClass": "processo-img",
+      "width": "223px"
+    }
+  },
+  "rich-text#entenda-processo3-1": {
+    "props": {
+      "text": "Entregamos onde quiser",
+      "blockClass": "title-processo",
+      "textPosition": "CENTER"
+    }
+  },
+  "rich-text#entenda-processo3-2": {
+    "props": {
+      "text": "Rapidinho, tudo separadinho onde e quando preferir: casa ou trabalho, manhã, tarde ou noite.",
+      "blockClass": "desc-processo",
+      "textPosition": "CENTER"
+    }
+  },
+  "flex-layout.col#entenda-processo-col4":{
+    "children":[
+      "image#entenda-processo-col4",
+      "rich-text#entenda-processo4-1",
+      "rich-text#entenda-processo4-2"
+    ]
+  },
+  "image#entenda-processo-col4": {
+    "props": {
+      "src": "assets/svg/processo-microondas.svg",
+      "blockClass": "processo-img",
+      "width": "223px"
+    }
+  },
+  "rich-text#entenda-processo4-1": {
+    "props": {
+      "text": "Super prático! É só aquecer :)",
+      "blockClass": "title-processo",
+      "textPosition": "CENTER"
+    }
+  },
+  "rich-text#entenda-processo4-2": {
+    "props": {
+      "text": "Rapidez e praticidade. Em poucos minutos no micro ou banho maria já está pronto!",
+      "blockClass": "desc-processo",
+      "textPosition": "CENTER"
+    }
+  },
+  "flex-layout.row#entenda-processo-row3":{
+    "children":[
+      "link#btn-processo"
+    ],
+    "props":{
+      "horizontalAlign": "center",
+      "width": "100%",
+      "blockClass": "wrap-btn-processo"
+    }
+  },
+  "link#btn-processo":{
+    "props":{
+      "href": "#",
+      "label": "Conheça o cardápio",
+      "blockClass": "btn-processo"
+    }
+  }
+}

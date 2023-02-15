@@ -1,0 +1,70 @@
+@import '../../extends/container';
+
+.container {
+    margin-bottom: 10px;
+  @media (min-width: $screen-lg) {
+    text-transform: uppercase;
+    padding:0;
+  }
+}
+
+.link,
+.term,
+.homeLink::before {
+  font-size: $font-size-xs;
+  line-height: $font-size-xs + 5;
+}
+
+.link {
+  display: inline-block;
+  vertical-align: baseline;
+
+  text-decoration-color: #bda2a2;
+  color: $text-color-1-500;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $text-color-1-400;
+  }
+}
+
+.term {
+  color: $color-1-500;
+  text-decoration: underline;
+  @media (min-width: $screen-lg) {
+    font-weight: 500;
+  }
+}
+
+.home {
+  &Link {
+    padding-left: 0;
+
+    &::before {
+      content: 'Home';
+      color: $text-color-1-500;
+    }
+  }
+
+  &Icon {
+    display: none;
+  }
+}
+
+.arrow {
+  padding: 0;
+
+  &::before {
+    content: '|';
+    color: $text-color-1-500;
+    font-size: $font-size-sm;
+    font-weight: $light;
+    padding: 0 0.5rem;
+  }
+
+}
+
+.caretIcon {
+  display: none;
+}

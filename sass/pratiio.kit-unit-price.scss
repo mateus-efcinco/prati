@@ -1,0 +1,7 @@
+@import 'variables/all';
+
+.wrapper {
+  @media (max-width: $m) {
+    justify-content: center;
+  }
+}

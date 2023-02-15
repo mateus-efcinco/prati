@@ -1,0 +1,269 @@
+{
+  "flex-layout.col#banner-category-item1":{
+    "children": [
+      "image#image-category-item1",
+      "rich-text#category-item1"
+    ], 
+    "props":{
+      "width": "100%"
+    }
+  },
+  "flex-layout.row#category-item1": {
+    "children": [
+      "flex-layout.col#banner-category-item1"
+    ],
+    "props": {
+      "blockClass": "category-container"
+    }
+  },
+  "image#image-category-item1": {
+    "title": "Imagem Item 1",
+    "props": {
+      "src": "/",
+      "alt": "Café da Manhã",
+      "blockClass": "category-image",
+      "link": {
+        "url": "https://google.com"
+      }
+    }
+  },
+  "rich-text#category-item1": {
+    "title": "Texto Item 1",
+    "props": {
+      "text": "Café da Manhã",
+      "blockClass": "category-title"
+    }
+  },
+  "flex-layout.col#banner-category-item2":{
+    "children": [
+      "image#image-category-item2",
+      "rich-text#category-item2"
+    ], 
+    "props":{
+      "width": "100%"
+    }
+  },
+  "flex-layout.row#category-item2": {
+    "children": [
+      "flex-layout.col#banner-category-item2"
+    ],
+    "props": {
+      "blockClass": "category-container"
+    }
+  },
+  "image#image-category-item2": {
+    "title": "Imagem Item 2",
+    "props": {
+      "src": "https://pratidev--luccofit.myvtex.com/arquivos/banner-category-item.png",
+      "blockClass": "category-image"
+    }
+  },
+  "rich-text#category-item2": {
+    "title": "Texto Item 2",
+    "props": {
+      "text": "Almoço",
+      "blockClass": "category-title"
+    }
+  },
+  "flex-layout.col#banner-category-item3":{
+    "children": [
+      "image#image-category-item3",
+      "rich-text#category-item3"
+    ], 
+    "props":{
+      "width": "100%"
+    }
+  },
+  "flex-layout.row#category-item3": {
+    "children": [
+      "flex-layout.col#banner-category-item3"
+    ],
+    "props": {
+      "blockClass": "category-container"
+    }
+  },
+  "image#image-category-item3": {
+    "title": "Imagem Item 3",
+    "props": {
+      "src": "https://pratidev--luccofit.myvtex.com/arquivos/banner-category-item.png",
+      "blockClass": "category-image"
+    }
+  },
+  "rich-text#category-item3": {
+    "title": "Texto Item 3",
+    "props": {
+      "text": "Lanchinho",
+      "blockClass": "category-title"
+    }
+  },
+  "flex-layout.col#banner-category-item4":{
+    "children": [
+      "image#image-category-item4",
+      "rich-text#category-item4"
+    ], 
+    "props":{
+      "width": "100%"
+    }
+  },
+  "flex-layout.row#category-item4": {
+    "children": [
+      "flex-layout.col#banner-category-item4"
+    ],
+    "props": {
+      "blockClass": "category-container"
+    }
+  },
+  "image#image-category-item4": {
+    "title": "Imagem Item 4",
+    "props": {
+      "src": "https://pratidev--luccofit.myvtex.com/arquivos/banner-category-item.png",
+      "blockClass": "category-image"
+    }
+  },
+  "rich-text#category-item4": {
+    "title": "Texto Item 4",
+    "props": {
+      "text": "Jantar",
+      "blockClass": "category-title"
+    }
+  },
+  "flex-layout.col#banner-category-item5":{
+    "children": [
+      "image#image-category-item5",
+      "rich-text#category-item5"
+    ], 
+    "props":{
+      "width": "100%"
+    }
+  },
+  "flex-layout.row#category-item5": {
+    "children": [
+      "flex-layout.col#banner-category-item5"
+    ],
+    "props": {
+      "blockClass": "category-container"
+    }
+  },
+  "image#image-category-item5": {
+    "title": "Imagem Item 5",
+    "props": {
+      "src": "https://pratidev--luccofit.myvtex.com/arquivos/banner-category-item.png",
+      "blockClass": "category-image"
+    }
+  },
+  "rich-text#category-item5": {
+    "title": "Texto Item 5",
+    "props": {
+      "text": "Gourmet",
+      "blockClass": "category-title"
+    }
+  },
+  "experimental__visibility-layout#category-6": {
+    "title": "Item 6 - Custom",
+    "children": ["flex-layout.row#category-item6"],
+    "props": {
+      "visible": false
+    }
+  },
+  "flex-layout.col#banner-category-item6":{
+    "children": [
+      "image#image-category-item6",
+      "rich-text#category-item6"
+    ], 
+    "props":{
+      "width": "100%"
+    }
+  },
+  "flex-layout.row#category-item6": {
+    "children": [
+      "flex-layout.col#banner-category-item6"
+    ],
+    "props": {
+      "blockClass": "category-container"
+    }
+  },
+  "image#image-category-item6": {
+    "props": {
+      "src": "https://pratidev--luccofit.myvtex.com/arquivos/banner-category-item.png",
+      "blockClass": "category-image"
+    }
+  },
+  "rich-text#category-item6": {
+    "props": {
+      "text": "Placeholder",
+      "blockClass": "category-title"
+    }
+  },
+  "experimental__visibility-layout#category-7": {
+    "title": "Item 7 - Custom",
+    "children": ["flex-layout.row#category-item7"],
+    "props": {
+      "visible": false
+    }
+  },
+  "flex-layout.col#banner-category-item7":{
+    "children": [
+      "image#image-category-item7",
+      "rich-text#category-item7"
+    ], 
+    "props":{
+      "width": "100%"
+    }
+  },
+  "flex-layout.row#category-item7": {
+    "children": [
+      "flex-layout.col#banner-category-item7"
+    ],
+    "props": {
+      "blockClass": "category-container"
+    }
+  },
+  "image#image-category-item7": {
+    "props": {
+      "src": "https://pratidev--luccofit.myvtex.com/arquivos/banner-category-item.png",
+      "blockClass": "category-image"
+    }
+  },
+  "rich-text#category-item7": {
+    "props": {
+      "text": "Placeholder",
+      "blockClass": "category-title"
+    }
+  },
+  "experimental__visibility-layout#category-8": {
+    "title": "Item 8 - Custom",
+    "children": ["flex-layout.row#category-item7"],
+    "props": {
+      "visible": false
+    }
+  },
+  "flex-layout.col#banner-category-item8":{
+    "children": [
+      "image#image-category-item8",
+      "rich-text#category-item8"
+    ], 
+    "props":{
+      "width": "100%"
+    }
+  },
+  "flex-layout.row#category-item8": {
+    "children": [
+      "flex-layout.col#banner-category-item8"
+    ],
+    "props": {
+      "blockClass": "category-container"
+    }
+  },
+  "image#image-category-item8": {
+    "props": {
+      "src": "https://pratidev--luccofit.myvtex.com/arquivos/banner-category-item.png",
+      "blockClass": "category-image"
+    }
+  },
+  "rich-text#category-item8": {
+    "props": {
+      "text": "Placeholder",
+      "blockClass": "category-title"
+    }
+  }
+}

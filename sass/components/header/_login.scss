@@ -1,0 +1,63 @@
+.container {
+  margin-left: 25px;
+  @include mobile{
+    margin-left: 20px;
+  }
+  :global(.vtex-button){
+    background: transparent !important;
+    &:hover{
+      background: transparent !important;
+    }
+    &:focus{
+      outline: none;
+    }
+    :global(.vtex-button__label){
+      padding: 0;
+      width: 26px;
+      height: 35px;
+      position: relative;
+      
+    }
+  }
+}
+.label{
+  text-indent: -9999px;  
+  &::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 23px;
+    height: 29px;
+    background: $login-icon;
+    background-size: contain; 
+  }
+}
+.buttonLink {
+  &::before{
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 2px;
+    width: 26px;
+    height: 35px;
+    background: $login-icon;
+    background-size: contain; 
+  }
+}
+
+.profile{
+  text-indent: -9999px;
+  &::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 4px;
+    width: 23px;
+    height: 29px;
+    background: $login-icon;
+    background-size: contain; 
+  }
+}

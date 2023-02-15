@@ -1,0 +1,106 @@
+{
+  "vtex.menu@2.x:menu#payment": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "footer__payment__menu"
+    },
+    "children": [
+      "image#visa",
+      "image#mastercard",
+      "image#elo",
+      "image#diners",
+      "image#amex",
+      "image#verocard",
+      "image#pix",
+      "image#sodexo",
+      "image#vr",
+      "image#ticket",
+      "image#alelo",
+      "image#ben"
+    ]
+  },
+  "image#visa": {
+    "props": {
+      "src": "assets/svg/visa.svg",
+      "blockClass": "footer__payment",
+      "width": "79px"
+    }
+  },
+  "image#mastercard": {
+    "props": {
+      "src": "assets/svg/mastercard.svg",
+      "blockClass": "footer__payment",
+      "width": "79px"
+    }
+  },
+  "image#elo": {
+    "props": {
+      "src": "assets/svg/elo.svg",
+      "blockClass": "footer__payment",
+      "width": "79px"
+    }
+  },
+  "image#diners": {
+    "props": {
+      "src": "assets/svg/diners.svg",
+      "blockClass": "footer__payment",
+      "width": "79px"
+    }
+  },
+  "image#amex": {
+    "props": {
+      "src": "assets/svg/american express.svg",
+      "blockClass": "footer__payment",
+      "width": "79px"
+    }
+  },
+  "image#verocard": {
+    "props": {
+      "src": "assets/svg/verocard.svg",
+      "blockClass": "footer__payment",
+      "width": "79px"
+    }
+  },
+  "image#pix": {
+    "props": {
+      "src": "assets/svg/pix.svg",
+      "blockClass": "footer__payment",
+      "width": "79px"
+    }
+  },
+  "image#sodexo": {
+    "props": {
+      "src": "assets/svg/sodexo.svg",
+      "blockClass": "footer__payment",
+      "width": "79px"
+    }
+  },
+  "image#vr": {
+    "props": {
+      "src": "assets/svg/vr.svg",
+      "blockClass": "footer__payment",
+      "width": "79px"
+    }
+  },
+  "image#ticket":{
+    "props": {
+      "src": "assets/svg/ticket.svg",
+      "blockClass": "footer__payment",
+      "width": "79px"
+    }
+  },
+  "image#alelo": {
+    "props": {
+      "src": "assets/svg/alelo.svg",
+      "blockClass": "footer__payment",
+      "width": "79px"
+    }
+  },
+  "image#ben": {
+    "props": {
+      "src": "assets/svg/ben.svg",
+      "blockClass": "footer__payment",
+      "width": "79px"
+    }
+  }
+}

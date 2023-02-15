@@ -1,0 +1,100 @@
+{
+  "header": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+  "header.full": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+  "header-layout.desktop": {
+    "children": [
+      "flex-layout.row#1-desktop",
+      "flex-layout.row#2-desktop",
+      "sticky-layout#4-desktop"
+      //"show-descontos"
+    ]
+  },
+
+  "flex-layout.row#1-desktop": {
+    "children": ["telemarketing"],
+    "props": {
+      "fullWidth": true
+    }
+  },
+
+  "flex-layout.row#2-desktop": {
+    "children": ["notification.bar#home"],
+    "props": {
+      "fullWidth": "true"
+    }
+  },
+  "notification.bar#home": {
+    "props": {
+      "content": "PARA COMPRAS ACIMA DE R$ 250,00 O FRETE É POR NOSSA CONTA. VÁLIDO PARA O RIO DE JANEIRO E SÃO PAULO!"
+    }
+  },
+
+  "flex-layout.col#spacer": {
+    "props": {
+      "width": "grow"
+    }
+  },
+  "sticky-layout#4-desktop": {
+    "props": {
+      "blockClass": "sticky-header"
+    },
+    "children": ["flex-layout.row#4-desktop"]
+  },
+  "flex-layout.row#4-desktop": {
+    "props": {
+      "blockClass": "main-header",
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true
+    },
+    "children": [
+      "flex-layout.col#logo-desktop",
+      //"link#btn-b2b-header",
+      "flex-layout.col#category-menu",
+      //"flex-layout.col#spacer",
+      "search-bar",
+      // "locale-switcher",
+      "login",
+      "minicart.v2#novo"
+    ]
+  },
+  "flex-layout.col#logo-desktop": {
+    "props": {
+      "verticalAlign": "middle"
+    },
+    "children": ["logo#desktop"]
+  },
+  "flex-layout.col#category-menu": {
+    "props": {
+      "verticalAlign": "middle",
+      "blockClass": "header--menu"
+    },
+    "children": ["vtex.menu@2.x:menu#category-menu"]
+
+  },
+
+
+
+  "logo#desktop": {
+    "props": {
+      "title": "Logo",
+      "blockClass": "header--logo",
+      "href": "/",
+      "url": "assets/svg/logo-prati-mobile.svg",
+      "width": "auto"
+    }
+  },
+  "search-bar":{
+    "props":{
+      "blockClass": "custom-search",
+      "placeholder": "O que você busca?",
+      "displayMode": "search-button"
+    }
+  }
+}

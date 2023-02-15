@@ -1,0 +1,337 @@
+{
+  "experimental__visibility-layout#itens-individuais":{
+    "title": "Visibilidade | Menu Itens Individuais",
+    "props": {
+      "visible": true
+    },
+    "children":[
+      "menu-item#itens-individuais"   
+    ]
+  },
+  "menu-item#itens-individuais": {
+    "props": {
+      "id": "menu-item-custom-itens-individuais",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "header-menu-item",
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "itens individuais",
+        "text": "itens individuais"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#itens-individuais"
+    ]
+  },
+  "vtex.menu@2.x:submenu#itens-individuais": {
+    "props": {
+      "width": "100%"
+    },
+    "children": [
+      "flex-layout.row#menu-itens-individuais"
+    ]
+  },
+  "flex-layout.row#menu-itens-individuais": {
+    "children": [
+      "flex-layout.col#menu-itens-individuais-1",
+      "flex-layout.col#menu-itens-individuais-2"
+    ],
+    "props":{
+      "fullWidth": true,
+      "width":"100%",
+      "blockClass": "submenu"
+    }
+  },
+  "flex-layout.col#menu-itens-individuais-1": {
+    "children": [
+      "vtex.menu@2.x:menu#itens-individuais-menu"
+    ],
+    "props": {
+      "width": "25%",
+      "marginRight": 10
+    }
+  },
+  "vtex.menu@2.x:menu#itens-individuais-menu": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "experimental__visibility-layout#menu-item-carboidratos",
+      "experimental__visibility-layout#menu-item-proteinas",
+      "experimental__visibility-layout#menu-item-vegetais",
+      "experimental__visibility-layout#menu-item-farofa-molhos",
+      "experimental__visibility-layout#menu-item-massas-panquecas",
+      "menu-item#todos-pratos"
+    ]
+  },
+  "experimental__visibility-layout#menu-item-carboidratos":{
+    "title": "Visibilidade | menu-item-carboidratos",
+    "props": {
+      "visible": true
+    },
+    "children":[
+      "menu-item#carboidratos"   
+    ]
+  },
+  "menu-item#carboidratos": {
+    "props": {
+      "id": "menu-item-carboidratos",
+      "blockClass": "firs-item-menu",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "CARBOIDRATOS",
+        "text": "CARBOIDRATOS"
+      }
+    }
+  },
+  "experimental__visibility-layout#menu-item-proteinas":{
+    "title": "Visibilidade | menu-item-proteinas",
+    "props": {
+      "visible": true
+    },
+    "children":[
+      "menu-item#proteinas"   
+    ]
+  },
+  "menu-item#proteinas": {
+    "props": {
+      "id": "menu-item-proteinas",      
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "PROTEÍNAS",
+        "text": "PROTEÍNAS"
+      }
+    }
+  },
+  "experimental__visibility-layout#menu-item-vegetais":{
+    "title": "Visibilidade | menu-item-vegetais",
+    "props": {
+      "visible": true
+    },
+    "children":[
+      "menu-item#vegetais"   
+    ]
+  },
+  "menu-item#vegetais": {
+    "props": {
+      "id": "menu-item-vegetais",      
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "VEGETAIS",
+        "text": "VEGETAIS"
+      }
+    }
+  },
+  "experimental__visibility-layout#menu-item-farofa-molhos":{
+    "title": "Visibilidade | menu-item-farofa-molhos",
+    "props": {
+      "visible": true
+    },
+    "children":[
+      "menu-item#farofa-molhos"   
+    ]
+  },
+  "menu-item#farofa-molhos": {
+    "props": {
+      "id": "menu-item-farofa-molhos",      
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "FAROFA, MOLHOS E TEMPEROS",
+        "text": "FAROFA, MOLHOS E TEMPEROS"
+      }
+    }
+  },
+  "experimental__visibility-layout#menu-item-massas-panquecas":{
+    "title": "Visibilidade | menu-item-massas-panquecas",
+    "props": {
+      "visible": true
+    },
+    "children":[
+      "menu-item#massas-panquecas"   
+    ]
+  },
+  "menu-item#massas-panquecas": {
+    "props": {
+      "id": "menu-item-massas-panquecas",      
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "MASSAS, PANQUECAS E RISOTOS",
+        "text": "MASSAS, PANQUECAS E RISOTOS"
+      }
+    }
+  },
+  "experimental__visibility-layout#menu-item-todos-pratos":{
+    "title": "Visibilidade | menu-item-todos-pratos",
+    "props": {
+      "visible": true
+    },
+    "children":[
+      "menu-item#todos-pratos"   
+    ]
+  },
+  "menu-item#todos-pratos": {
+    "props": {
+      "id": "menu-item-todos-pratos",      
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "last-item",
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Todos os pratos",
+        "text": "Todos os pratos"
+      }
+    }
+  },
+  "flex-layout.col#menu-itens-individuais-2": {
+    "children": [
+      "flex-layout.row#itens-individuais-destaque-line-1",
+      "flex-layout.row#itens-individuais-destaque-line-2"
+    ],
+    "props": {
+      "width": "50%",
+      "blockClass": "sub-menu"
+    }
+  },
+  "flex-layout.row#itens-individuais-destaque-line-1":{
+    "children":["rich-text#kit-destaque"],
+    "props":{
+      "horizontalAlign": "center",
+      "preventVerticalStretch": false
+    }
+  },
+  "rich-text#kit-destaque":{
+    "props": {
+      "text": "itens-individuais em destaque",
+      "textAlignment": "Left",
+      "textPosition": "Left",
+      "blockClass": "title-destaque"
+    }
+  },
+  "flex-layout.row#itens-individuais-destaque-line-2":{
+    "children":[
+      "flex-layout.col#destaque-kit1",
+      "flex-layout.col#destaque-kit2"
+    ],
+    "props":{
+      
+    }
+  },
+  "flex-layout.col#destaque-kit1":{
+    "children":[
+      "image#destaque-kit1",
+      "link#destaque-kit1"
+    ],
+    "props": {
+    }
+
+  },
+  "image#destaque-kit1":{
+    "props": {
+      "src": "https://pratidev--luccofit.myvtex.com/arquivos/banner-destaque-ex.png",
+      "link" :"#",
+      "width":"100%"
+    }
+  },
+  "link#destaque-kit1": {
+    "props": {
+      "href": "#",
+      "label":"Risoto de arroz negro com frango em crosta acompanhado com berinjela - 400g - Lucco Fit"
+    }
+  },
+  "flex-layout.col#destaque-kit2":{
+    "children":[
+      "image#destaque-kit2",
+      "link#destaque-kit2"
+    ]
+  },
+  "image#destaque-kit2":{
+    "props": {
+      "src": "https://pratidev--luccofit.myvtex.com/arquivos/banner-destaque-ex.png",
+      "link" :"#",
+      "width":"100%"
+    }
+  },
+  "link#destaque-kit2": {
+    "props": {
+      "href": "#",
+      "label":"Risoto de arroz negro com frango em crosta acompanhado com berinjela - 400g - Lucco Fit"
+    }
+  },
+  "experimental__visibility-layout#itens-individuais-mobile":{
+    "title": "Visibilidade | Menu Itens Individuais Mobile",
+    "props": {
+      "visible": true
+    },
+    "children":[
+      "menu-item#itens-individuais-mobile"   
+    ]
+  },
+  "menu-item#itens-individuais-mobile": {
+    "props": {
+      "blockClass": "category-nav__item__mobile",
+      "id": "menu-item-kit",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "itens individuais",
+        "text": "itens individuais"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#itens-individuais"]
+  },
+  "vtex.menu@2.x:submenu.accordion#itens-individuais": {
+    "props": {
+      "blockClass": "category-nav__submenu"
+    },
+    "children": ["vtex.menu@2.x:menu#itens-individuais-drawer"]
+  },
+  "vtex.menu@2.x:menu#itens-individuais-drawer": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#carboidratos",
+      "menu-item#proteinas",
+      "menu-item#vegetais",
+      "menu-item#farofa-molhos",
+      "menu-item#massas-panquecas",
+      "menu-item#todos-pratos"
+    ]
+  }
+}

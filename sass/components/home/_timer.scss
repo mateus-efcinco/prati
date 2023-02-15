@@ -1,0 +1,30 @@
+.container {
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.timer {
+  color: $color-3-500;
+
+  &Number,
+  &Separator {
+    line-height: $font-size-xlg;
+    margin: 0.5rem 0 0.75rem;
+  }
+
+  &Title {
+    font-size: $font-size-sm;
+    font-weight: $bold;
+    line-height: $font-size-lg;
+    margin: 0.75rem 0 0;
+  }
+
+  &Shelf {
+    background-color: $color-5-50;
+    padding: 3.125rem 0;
+
+    :global(.vtex-product-summary-2-x-element) {
+      background-color: $white;
+    }
+  }
+}

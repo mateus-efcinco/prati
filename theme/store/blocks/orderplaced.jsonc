@@ -1,0 +1,215 @@
+{
+  "order-placed": {
+    "blocks": ["op-header", "op-order"]
+  },
+  "op-header": {
+    "children": [
+      "op-section#confirmation",
+      "op-summary-section",
+      "op-bank-invoice-section"
+    ]
+  },
+  "op-section#confirmation": {
+    "props": {
+      "name": "confirmation",
+      "marginBottom": 9,
+      "borderless": true
+    },
+    "children": [
+      "flex-layout.row#pedido-confirmado"
+      // "flex-layout.row#confirmation-buttons"
+    ]
+  },
+  "flex-layout.row#pedido-confirmado":{
+    "children":[
+      "flex-layout.col#pedido-confirmado"
+    ],
+    "props":{
+      "blockClass": "pedido-confirmado-topo"
+    }
+  },
+  "flex-layout.col#pedido-confirmado":{
+    "children": [
+      "rich-text#order-title",
+      "rich-text#order-subtitle",
+      "op-confirmation-message",
+      "rich-text#order-lastmessage"
+    ]
+  },
+  "rich-text#order-title":{
+    "props":{
+      "text": "Pedido Confirmado",
+      "blockClass": "order-title"
+    }
+  },
+  "rich-text#order-subtitle":{
+    "props":{
+      "text": "Seu pedido foi processado com sucesso.",
+      "blockClass": "order-sub-title"
+    }
+  },
+  "rich-text#order-lastmessage":{
+    "props":{
+      "text": "Seu pagamento está sendo processado, você receberá um e-mail de confirmação."
+    }
+  },
+  // each order section
+  "op-order": {
+    "children": [
+      "flex-layout.row#order-header",
+      "flex-layout.row#order-informacao",
+      "op-order-split-notice",
+      "flex-layout.row#order-produtos",
+      "flex-layout.row#order-footer"
+      // "op-order-customer",
+    ]
+  },
+  // each order header
+  "flex-layout.row#order-header": {
+    "props": {
+      "blockClass": "order-header-info"
+    },
+    "children": [
+      "flex-layout.col#order-header-info"
+    ]
+  },
+  "flex-layout.col#order-header-info": {
+    "children": ["op-order-number", "op-order-datetime", "op-order-seller"]
+  },
+  "flex-layout.col#order-header-options": {
+    "children": ["responsive-layout.desktop#order-options-desktop"]
+  },
+  "responsive-layout.desktop#order-options-desktop": {
+    "children": ["op-order-options"]
+  },
+  "flex-layout.row#order-informacao":{
+    "children": [
+      "flex-layout.col#info-entrega",
+      "flex-layout.col#info-pagamento",
+      "flex-layout.col#info-resumo"
+    ],
+    "props":{
+      "blockClass": "box-info-pedido"
+    }
+  },
+  "flex-layout.col#info-entrega":{
+    "children": [
+      "rich-text#info-entrega",
+      "op-section#delivery-packages"
+    ],
+    "props":{
+      "blockClass": "info-col-bg"
+    }
+  },
+  "rich-text#info-entrega":{
+    "props":{
+      "text": "Endereço",
+      "blockClass":"info-entrega"
+    }
+  },
+  "flex-layout.col#info-pagamento":{
+    "children": [
+      "rich-text#info-pagamento",
+      "op-section#payments"
+    ],
+    "props":{
+      "blockClass": "info-col-bg"
+    }
+  },
+  "rich-text#info-pagamento":{
+    "props":{
+      "text": "Forma de Pagamento",
+      "blockClass":"info-pagamento"
+    }
+  },
+  "flex-layout.col#info-resumo":{
+    "children": [
+      "rich-text#info-resumo",
+      "op-order-total"
+    ],
+    "props":{
+      "blockClass": "info-col-bg"
+    }
+  },
+  "rich-text#info-resumo":{
+    "props":{
+      "text": "Resumo",
+      "blockClass":"info-resumo"
+    }
+  },
+  "flex-layout.row#order-produtos":{
+    "children": [
+      "op-section#delivery-packages"
+      // "op-section#pickup-packages",
+      // "op-order-takeaway-packages"
+    ],
+    "props":{
+      "blockClass": "lista-produtos"
+    }
+  },
+  "flex-layout.row#order-footer":{
+    "children":[
+      "flex-layout.col#nova-compra",
+      "flex-layout.col#meus-pedidos"
+    ],
+    "props":{
+      "blockClass": "order-footer"
+    }
+  },
+  "flex-layout.col#nova-compra":{
+    "children":[
+      "link#nova-compra"
+    ]
+  },
+  "link#nova-compra":{
+    "props": {
+      "href": "/",
+      "label":"Realizar nova compra",
+      "blockClass": "nova-compra"
+    }
+  },
+  "flex-layout.col#meus-pedidos":{
+    "children":[
+      "link#meus-pedidos"
+    ]
+  },
+  "link#meus-pedidos":{
+    "props": {
+      "href": "/account#/orders",
+      "label":"Ir para meus pedidos",
+      "blockClass": "meus-pedidos"
+    }
+  },
+  // payment section
+  "op-section#payments": {
+    "props": {
+      "name": "paymentMethods"
+    },
+    "children": [
+      "op-order-payment",
+      "responsive-layout.mobile#order-options-mobile"
+    ]
+  },
+  // bottom of top section of order header
+  "responsive-layout.mobile#order-options-mobile": {
+    "children": ["op-order-options#mobile"]
+  },
+  "op-order-options#mobile": {
+    "props": {
+      "blockClass": "mobile",
+      "fullWidth": true
+    }
+  },
+  "op-section#pickup-packages": {
+    "props": {
+      "name": "pickupPackages"
+    },
+    "children": ["op-order-pickup-packages"]
+  },
+  "op-section#delivery-packages": {
+    "props": {
+      "name": "deliveryPackages"
+    },
+    "children": ["op-order-delivery-packages"]
+  }
+}

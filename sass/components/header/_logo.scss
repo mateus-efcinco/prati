@@ -1,0 +1,19 @@
+.logo {
+  &Link {
+    @include mobile {
+      display: flex !important;
+      align-items: center;
+    }
+  }
+
+  &Container {
+    @include notebook {
+      padding: 0;
+      display: block;
+    }
+  }
+}
+.logoImage--header--logo {
+  width: auto;
+  max-height: 50px;
+}

@@ -1,0 +1,10 @@
+{
+  "link#btn-b2b-header":{
+    "props":{
+      "href": "https://b2b.comaprati.com.br/",
+      "label": "Para Empresas",
+      "blockClass": "btn-b2b-header",
+      "target": "_blank"
+    }
+  }
+}

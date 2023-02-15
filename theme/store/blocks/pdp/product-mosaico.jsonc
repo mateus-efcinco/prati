@@ -1,0 +1,152 @@
+{
+    // mosaico
+    "rich-text#titulo-mosaico-product":{
+        "title": "Titulo Mosaico",
+        "props": {
+            "text": "## Categorias mais acessadas",
+            "blockClass": "title-mosaico-product",
+            "textPosition": "CENTER"
+        }
+    },
+
+    "flex-layout.row#banner-mosaico-product":{
+        "title": "Mosaico",
+        "children":[
+            "flex-layout.col#banner-mosaico-product-1",
+            "flex-layout.col#banner-mosaico-product-2",
+            "flex-layout.col#banner-mosaico-product-3",
+            "flex-layout.col#banner-mosaico-product-4",
+            "flex-layout.col#banner-mosaico-product-5",
+            "flex-layout.col#banner-mosaico-product-6",
+            "flex-layout.col#banner-mosaico-product-7",
+            "flex-layout.col#banner-mosaico-product-8"
+        ],
+        "props":{
+            "colSizing": "auto",
+            "blockClass": "banner-mosaico-search"
+        }
+    },
+
+    "flex-layout.col#banner-mosaico-product-1":{
+        "children": [
+            "image#image-mosaico-product-1"
+        ], 
+        "props":{
+            "width": "33%"
+        }
+    },
+    "flex-layout.col#banner-mosaico-product-2":{
+        "children": [
+            "image#image-mosaico-product-2"
+        ], 
+        "props":{
+            "width": "33%"
+        }
+    },
+    "flex-layout.col#banner-mosaico-product-3":{
+        "children": [
+            "image#image-mosaico-product-3"
+        ], 
+        "props":{
+            "width": "33%"
+        }
+    },
+    "flex-layout.col#banner-mosaico-product-4":{
+        "children": [
+            "image#image-mosaico-product-4"
+        ], 
+        "props":{
+            "width": "33%"
+        }
+    },
+    "flex-layout.col#banner-mosaico-product-5":{
+        "children": [
+            "image#image-mosaico-product-5"
+        ], 
+        "props":{
+            "width": "33%"
+        }
+    },
+    "flex-layout.col#banner-mosaico-product-6":{
+        "children": [
+            "image#image-mosaico-product-6"
+        ], 
+        "props":{
+            "width": "33%"
+        }
+    },
+    "flex-layout.col#banner-mosaico-product-7":{
+        "children": [
+            "image#image-mosaico-product-6"
+        ], 
+        "props":{
+            "width": "33%"
+        }
+    },
+    "flex-layout.col#banner-mosaico-product-8":{
+        "children": [
+            "image#image-mosaico-product-8"
+        ], 
+        "props":{
+            "width": "33%"
+        }
+    },
+
+
+    "image#image-mosaico-product-1": {
+        "props": {
+            "src": "https://pratidev--luccofit.myvtex.com/arquivos/banner-mosaico-8-1.png",
+            "blockClass": "footer__developers",
+            "width": "320px"
+        }
+    },
+    "image#image-mosaico-product-2": {
+        "props": {
+            "src": "https://pratidev--luccofit.myvtex.com/arquivos/banner-mosaico-8-1.png",
+            "blockClass": "footer__developers",
+            "width": "320px"
+        }
+    },
+    "image#image-mosaico-product-3": {
+        "props": {
+            "src": "https://pratidev--luccofit.myvtex.com/arquivos/banner-mosaico-8-1.png",
+            "blockClass": "footer__developers",
+            "width": "320px"
+        }
+    },
+    "image#image-mosaico-product-4": {
+        "props": {
+            "src": "https://pratidev--luccofit.myvtex.com/arquivos/banner-mosaico-8-1.png",
+            "blockClass": "footer__developers",
+            "width": "320px"
+        }
+    },
+    "image#image-mosaico-product-5": {
+        "props": {
+            "src": "https://pratidev--luccofit.myvtex.com/arquivos/banner-mosaico-8-1.png",
+            "blockClass": "footer__developers",
+            "width": "320px"
+        }
+    },
+    "image#image-mosaico-product-6": {
+        "props": {
+            "src": "https://pratidev--luccofit.myvtex.com/arquivos/banner-mosaico-8-1.png",
+            "blockClass": "footer__developers",
+            "width": "320px"
+        }
+    },
+    "image#image-mosaico-product-7": {
+        "props": {
+            "src": "https://pratidev--luccofit.myvtex.com/arquivos/banner-mosaico-8-1.png",
+            "blockClass": "footer__developers",
+            "width": "320px"
+        }
+    },
+    "image#image-mosaico-product-8": {
+        "props": {
+            "src": "https://pratidev--luccofit.myvtex.com/arquivos/banner-mosaico-8-1.png",
+            "blockClass": "footer__developers",
+            "width": "320px"
+        }
+    }
+}

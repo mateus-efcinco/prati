@@ -1,0 +1,11 @@
+.expandIcon {
+  color: #727273;
+}
+
+.cartIcon {
+  color: #333333;
+
+  @media (max-width: $l) {
+    color: white;
+  }
+}

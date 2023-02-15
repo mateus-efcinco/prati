@@ -1,0 +1,51 @@
+@import 'variables/all';
+
+.headerContainer {
+    &--popup-news-close {
+        position: absolute;
+        right: 17px;
+        background: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 17px;
+    }
+}
+
+.paper {
+    &--modal-news {
+        width: 850px;
+        height: 530px;
+
+        @include mobile {
+            width: 100vw;
+            margin: 0;
+            height: 100vh;
+            padding: 0;
+            max-height: initial;
+        }
+    }
+
+    :global(.vtex-flex-layout-0-x-flexRow) {
+        height:100%;
+    }
+    :global(.vtex-store-components-3-x-container) {
+        height: 100%;
+        padding:0;
+    }
+    :global(.vtex-flex-layout-0-x-flexRowContent) {
+        height: 100%;
+
+        @include mobile {
+            flex-direction: column;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+        @include mobile {
+            height:100%;
+        }
+    }
+}

@@ -1,0 +1,28 @@
+.link {
+  &--btn-b2b-footer{
+    width: auto;
+    background: $color-1-500;
+    text-decoration-color: transparent !important;
+    border-radius: 16px;
+    padding: 12px 48px;
+    margin-top: 16px;
+
+    @include mobile {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 32px;
+      margin-top: 0;
+    }
+  }
+}
+
+.label {
+  &--btn-b2b-footer {
+    color: $white;
+    text-decoration: none;
+    font-size: $font-size-md;
+    font-weight: $bold;
+    text-transform: uppercase;
+  }
+}

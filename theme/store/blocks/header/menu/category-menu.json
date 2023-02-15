@@ -1,0 +1,41 @@
+{
+  "vtex.menu@2.x:menu#category-menu": {
+    "props": {
+      "experimentalOptimizeRendering": true,
+      "blockClass": "header-category-menu",
+      "experimentalHideEmptyCols": true
+    },
+    "children": [
+      "experimental__visibility-layout#kits",
+      "experimental__visibility-layout#cardapio",
+      "experimental__visibility-layout#itens-individuais",
+      "experimental__visibility-layout#emporio",
+      "experimental__visibility-layout#menu-desconto"
+    ]
+  },
+  "experimental__visibility-layout#menu-desconto":{
+    "title": "Visibilidade | Menu Desconto Desktop",
+    "props": {
+      "visible": true
+    },
+    "children":[
+      "menu-item#descontos"    
+    ]
+  },
+  "menu-item#descontos": {
+    "props": {
+      "id": "menu-item-descontos",
+      "blockClass": "last-item-menu",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Descontos",
+        "text": "Descontos"
+      }
+    }
+  }  
+}

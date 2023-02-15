@@ -1,0 +1,527 @@
+{
+    // vitrine 1
+    "flex-layout.row#shelf-departament1": {
+        "title": "Vitrine 1",
+        "children": ["list-context.product-list#departament1"],
+        "props": {
+            "blockClass": "home-shelf1"
+        }
+    },
+    "rich-text#departament-title1": {
+        "title": "Titulo Vitrine 1",
+        "props": {
+            "text": "## Categoria 1",
+            "blockClass": "shelfTitle",
+            "textPosition": "CENTER"
+        }
+    },
+    "list-context.product-list#departament1": {
+        "blocks": ["product-summary.shelf"],
+        "children": ["slider-layout#departament1"],
+        "props": {
+            "collection": "196",
+            "orderBy": "OrderByTopSaleDESC",
+            "hideUnavailableItems": true
+        }
+    },
+    "slider-layout#departament1": {
+        "props": {
+            "itemsPerPage": {
+                "desktop": 4,
+                "tablet": 3,
+                "phone": 2
+            },
+            "infinite": true,
+            "fullWidth": false,
+            "blockClass": "shelf",
+            "showPaginationDots": "never",
+            "showNavigationArrows": "always",
+            "autoplay":{
+                "timeout": 4000,
+                "stopOnHover": true
+            }
+        }
+    },
+
+    // vitrine 2
+    "flex-layout.row#shelf-departament2": {
+        "title": "Vitrine 2",
+        "children": ["list-context.product-list#departament2"],
+        "props": {
+            "blockClass": "home-shelf1"
+        }
+    },
+    "rich-text#departament-title2": {
+        "title": "Titulo Vitrine 2",
+        "props": {
+            "text": "## Categoria 2",
+            "blockClass": "shelfTitle",
+            "textPosition": "CENTER"
+        }
+    },
+    "list-context.product-list#departament2": {
+        "blocks": ["product-summary.shelf"],
+        "children": ["slider-layout#departament2"],
+        "props": {
+            "collection": "196",
+            "orderBy": "OrderByTopSaleDESC",
+            "hideUnavailableItems": true
+        }
+    },
+    "slider-layout#departament2": {
+        "props": {
+            "itemsPerPage": {
+                "desktop": 4,
+                "tablet": 3,
+                "phone": 2
+            },
+            "infinite": true,
+            "fullWidth": false,
+            "blockClass": "shelf",
+            "showPaginationDots": "never",
+            "showNavigationArrows": "always",
+            "autoplay":{
+                "timeout": 4000,
+                "stopOnHover": true
+            }
+        }
+    },
+
+    // vitrine 3
+    "flex-layout.row#shelf-departament3": {
+        "title": "Vitrine 3",
+        "children": ["list-context.product-list#departament3"],
+        "props": {
+            "blockClass": "home-shelf1"
+        }
+    },
+    "rich-text#departament-title3": {
+        "title": "Titulo Vitrine 3",
+        "props": {
+            "text": "## Categoria 3",
+            "blockClass": "shelfTitle",
+            "textPosition": "CENTER"
+        }
+    },
+    "list-context.product-list#departament3": {
+        "blocks": ["product-summary.shelf"],
+        "children": ["slider-layout#departament3"],
+        "props": {
+            "collection": "196",
+            "orderBy": "OrderByTopSaleDESC",
+            "hideUnavailableItems": true
+        }
+    },
+    "slider-layout#departament3": {
+        "props": {
+            "itemsPerPage": {
+                "desktop": 4,
+                "tablet": 3,
+                "phone": 2
+            },
+            "infinite": true,
+            "fullWidth": false,
+            "blockClass": "shelf",
+            "showPaginationDots": "never",
+            "showNavigationArrows": "always",
+            "autoplay":{
+                "timeout": 4000,
+                "stopOnHover": true
+            }
+        }
+    },
+
+    // vitrine 4
+    "flex-layout.row#shelf-departament4": {
+        "title": "Vitrine 4",
+        "children": ["list-context.product-list#departament4"],
+        "props": {
+            "blockClass": "home-shelf1"
+        }
+    },
+    "rich-text#departament-title4": {
+        "title": "Titulo Vitrine 4",
+        "props": {
+            "text": "## Categoria 4",
+            "blockClass": "shelfTitle",
+            "textPosition": "CENTER"
+        }
+    },
+    "list-context.product-list#departament4": {
+        "blocks": ["product-summary.shelf"],
+        "children": ["slider-layout#departament4"],
+        "props": {
+            "collection": "196",
+            "orderBy": "OrderByTopSaleDESC",
+            "hideUnavailableItems": true
+        }
+    },
+    "slider-layout#departament4": {
+        "props": {
+            "itemsPerPage": {
+                "desktop": 4,
+                "tablet": 3,
+                "phone": 2
+            },
+            "infinite": true,
+            "fullWidth": false,
+            "blockClass": "shelf",
+            "showPaginationDots": "never",
+            "showNavigationArrows": "always",
+            "autoplay":{
+                "timeout": 4000,
+                "stopOnHover": true
+            }
+        }
+    },
+
+    // vitrine 5
+    "flex-layout.row#shelf-departament5": {
+        "title": "Vitrine 4",
+        "children": ["list-context.product-list#departament5"],
+        "props": {
+            "blockClass": "home-shelf1"
+        }
+    },
+    "rich-text#departament-title5": {
+        "title": "Titulo Vitrine 5",
+        "props": {
+            "text": "## Categoria 5",
+            "blockClass": "shelfTitle",
+            "textPosition": "CENTER"
+        }
+    },
+    "list-context.product-list#departament5": {
+        "blocks": ["product-summary.shelf"],
+        "children": ["slider-layout#departament5"],
+        "props": {
+            "collection": "196",
+            "orderBy": "OrderByTopSaleDESC",
+            "hideUnavailableItems": true
+        }
+    },
+    "slider-layout#departament5": {
+        "props": {
+            "itemsPerPage": {
+                "desktop": 4,
+                "tablet": 3,
+                "phone": 2
+            },
+            "infinite": true,
+            "fullWidth": false,
+            "blockClass": "shelf",
+            "showPaginationDots": "never",
+            "showNavigationArrows": "always",
+            "autoplay":{
+                "timeout": 4000,
+                "stopOnHover": true
+            }
+        }
+    },
+
+    // vitrine 6
+    "flex-layout.row#shelf-departament6": {
+        "title": "Vitrine 6",
+        "children": ["list-context.product-list#departament6"],
+        "props": {
+            "blockClass": "home-shelf1"
+        }
+    },
+    "rich-text#departament-title6": {
+        "title": "Titulo Vitrine 6",
+        "props": {
+            "text": "## Categoria 6",
+            "blockClass": "shelfTitle",
+            "textPosition": "CENTER"
+        }
+    },
+    "list-context.product-list#departament6": {
+        "blocks": ["product-summary.shelf"],
+        "children": ["slider-layout#departament6"],
+        "props": {
+            "collection": "196",
+            "orderBy": "OrderByTopSaleDESC",
+            "hideUnavailableItems": true
+        }
+    },
+    "slider-layout#departament6": {
+        "props": {
+            "itemsPerPage": {
+                "desktop": 4,
+                "tablet": 3,
+                "phone": 2
+            },
+            "infinite": true,
+            "fullWidth": false,
+            "blockClass": "shelf",
+            "showPaginationDots": "never",
+            "showNavigationArrows": "always",
+            "autoplay":{
+                "timeout": 4000,
+                "stopOnHover": true
+            }
+        }
+    },
+
+    // vitrine 7
+    "flex-layout.row#shelf-departament7": {
+        "title": "Vitrine 7",
+        "children": ["list-context.product-list#departament7"],
+        "props": {
+            "blockClass": "home-shelf1"
+        }
+    },
+    "rich-text#departament-title7": {
+        "title": "Titulo Vitrine 7",
+        "props": {
+            "text": "## Categoria 7",
+            "blockClass": "shelfTitle",
+            "textPosition": "CENTER"
+        }
+    },
+    "list-context.product-list#departament7": {
+        "blocks": ["product-summary.shelf"],
+        "children": ["slider-layout#departament7"],
+        "props": {
+            "collection": "196",
+            "orderBy": "OrderByTopSaleDESC",
+            "hideUnavailableItems": true
+        }
+    },
+    "slider-layout#departament7": {
+        "props": {
+            "itemsPerPage": {
+                "desktop": 4,
+                "tablet": 3,
+                "phone": 2
+            },
+            "infinite": true,
+            "fullWidth": false,
+            "blockClass": "shelf",
+            "showPaginationDots": "never",
+            "showNavigationArrows": "always",
+            "autoplay":{
+                "timeout": 4000,
+                "stopOnHover": true
+            }
+        }
+    },
+
+    // vitrine 8
+    "flex-layout.row#shelf-departament8": {
+        "title": "Vitrine 8",
+        "children": ["list-context.product-list#departament8"],
+        "props": {
+            "blockClass": "home-shelf1"
+        }
+    },
+    "rich-text#departament-title8": {
+        "title": "Titulo Vitrine 8",
+        "props": {
+            "text": "## Categoria 8",
+            "blockClass": "shelfTitle",
+            "textPosition": "CENTER"
+        }
+    },
+    "list-context.product-list#departament8": {
+        "blocks": ["product-summary.shelf"],
+        "children": ["slider-layout#departament8"],
+        "props": {
+            "collection": "196",
+            "orderBy": "OrderByTopSaleDESC",
+            "hideUnavailableItems": true
+        }
+    },
+    "slider-layout#departament8": {
+        "props": {
+            "itemsPerPage": {
+                "desktop": 4,
+                "tablet": 3,
+                "phone": 2
+            },
+            "infinite": true,
+            "fullWidth": false,
+            "blockClass": "shelf",
+            "showPaginationDots": "never",
+            "showNavigationArrows": "always",
+            "autoplay":{
+                "timeout": 4000,
+                "stopOnHover": true
+            }
+        }
+    },
+
+    // vitrine 9
+    "flex-layout.row#shelf-departament9": {
+        "title": "Vitrine 9",
+        "children": ["list-context.product-list#departament9"],
+        "props": {
+            "blockClass": "home-shelf1"
+        }
+    },
+    "rich-text#departament-title9": {
+        "title": "Titulo Vitrine 9",
+        "props": {
+            "text": "## Categoria 9",
+            "blockClass": "shelfTitle",
+            "textPosition": "CENTER"
+        }
+    },
+    "list-context.product-list#departament9": {
+        "blocks": ["product-summary.shelf"],
+        "children": ["slider-layout#departament9"],
+        "props": {
+            "collection": "196",
+            "orderBy": "OrderByTopSaleDESC",
+            "hideUnavailableItems": true
+        }
+    },
+    "slider-layout#departament9": {
+        "props": {
+            "itemsPerPage": {
+                "desktop": 4,
+                "tablet": 3,
+                "phone": 2
+            },
+            "infinite": true,
+            "fullWidth": false,
+            "blockClass": "shelf",
+            "showPaginationDots": "never",
+            "showNavigationArrows": "always",
+            "autoplay":{
+                "timeout": 4000,
+                "stopOnHover": true
+            }
+        }
+    },
+
+    // vitrine 10
+    "flex-layout.row#shelf-departament10": {
+        "title": "Vitrine 10",
+        "children": ["list-context.product-list#departament10"],
+        "props": {
+            "blockClass": "home-shelf1"
+        }
+    },
+    "rich-text#departament-title10": {
+        "title": "Titulo Vitrine 10",
+        "props": {
+            "text": "## Categoria 10",
+            "blockClass": "shelfTitle",
+            "textPosition": "CENTER"
+        }
+    },
+    "list-context.product-list#departament10": {
+        "blocks": ["product-summary.shelf"],
+        "children": ["slider-layout#departament10"],
+        "props": {
+            "collection": "196",
+            "orderBy": "OrderByTopSaleDESC",
+            "hideUnavailableItems": true
+        }
+    },
+    "slider-layout#departament10": {
+        "props": {
+            "itemsPerPage": {
+                "desktop": 4,
+                "tablet": 3,
+                "phone": 2
+            },
+            "infinite": true,
+            "fullWidth": false,
+            "blockClass": "shelf",
+            "showPaginationDots": "never",
+            "showNavigationArrows": "always",
+            "autoplay":{
+                "timeout": 4000,
+                "stopOnHover": true
+            }
+        }
+    },
+    // vitrine 11
+    "flex-layout.row#shelf-departament11": {
+        "title": "Vitrine 11",
+        "children": ["list-context.product-list#departament11"],
+        "props": {
+            "blockClass": "home-shelf1"
+        }
+    },
+    "rich-text#departament-title11": {
+        "title": "Titulo Vitrine 11",
+        "props": {
+            "text": "## Categoria 11",
+            "blockClass": "shelfTitle",
+            "textPosition": "CENTER"
+        }
+    },
+    "list-context.product-list#departament11": {
+        "blocks": ["product-summary.shelf"],
+        "children": ["slider-layout#departament11"],
+        "props": {
+            "collection": "196",
+            "orderBy": "OrderByTopSaleDESC",
+            "hideUnavailableItems": true
+        }
+    },
+    "slider-layout#departament11": {
+        "props": {
+            "itemsPerPage": {
+                "desktop": 4,
+                "tablet": 3,
+                "phone": 2
+            },
+            "infinite": true,
+            "fullWidth": false,
+            "blockClass": "shelf",
+            "showPaginationDots": "never",
+            "showNavigationArrows": "always",
+            "autoplay":{
+                "timeout": 4000,
+                "stopOnHover": true
+            }
+        }
+    },
+    // vitrine 12
+    "flex-layout.row#shelf-departament12": {
+        "title": "Vitrine 11",
+        "children": ["list-context.product-list#departament12"],
+        "props": {
+            "blockClass": "home-shelf1"
+        }
+    },
+    "rich-text#departament-title12": {
+        "title": "Titulo Vitrine 12",
+        "props": {
+            "text": "## Categoria 12",
+            "blockClass": "shelfTitle",
+            "textPosition": "CENTER"
+        }
+    },
+    "list-context.product-list#departament12": {
+        "blocks": ["product-summary.shelf"],
+        "children": ["slider-layout#departament12"],
+        "props": {
+            "collection": "196",
+            "orderBy": "OrderByTopSaleDESC",
+            "hideUnavailableItems": true
+        }
+    },
+    "slider-layout#departament12": {
+        "props": {
+            "itemsPerPage": {
+                "desktop": 4,
+                "tablet": 3,
+                "phone": 2
+            },
+            "infinite": true,
+            "fullWidth": false,
+            "blockClass": "shelf",
+            "showPaginationDots": "never",
+            "showNavigationArrows": "always",
+            "autoplay":{
+                "timeout": 4000,
+                "stopOnHover": true
+            }
+        }
+    }
+}

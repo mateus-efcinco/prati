@@ -1,0 +1,46 @@
+// @import '../../mixins/arrow';
+// @import '../../mixins/dots';
+
+//.product {
+//  &Images {
+//    &Container {
+//      .carouselGalery {
+//        &Cursor,
+//        &Thumbs {
+//          padding: 0 !important;
+//
+//          @media (min-width: $l) {
+//            padding-left: 2rem !important;
+//          }
+//        }
+//      }
+//
+//      .productImageTag {
+//          &--main {
+//              width: auto;
+//          }
+//        max-height: inherit !important;
+//        background: #f0f0f0;
+//      }
+//    }
+//  }
+//}
+
+.productImageTag--main {
+  width: auto !important;
+}
+
+.imageElement {
+    &--preparo--img {
+        max-width: 280px;
+        margin-bottom: 45px;
+    }
+}
+
+.thumbImg {
+  width: auto;
+}
+
+:global(.vtex-store-components-3-x-carouselContainer){
+  max-width: 630px;
+}

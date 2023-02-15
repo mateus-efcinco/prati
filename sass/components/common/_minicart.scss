@@ -1,0 +1,57 @@
+.close {
+  &Icon {
+    &Container {
+      position: absolute;
+    }
+    &Button {
+      padding: 0.75rem 1rem;
+    }
+  }
+}
+
+.minicart {
+  &Container {
+    :global(.vtex-button):hover {
+      background-color: $color-5-100;
+
+      @media (max-width: $l) {
+        background-color: $color-6-900;
+      }
+    }
+  }
+
+  &Title {
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid $color-5-200;
+    font-style: normal;
+    font-weight: $bold;
+    font-size: $font-size-lg;
+    color: $text-color-1-500;
+  }
+
+  &SideBarContentWrapper {
+    height: 100vh !important;
+  }
+
+  &CheckoutButton {
+    padding: 0 1.25rem;
+
+    :global(.vtex-button) {
+      border-radius: 0;
+    }
+
+    :global(.vtex-button__label) {
+      font-weight: $bold;
+      font-size: $font-size-sm;
+      line-height: 18px;
+    }
+  }
+}
+
+.overlay,
+.overlay--visible {
+  background-color: black;
+}

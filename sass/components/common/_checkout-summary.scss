@@ -1,0 +1,36 @@
+.summary {
+  &Title {
+    display: none;
+  }
+
+  &Item {
+    &Price,
+    &Label {
+      font-weight: $bold;
+
+      font-size: $font-size-xs;
+    }
+
+    &Container {
+      margin-top: 0.2rem;
+
+      &:last-child {
+        // margin-top: 0;
+        padding-bottom: 0.75rem;
+
+        .summaryItemPrice,
+        .summaryItemLabel {
+          font-size: $font-size-md;
+        }
+      }
+    }
+  }
+  &Small {
+    &Content {
+      margin: 0 0.5rem;
+    }
+    &Disclaimer {
+      display: none;
+    }
+  }
+}

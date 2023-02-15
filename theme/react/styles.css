@@ -1,0 +1,123 @@
+.loadPrd{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;
+    background: white;
+    opacity: .8;
+    height: 64px;
+    margin: auto;
+} 
+.loadPrd img{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.buttonWrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #F5F5F5;
+}
+
+.buttonwLoading{
+    padding: 0;
+    pointer-events: none;
+}
+
+.buttonClick{
+    background-color: #009180;
+    font-size: 18px;
+    color: #fff;
+    border: none;
+    width: 100%;
+    padding: 16px;
+    text-transform: uppercase;
+    font-weight: 500;
+    border-radius: 4px;
+    font-family:Nyata;
+    cursor: pointer;
+}
+
+.buttonClick:hover{
+    background-color: #00a592;
+}
+
+.buttonLoading {
+  padding: 10px 16px;
+}
+
+.buttonQtyMinus, .buttonQtyPlus {
+    background-color: #009180;
+    border: none;
+    height: 50px;
+    width: 70px;
+    border-radius: 5px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.buttonQtyPlus:before {
+    content: '+';
+}
+.buttonQtyMinus:before {
+    content: '\2212';
+}
+
+.buttonQtyMinus:before, .buttonQtyPlus:before {
+    width: 25px;
+    height: 25px;
+    border: 1px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 2px;
+}
+
+
+.inputQty {
+    text-align: center;
+    height: 100%;
+    border: none;
+    font-weight: 600;
+    background-color: #F5F5F5;
+    pointer-events: none;
+    touch-action: none;
+    width: 100%;
+}
+
+.unavailable {
+    color: #979899;
+    font-family: Nyata;
+    background-color: #f2f4f5;
+    text-transform: uppercase;
+    width: 100%;
+    padding: 16px;
+    border-radius: 5px;
+}
+
+
+@media( max-width:768px ) {
+    .inputQty {
+        width: inherit;
+    }
+    .buttonQtyPlus, .buttonQtyMinus {
+        height: 50px;
+        font-size: 24px;
+    }
+    .buttonQtyPlus:before, .buttonQtyMinus:before {
+        width: 20px;
+        height: 20px;
+    }
+    .buttonClick {
+        padding: 16px 16px;
+    }
+}

@@ -1,0 +1,161 @@
+{
+  "header-layout.mobile": {
+    "children": [
+      "flex-layout.row#2-desktop",
+      "sticky-layout#1-mobile"
+    ]
+  },
+  "sticky-layout#1-mobile": {
+    "children": ["flex-layout.row#1-mobile"]
+  },
+  "flex-layout.row#1-mobile": {
+    "children": [
+      "drawer#menu",
+      "logo#mobile",
+      "flex-layout.col#spacer",
+      "drawer#search",
+      "login",
+      "minicart.v2"
+    ],
+    "props": {
+      "blockClass": "main-header-mobile",
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "fullWidth": true
+    }
+  },
+  "drawer#menu": {
+    "children": [
+      "flex-layout.row#dada"
+      
+    ],
+    "blocks":[
+      "drawer-header#menu-header"
+    ],
+    "props":{
+      "maxWidth": 7
+    }
+  },
+  "drawer-header#menu-header":{
+    "children": [
+      "flex-layout.row#header-menu",
+      "drawer-close-button"
+    ]
+  },
+  "flex-layout.row#header-menu":{
+    "children":[
+      "rich-text#headerTitle-menu"
+    ],
+    "props":{
+      "verticalAlign": "middle",
+      "blockClass": "rowGreen-header",
+      "fullWidth": true,
+      "width": "100%"
+    }
+  },
+  "rich-text#headerTitle-menu":{
+    "props":{
+      "text": "Bem vindo",
+      "blockClass": "HeaderTitle"
+    }
+  },
+  "menu#drawer": {
+    "children": [
+      "vtex.menu@2.x:menu#category-menu-mobile"
+      // "menu-item#kit-mobile",
+      // "menu-item#cardapio-mobile",
+      // "menu-item#itens-individuais-mobile",
+      // "menu-item#emporio-mobile",
+      // "menu-item#descontos"
+    ],
+    "props": {
+      "orientation": "vertical"
+    }
+  },
+  "flex-layout.row#dada": {
+    "children": ["flex-layout.col#dada"],
+    "props":{
+      "blockClass": "drawer-col"
+    }
+  },
+  "flex-layout.col#dada": {
+    "children": ["menu#drawer", "flex-layout.col#b2b-button"],
+    "props":{
+      "blockClass": "drawer-col"
+    }
+  },
+  "drawer#search":{
+    "children": [
+      "menu#search"
+    ],
+    "props":{
+      "blockClass": "icon-search",
+      "width": 7
+    },
+    "blocks": [
+      "drawer-trigger#search-trigger",
+      "drawer-header#search-header"
+    ]
+  },
+  "drawer-header#search-header":{
+    "children": [
+      "flex-layout.row#header",
+      "drawer-close-button"
+    ]
+  },
+  "flex-layout.row#header":{
+    "children":[
+      "rich-text#headerTitle"
+    ],
+    "props":{
+      "verticalAlign": "middle",
+      "blockClass": "rowGreen-header"
+    }
+  },
+  "rich-text#headerTitle":{
+    "props":{
+      "text": "Buscar no site",
+      "blockClass": "HeaderTitle"
+    }
+  },
+  "flex-layout.row#conteudo":{
+    "children": [
+      "search-bar"
+    ]
+  },
+  "drawer-trigger#search-trigger":{
+    "children": ["rich-text#searchicon"]
+  },
+  "rich-text#searchicon":{
+    "props": {
+      "text": "icon",
+      "blockClass": "icon-search"
+    }
+  },
+  "menu#search":{
+    "children": [
+      "search-bar"
+    ]
+  },
+  "logo#mobile": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "assets/svg/logo-prati-mobile.svg",
+      "width": "120"
+    }
+  },
+  "flex-layout.row#b2b-button":{
+    "children": [
+      "flex-layout.col#b2b-button"
+    ]
+  },
+  "flex-layout.col#b2b-button":{
+    "children": [
+      "link#btn-b2b-header"
+    ],
+    "props": {
+      "blockClass": "col-btn-b2b"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+.shareContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: $screen-md) {
+    align-items: flex-start;
+  }
+}
+
+.shareLabel {
+  color: $text-color-1-500;
+  font-size: $font-size-sm;
+  margin-bottom: 0.875rem;
+
+  &::after {
+    content: ' :)';
+  }
+}
+
+.container {
+    max-width: initial;
+}

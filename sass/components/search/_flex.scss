@@ -1,0 +1,165 @@
+.flexRow {
+  &Content {
+    &--search-bread,
+    &--search-title,
+    &--search-result,
+    &--banner-mosaico-search {
+      //max-width: 96rem;
+      max-width: 1300px;
+      margin: 0 auto;
+      @include notebook {
+        max-width: 1050px;
+      }
+      @media (max-width: 1300px) {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+      }
+    }
+
+    &--search-seo-wrapper {
+      max-width: 1300px;
+      margin: 0 auto;
+      @include notebook {
+        max-width: 1050px;
+      }
+    }
+
+    &--search-info {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
+  &--wrapper--banner {
+    position: relative;
+  }
+
+  &--banner--full--text--wrapper,
+  &--banner--full--text--wrapper-dep {
+    position: absolute;
+    left: 100px;
+    top: 80px;
+    //bottom: 100px;
+    color: #fff;
+    background: #ffffffb5;
+    max-width: 400px;
+    padding: 20px;
+    //bottom: 20%;
+
+    @include mobile {
+      display: none;
+      left: 20px;
+      padding: 10px;
+      max-width: 300px;
+      top: 20px;
+    }
+  }
+
+  &--banner--full--text--wrapper-dep {
+    top: 215px;
+    @include mobile {
+      display: none;
+      top: 150px;
+    }
+  }
+
+  &--banner-mosaico-search {
+    overflow: hidden;
+    width: 100%;
+  }
+
+  &--search-seo-wrapper {
+    background-color: #f5f5f5;
+    margin-top: 100px;
+    @include mobile {
+      margin-top: 0px;
+    }
+  }
+
+  &--search-bread,
+  &--search-title {
+    width: 100%;
+    z-index: 2;
+  }
+
+  &--search-info {
+    margin-bottom: 30px;
+    @include mobile {
+      margin-bottom: 0;
+    }
+  }
+
+  &--search-fetch-more {
+    margin-top: 70px;
+  }
+  &--search-fetch-previous {
+    margin-bottom: 30px;
+  }
+
+  &--orderByAndSwitcher {
+    padding: 0 !important;
+  }
+  &--productCountCol {
+    .stretchChildrenWidth {
+      width: auto !important;
+
+      .galleryTitle--layout {
+        margin: 0;
+        padding: 0;
+      }
+    }
+  }
+}
+
+.flexRow--faq{
+    padding: 20px 0 70px;
+
+    @include mobile {
+      padding: 0 0 10px;
+    }
+}
+
+.flexRowContent--faq{
+  display: block;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 30px 40px 45px;
+  box-shadow: 0 0 20px #0003;
+  border-radius: 3px;
+  background: #f1f1f1;
+
+  .stretchChildrenWidth{
+    width: 100%!important;
+    border-bottom: 1px dotted #ccc;
+    padding: 9px 0 6px;
+  }
+
+  :global(.vtex-menu-2-x-accordionIcon){
+    font-size: 24px;
+    height: 18px;
+    line-height: 18px;
+    color: #ff7300;
+  }
+
+  @include mobile {
+    padding: 0;
+
+    :global(.vtex-menu-2-x-styledLinkContent){
+      font-size: 14px;
+      white-space: break-spaces;
+    }
+  }
+
+
+}
+
+:global(.vtex-rich-text-0-x-paragraph--resposta){
+  padding: 0 15px;
+  color: #777;
+
+  @include mobile{
+    padding: 0 5px 0 0;
+  }
+
+}

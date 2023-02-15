@@ -1,0 +1,329 @@
+{  
+    "flex-layout.row#buscas": {
+        "title": "principais buscas",
+        "props": {
+            "horizontalAlign": "left",
+            "blockClass": "principais-buscas-row"
+        },
+        "children": [
+            "rich-text#title",
+            "flex-layout.row#wrapper"
+        ]
+    },
+
+    "rich-text#title": {
+        "props": {
+            "text": "## PRINCIPAIS BUSCAS",
+            "textAlignment": "left",
+            "textPosition": "left"
+        }
+    },
+
+    "flex-layout.row#wrapper": {
+        "props": {
+            "horizontalAlign": "center",
+            "blockClass": "principais-buscas-row--wrapper"
+        },
+        "children": [
+            "flex-layout.col#col1",
+            "flex-layout.col#col2",
+            "flex-layout.col#col3",
+            "flex-layout.col#col4"
+        ]
+    },
+
+
+    "flex-layout.col#col1": {
+        "props": {
+            "blockClass": "principais-buscas-col"
+        },
+        "children": [
+            "rich-text#item1",
+            "rich-text#item2",
+            "rich-text#item3",
+            "rich-text#item4",
+            "rich-text#item5",
+            "rich-text#item6",
+            "rich-text#item7",
+            "rich-text#item8"
+        ]
+    },
+    "flex-layout.col#col2": {
+        "props": {
+            "blockClass": "principais-buscas-col"
+        },
+        "children": [
+            "rich-text#item9",
+            "rich-text#item10",
+            "rich-text#item11",
+            "rich-text#item12",
+            "rich-text#item13",
+            "rich-text#item14",
+            "rich-text#item15",
+            "rich-text#item16"
+        ]
+    },
+    "flex-layout.col#col3": {
+        "props": {
+            "blockClass": "principais-buscas-col"
+        },
+        "children": [
+            "rich-text#item17",
+            "rich-text#item18",
+            "rich-text#item19",
+            "rich-text#item20",
+            "rich-text#item21",
+            "rich-text#item22",
+            "rich-text#item23",
+            "rich-text#item24"
+        ]
+    },
+    "flex-layout.col#col4": {
+        "props": {
+            "blockClass": "principais-buscas-col"
+        },
+        "children": [
+            "rich-text#item25",
+            "rich-text#item26",
+            "rich-text#item27",
+            "rich-text#item28",
+            "rich-text#item29",
+            "rich-text#item30",
+            "rich-text#item31",
+            "rich-text#item32"
+        ]
+    },
+
+    "rich-text#item1": {
+        "title": "item 1",
+        "props": {
+            "text": "[Comida Congelada Saudável](/cardapio)"
+        }
+    },
+
+    "rich-text#item2": {
+        "title": "item 2",
+        "props": {
+            "text": "[Comida Congelada SP e RJ](/cardapio)"
+        }
+    },
+
+    "rich-text#item3": {
+        "title": "item 3",
+        "props": {
+            "text": "[Comida Fitness](/kit)"
+        }
+    },
+
+    "rich-text#item4": {
+        "title": "item 4",
+        "props": {
+            "text": "[Comida Fitness Congelada](/cardapio)"
+        }
+    },
+
+    "rich-text#item5": {
+        "title": "item 5",
+        "props": {
+            "text": "[Delivery Marmita](/cardapio/pf-do-chef)"
+        }
+    },
+
+    "rich-text#item6": {
+        "title": "item 6",
+        "props": {
+            "text": "[Desinchá](/emporio/desincha)"
+        }
+    },
+
+    "rich-text#item7": {
+        "title": "item 7",
+        "props": {
+            "text": "[Dieta de Emagrecimento](/kit/emagrecimento)"
+        }
+    },
+
+    "rich-text#item8": {
+        "title": "item 8",
+        "props": {
+            "text": "[Dieta Low Carb](/kit/low-carb)"
+        }
+    },
+
+    "rich-text#item9": {
+        "title": "item 9",
+        "props": {
+            "text": "[Doce Low Carb](/cardapio/doces-fit-e-estes-podem)"
+        }
+    },
+
+    "rich-text#item10": {
+        "title": "item 10",
+        "props": {
+            "text": "[Kit de Emagrecimento](/kit/emagrecimento)"
+        }
+    },
+
+    "rich-text#item11": {
+        "title": "item 11",
+        "props": {
+            "text": "[Marmita Fitness](/kit-jantar-sem-carbo/p)"
+        }
+    },
+
+    "rich-text#item12": {
+        "title": "item 12",
+        "props": {
+            "text": "[Marmita Fit](/kit-7-dias-para-criar-um-habito/p)"
+        }
+    },
+
+    "rich-text#item13": {
+        "title": "item 13",
+        "props": {
+            "text": "[Marmita Fitness](/cardapio/carne)"
+        }
+    },
+
+    "rich-text#item14": {
+        "title": "item 14",
+        "props": {
+            "text": "[Marmita Low Carb](/cardapio/low-carb)"
+        }
+    },
+
+    "rich-text#item15": {
+        "title": "item 15",
+        "props": {
+            "text": "[Marmita Vegana](/cardapio/vegetariano)"
+        }
+    },
+
+    "rich-text#item16": {
+        "title": "item 16",
+        "props": {
+            "text": "[Programa Fitness](/marmita-fitness-kit-emagrecimento-para-7-dias-almoco-jantar/p)"
+        }
+    },
+
+
+
+    "rich-text#item17": {
+        "title": "item 17",
+        "props": {
+            "text": "[Comida Congelada Saudável](/cardapio)"
+        }
+    },
+
+    "rich-text#item18": {
+        "title": "item 18",
+        "props": {
+            "text": "[Comida Congelada SP e RJ](/cardapio)"
+        }
+    },
+
+    "rich-text#item19": {
+        "title": "item 3",
+        "props": {
+            "text": "[Comida Fitness](/kit)"
+        }
+    },
+
+    "rich-text#item20": {
+        "title": "item 20",
+        "props": {
+            "text": "[Comida Fitness Congelada](/cardapio)"
+        }
+    },
+
+    "rich-text#item21": {
+        "title": "item 21",
+        "props": {
+            "text": "[Delivery Marmita](/cardapio/pf-do-chef)"
+        }
+    },
+
+    "rich-text#item22": {
+        "title": "item 22",
+        "props": {
+            "text": "[Desinchá](/emporio/desincha)"
+        }
+    },
+
+    "rich-text#item23": {
+        "title": "item 23",
+        "props": {
+            "text": "[Dieta de Emagrecimento](/kit/emagrecimento)"
+        }
+    },
+
+    "rich-text#item24": {
+        "title": "item 24",
+        "props": {
+            "text": "[Dieta Low Carb](/kit/low-carb)"
+        }
+    },
+
+    "rich-text#item25": {
+        "title": "item 25",
+        "props": {
+            "text": "[Doce Low Carb](/cardapio/doces-fit-e-estes-podem)"
+        }
+    },
+
+    "rich-text#item26": {
+        "title": "item 26",
+        "props": {
+            "text": "[Kit de Emagrecimento](/kit/emagrecimento)"
+        }
+    },
+
+    "rich-text#item27": {
+        "title": "item 27",
+        "props": {
+            "text": "[Marmita Fitness](/kit-jantar-sem-carbo/p)"
+        }
+    },
+
+    "rich-text#item28": {
+        "title": "item 28",
+        "props": {
+            "text": "[Marmita Fit](/kit-7-dias-para-criar-um-habito/p)"
+        }
+    },
+
+    "rich-text#item29": {
+        "title": "item 29",
+        "props": {
+            "text": "[Marmita Fitness](/cardapio/carne)"
+        }
+    },
+
+    "rich-text#item30": {
+        "title": "item 30",
+        "props": {
+            "text": "[Marmita Low Carb](/cardapio/low-carb)"
+        }
+    },
+
+    "rich-text#item31": {
+        "title": "item 31",
+        "props": {
+            "text": "[Marmita Vegana](/cardapio/vegetariano)"
+        }
+    },
+
+    "rich-text#item32": {
+        "title": "item 32",
+        "props": {
+            "text": "[Programa Fitness](/marmita-fitness-kit-emagrecimento-para-7-dias-almoco-jantar/p)"
+        }
+    }
+
+
+
+
+
+
+
+}

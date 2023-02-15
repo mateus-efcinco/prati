@@ -1,0 +1,24 @@
+{
+  "paths": {
+    "sass": {
+      "src": "sass/**/*.scss",
+      "dest": "theme/styles/css"
+    },
+    "json": {
+      "src": "theme/store/components/*.json",
+      "dest": "theme/store"
+    }
+  },
+  "options": {
+    "merge": {
+      "fileName": "blocks.json"
+    },
+    "link": {
+      "continueOnError": true
+    },
+    "sass": {
+      "includePaths": ["sass"],
+      "outputStyle": "compressed"
+    }
+  }
+}

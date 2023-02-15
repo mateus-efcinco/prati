@@ -1,0 +1,113 @@
+{
+  "vtex.menu@2.x:menu#institucional": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "menu-institucional"
+    },
+    "children": [
+      "menu-item#conheca-prati",
+      "menu-item#sobre",
+      "menu-item#perguntas-frequentes",
+      "menu-item#solucao-empresa",
+      "menu-item#contatos",
+      // "menu-item#lojas",
+      "institucional-clicked"
+    ]
+  },
+  "menu-item#conheca-prati": {
+    "props": {
+      "id": "menu-item-conheca-prati",
+      "blockClass": "title-menu-institucional",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Institucional",
+        "text": "Institucional"
+      }
+    }
+  },
+  "menu-item#sobre": {
+    "props": {
+      "id": "menu-item-sobre",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menu-institucional-item",
+      "itemProps": {
+        "type": "internal",
+        "href": "/sobre",
+        "noFollow": false,
+        "tagTitle": "sobre",
+        "text": "Sobre"
+      }
+    }
+  },
+  "menu-item#perguntas-frequentes": {
+    "props": {
+      "id": "menu-item-perguntas-frequentes",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menu-institucional-item",
+      "itemProps": {
+        "type": "internal",
+        "href": "/perguntas-frequentes",
+        "noFollow": false,
+        "tagTitle": "perguntas-frequentes",
+        "text": "Perguntas Frequentes"
+      }
+    }
+  },
+  "menu-item#solucao-empresa": {
+    "props": {
+      "id": "menu-item-solucao-empresa",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menu-institucional-item",
+      "itemProps": {
+        "type": "internal",
+        "href": "/nosso-segredo",
+        "noFollow": false,
+        "tagTitle": "nosso-segredo",
+        "text": "Nosso segredo"
+      }
+    }
+  },
+  "menu-item#contatos": {
+    "props": {
+      "id": "menu-item-contatos",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menu-institucional-item",
+      "itemProps": {
+        "type": "internal",
+        "href": "/contato",
+        "noFollow": false,
+        "tagTitle": "contatos",
+        "text": "Contatos"
+      }
+    }
+  },
+  "menu-item#lojas": {
+    "props": {
+      "id": "menu-item-lojas",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menu-institucional-item",
+      "itemProps": {
+        "type": "internal",
+        "href": "/lojas",
+        "noFollow": false,
+        "tagTitle": "lojas",
+        "text": "Lojas"
+      }
+    }
+  }
+}

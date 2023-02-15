@@ -1,0 +1,97 @@
+.flex {
+  &Row {
+    &--box-info-pedido{
+      :global(.vtex-order-placed-2-x-productList){
+        display: none;
+      }
+    }
+    &--lista-produtos{
+      :global(.vtex-order-placed-2-x-packageHeaderColumn){
+        display: none;
+      }
+    }
+    &--pedido-confirmado-topo,{
+      @include mobile {
+        :global(.vtex-store-components-3-x-container) {
+          padding: 0 1rem;
+        }
+      }
+    }
+    &--box-info-pedido,
+    &--order-header-info,
+    &--order-footer,
+    &--lista-produtos {
+      @include mobile {
+        :global(.vtex-store-components-3-x-container) {
+          padding: 0;
+        }
+      }
+    }
+    &Content{
+      &--order-footer{
+        display: flex;
+        justify-content: flex-end;
+        padding: 10px 0 35px;
+        @include mobile{
+          flex-wrap: wrap;
+          justify-content: center;
+          padding: 0;
+        }
+        @include desktop {
+          .stretchChildrenWidth{
+            width: unset !important;
+          }
+        }
+        .flexCol{
+          display: flex;
+          justify-content: right;
+        }
+      }
+      &--pedido-confirmado-topo{
+        border: 1px solid $color-1-500;
+        border-radius: 3px;
+        padding: 20px 31px;
+
+        @include mobile {
+          padding: 20px 8px;
+        }
+      }
+      &--box-info-pedido{
+        justify-content: space-between;
+        margin-bottom: 40px;
+        @include mobile{
+          flex-wrap: wrap;
+        }
+        .stretchChildrenWidth{
+          background: #F8F8F8;
+          border-radius: 3px;
+          width: 32% !important;
+          @include mobile{
+            width: 100% !important;
+            margin-bottom: 10px;
+          }
+        }
+      }
+      &--order-header-info{
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  &Col {
+    &Child {
+      &--info-col-bg{
+        height: auto !important;
+        :global(.vtex-order-placed-2-x-package--delivery){
+          border: none;
+        }
+        &:first-child{
+          padding: 21px 21px 0 21px;
+        }
+        &:last-child{
+          padding: 0 21px 0 21px;
+        }
+      }
+    }
+  }
+}

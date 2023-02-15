@@ -1,0 +1,28 @@
+@mixin dots(
+  $bg-active: $white,
+  $bg: $color-1-500,
+  $opacity: 0.5,
+  $opacity-hover: 1,
+  $size: 9px,
+  $border-color: $color-1-500
+) {
+  width: $size;
+  height: $size;
+  border-radius: 100%;
+  background-color: $bg;
+  opacity: $opacity;
+  padding: 0;
+  margin: 0 3px;
+  border: 1px solid $border-color;
+
+  &--active {
+    background-color: $bg-active;
+    opacity: $opacity-hover;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    opacity: $opacity-hover;
+  }
+}

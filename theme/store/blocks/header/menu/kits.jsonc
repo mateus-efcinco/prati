@@ -1,0 +1,474 @@
+{
+  "experimental__visibility-layout#kits":{
+    "title": "Visibilidade | Menu kits Individuais",
+    "props": {
+      "visible": true
+    },
+    "children":[
+      "menu-item#kits"   
+    ]
+  },
+  "menu-item#kits": {
+    "props": {
+      "id": "menu-item-custom-kits",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "header-menu-item",
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "kits",
+        "text": "kits"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#kits"
+    ]
+  },
+  "vtex.menu@2.x:submenu#kits": {
+    "props": {
+      "width": "100%"
+    },
+    "children": [
+      "flex-layout.row#menu-kits"
+    ]
+  },
+  "flex-layout.row#menu-kits": {
+    "children": [
+      "flex-layout.col#menu-kits-1",
+      "flex-layout.col#menu-kits-2"
+    ],
+    "props":{
+      "fullWidth": true,
+      "width":"100%",
+      "blockClass": "submenu"
+    }
+  },
+  "flex-layout.col#menu-kits-1": {
+    "children": [
+      "vtex.menu@2.x:menu#kit-menu"
+    ],
+    "props": {
+      "width": "25%",
+      "marginRight": 10,
+      "horizontalAlign": "left"
+
+    }
+  },
+  "vtex.menu@2.x:menu#kit-menu": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "experimental__visibility-layout#menu-item-favoritos",
+      "experimental__visibility-layout#menu-item-low-carb",
+      "experimental__visibility-layout#menu-item-mes",
+      "experimental__visibility-layout#menu-item-semanal",
+      "experimental__visibility-layout#menu-item-almoco-jantar",
+      "experimental__visibility-layout#menu-item-detox",
+      "experimental__visibility-layout#menu-item-ganho-massa",
+      "experimental__visibility-layout#menu-item-emagrecimento",
+      "experimental__visibility-layout#menu-item-desafio",
+      "experimental__visibility-layout#menu-item-todos-kits"
+    ]
+  },
+  "experimental__visibility-layout#menu-item-favoritos":{
+    "title": "Visibilidade | menu-item-favoritos",
+    "props": {
+      "visible": true
+    },
+    "children":[
+      "menu-item#favoritos"   
+    ]
+  },
+  "menu-item#favoritos": {
+    "props": {
+      "id": "menu-item-favoritos",
+      "blockClass": "firs-item-menu",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "FAVORITOS",
+        "text": "FAVORITOS"
+      }
+    }
+  },
+  "experimental__visibility-layout#menu-item-low-carb":{
+    "title": "Visibilidade | menu-item-low-carb",
+    "props": {
+      "visible": true
+    },
+    "children":[
+      "menu-item#low-carb"   
+    ]
+  },
+  "menu-item#low-carb": {
+    "props": {
+      "id": "menu-item-low-carb",      
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "LOW CARB",
+        "text": "LOW CARB"
+      }
+    }
+  },
+  "experimental__visibility-layout#menu-item-mes":{
+    "title": "Visibilidade | menu-item-mes",
+    "props": {
+      "visible": true
+    },
+    "children":[
+      "menu-item#mes"   
+    ]
+  },
+  "menu-item#mes": {
+    "props": {
+      "id": "menu-item-mes",      
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "MÊS",
+        "text": "MÊS"
+      }
+    }
+  },
+  "experimental__visibility-layout#menu-item-semanal":{
+    "title": "Visibilidade | menu-item-semanal",
+    "props": {
+      "visible": true
+    },
+    "children":[
+      "menu-item#semanal"   
+    ]
+  },
+  "menu-item#semanal": {
+    "props": {
+      "id": "menu-item-semanal",      
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "SEMANAL",
+        "text": "SEMANAL"
+      }
+    }
+  },
+  "experimental__visibility-layout#menu-item-almoco-jantar":{
+    "title": "Visibilidade | menu-item-almoco-jantar",
+    "props": {
+      "visible": true
+    },
+    "children":[
+      "menu-item#almoco-jantar"   
+    ]
+  },
+  "menu-item#almoco-jantar": {
+    "props": {
+      "id": "menu-item-almoco-jantar",      
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "ALMOÇO OU JANTAR",
+        "text": "ALMOÇO OU JANTAR"
+      }
+    }
+  },
+  "experimental__visibility-layout#menu-item-detox":{
+    "title": "Visibilidade | menu-item-detox",
+    "props": {
+      "visible": true
+    },
+    "children":[
+      "menu-item#detox"   
+    ]
+  },
+  "menu-item#detox": {
+    "props": {
+      "id": "menu-item-detox",      
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "DETOX",
+        "text": "DETOX"
+      }
+    }
+  },
+  "experimental__visibility-layout#menu-item-ganho-massa":{
+    "title": "Visibilidade | menu-item-ganho-massa",
+    "props": {
+      "visible": true
+    },
+    "children":[
+      "menu-item#ganho-massa"   
+    ]
+  },
+  "menu-item#ganho-massa": {
+    "props": {
+      "id": "menu-item-ganho-massa",      
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "GANHO DE MASSA",
+        "text": "GANHO DE MASSA"
+      }
+    }
+  },
+  "experimental__visibility-layout#menu-item-emagrecimento":{
+    "title": "Visibilidade | menu-item-emagrecimento",
+    "props": {
+      "visible": true
+    },
+    "children":[
+      "menu-item#emagrecimento"   
+    ]
+  },
+  "menu-item#emagrecimento": {
+    "props": {
+      "id": "menu-item-emagrecimento",      
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "EMAGRECIMENTO",
+        "text": "EMAGRECIMENTO"
+      }
+    }
+  },
+  "experimental__visibility-layout#menu-item-desafio":{
+    "title": "Visibilidade | menu-item-desafio",
+    "props": {
+      "visible": true
+    },
+    "children":[
+      "menu-item#desafio"   
+    ]
+  },
+  "menu-item#desafio": {
+    "props": {
+      "id": "menu-item-desafio",      
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "DESAFIO",
+        "text": "DESAFIO"
+      }
+    }
+  },
+  "experimental__visibility-layout#menu-item-todos-kits":{
+    "title": "Visibilidade | menu-item-todos-kits",
+    "props": {
+      "visible": true
+    },
+    "children":[
+      "menu-item#todos-kits"   
+    ]
+  },
+  "menu-item#todos-kits": {
+    "props": {
+      "id": "menu-item-todos-kits",      
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "last-item",
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Todos os Kits",
+        "text": "Todos os Kits"
+      }
+    }
+  },
+  "flex-layout.col#menu-kits-2": {
+    "children": [
+      "flex-layout.row#kits-destaque-line-1",
+      "flex-layout.row#kits-destaque-line-2"
+    ],
+    "props": {
+      "width": "50%",
+      "blockClass": "sub-menu"
+    }
+  },
+  "flex-layout.row#kits-destaque-line-1":{
+    "children":["rich-text#kit-destaque"],
+    "props":{
+      
+    }
+  },
+  "rich-text#kit-destaque":{
+    "props": {
+      "text": "Kits em destaque",
+      "textAlignment": "Left",
+      "textPosition": "Left",
+      "blockClass": "title-destaque"
+    }
+  },
+  "flex-layout.row#kits-destaque-line-2":{
+    "children":[
+      "flex-layout.col#destaque-kit1",
+      "flex-layout.col#destaque-kit2",
+      "flex-layout.col#destaque-kit3"
+    ],
+    "props":{
+      
+    }
+  },
+  "flex-layout.col#destaque-kit1":{
+    "children":[
+      "image#destaque-kit1",
+      "link#destaque-kit1"
+    ],
+    "props":{
+      "width": "100%",
+      "horizontalAlign": "center",
+      "marginRight":6
+    }
+  },
+  "image#destaque-kit1":{
+    "props": {
+      "src": "https://pratidev--luccofit.myvtex.com/arquivos/banner-destaque-ex.png",
+      "link" :"#"
+    }
+  },
+  "link#destaque-kit1": {
+    "props": {
+      "href": "#",
+      "label":"Risoto de arroz negro com frango em crosta acompanhado com berinjela - 400g - Lucco Fit",
+      "blockClass": "link-destaque"
+    }
+  },
+  "flex-layout.col#destaque-kit2":{
+    "children":[
+      "image#destaque-kit2",
+      "link#destaque-kit2"
+    ],
+    "props":{
+      "width": "100%",
+      "horizontalAlign": "center",
+      "marginRight":6
+    }
+  },
+  "image#destaque-kit2":{
+    "props": {
+      "src": "https://pratidev--luccofit.myvtex.com/arquivos/banner-destaque-ex.png",
+      "link" :"#"
+    }
+  },
+  "link#destaque-kit2": {
+    "props": {
+      "href": "#",
+      "label":"Risoto de arroz negro com frango em crosta acompanhado com berinjela - 400g - Lucco Fit",
+      "blockClass": "link-destaque"
+    }
+  },
+  "flex-layout.col#destaque-kit3":{
+    "children":[
+      "image#destaque-kit3",
+      "link#destaque-kit3"
+    ],
+    "props":{
+      "width": "100%",
+      "horizontalAlign": "center",
+      "marginRight":6
+    }
+  },
+  "image#destaque-kit3":{
+    "props": {
+      "src": "https://pratidev--luccofit.myvtex.com/arquivos/banner-destaque-ex.png",
+      "link" :"#"
+    }
+  },
+  "link#destaque-kit3": {
+    "props": {
+      "href": "#",
+      "label":"Risoto de arroz negro com frango em crosta acompanhado com berinjela - 400g - Lucco Fit",
+      "blockClass": "link-destaque"
+    }
+  },
+  "experimental__visibility-layout#kit-mobile":{
+    "title": "Visibilidade | Menu kits Individuais Mobile",
+    "props": {
+      "visible": true
+    },
+    "children":[
+      "menu-item#kit-mobile"   
+    ]
+  },
+  "menu-item#kit-mobile": {
+    "props": {
+      "blockClass": "category-nav__item__mobile",
+      "id": "menu-item-kit",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "kits",
+        "text": "kits"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#kit"]
+  },
+  "vtex.menu@2.x:submenu.accordion#kit": {
+    "props": {
+      "blockClass": "category-nav__submenu"
+    },
+    "children": ["vtex.menu@2.x:menu#kit-drawer"]
+  },
+  "vtex.menu@2.x:menu#kit-drawer": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "experimental__visibility-layout#menu-item-favoritos",
+      "experimental__visibility-layout#menu-item-low-carb",
+      "experimental__visibility-layout#menu-item-mes",
+      "experimental__visibility-layout#menu-item-semanal",
+      "experimental__visibility-layout#menu-item-almoco-jantar",
+      "experimental__visibility-layout#menu-item-detox",
+      "experimental__visibility-layout#menu-item-ganho-massa",
+      "experimental__visibility-layout#menu-item-emagrecimento",
+      "experimental__visibility-layout#menu-item-desafio",
+      "experimental__visibility-layout#menu-item-todos-kits"
+    ]
+  }
+}

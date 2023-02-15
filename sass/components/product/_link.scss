@@ -1,0 +1,28 @@
+.link {
+  &--social-instagram {
+    position: absolute;
+    bottom: 0;
+    width: auto !important;
+    left: 130px;
+    font-size: 0;
+    transition: opacity 0.2s;
+
+    @include mobile {
+      left: 133px;
+    }
+
+    &::before {
+      content: url(assets/svg/instagram-icon.svg);
+      background: #f5f5f5;
+      display: block;
+      padding: 9px;
+      border-radius: 100%;
+    }
+
+    &:hover,
+    &:active,
+    &:focus {
+      opacity: 0.5;
+    }
+  }
+}

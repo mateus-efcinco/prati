@@ -1,0 +1,41 @@
+{
+  "vtex.menu@2.x:menu#category-menu-mobile": {
+    "props": {
+      "experimentalOptimizeRendering": true,
+      "orientation": "vertical",
+      "blockClass": "menu--mobile"
+    },
+    "children": [
+      "experimental__visibility-layout#kit-mobile",
+      "experimental__visibility-layout#cardapio-mobile",
+      "experimental__visibility-layout#itens-individuais-mobile",
+      "experimental__visibility-layout#emporio-mobile",
+      "experimental__visibility-layout#descontos-mobile"
+    ]
+  },
+  "experimental__visibility-layout#descontos-mobile":{
+    "title": "Visibilidade | Menu Desconto Mobile",
+    "props": {
+      "visible": true
+    },
+    "children":[
+      "menu-item#descontos-mobile"   
+    ]
+  },
+  "menu-item#descontos-mobile": {
+    "props": {
+      "id": "menu-item-descontos",
+      "blockClass": "last-item-menu",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Descontos",
+        "text": "Descontos"
+      }
+    }
+  }  
+}

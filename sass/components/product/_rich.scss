@@ -1,0 +1,57 @@
+.wrapper {
+    &--texto--preparo {
+        //max-width: 310px;
+        width: 320px;
+        @include mobile {
+            padding: 0px 10px;
+        }
+        @media(max-width: 320px ) {
+            width: 300px;
+        }
+    }
+
+    .paragraph {
+        &--texto--preparo {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            margin-top: 0;
+            font-size: 20px;
+            line-height: 25px;
+            &::before {
+                content: url(assets/svg/checked.svg);
+                display: flex;
+                align-items: center;
+                margin-right: 15px;
+            }
+
+            @include mobile {
+                font-size: 16px;
+            }
+
+        }
+        &--descricao--preparo {
+            font-size: 21px;
+            margin: 0;
+            margin-bottom:30px;
+            @include mobile {
+                font-size: 16px;
+                max-width: 270px;
+            }
+        }
+    }
+    .heading{
+        &--titulo--preparo{
+            font-size: 32px;
+            color: #009180;
+            margin:0;
+            margin-bottom: 12px;
+            margin-top: 30px;
+            @include mobile {
+                font-size: 22px;
+                max-width: 210px;
+                margin-top: 0;
+            }
+        }
+    }
+}

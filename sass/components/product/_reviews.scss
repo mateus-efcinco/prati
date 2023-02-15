@@ -1,0 +1,36 @@
+.container {
+  margin-bottom: 3rem;
+}
+
+.reviewsHeading {
+  text-align: center;
+  text-transform: uppercase;
+
+  font-size: $font-size-h5;
+}
+
+.reviewsRating {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inlineContainer {
+  margin-left: 0;
+}
+
+.stars {
+  font-size: 10px;
+}
+
+.star--filled,
+.star--empty {
+  color: #ceb18f;
+  font-size: $font-size-lg;
+  font-weight: $normal;
+  vertical-align: super;
+}
+
+.summaryContainer {
+  font-size: $font-size-xs;
+}

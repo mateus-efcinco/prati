@@ -1,0 +1,174 @@
+{
+
+  "flex-layout.row#faq": {
+    "title": "FAQ",
+    "props": {
+      "blockClass": "faq"
+    },
+    "children": [
+      "menu-item#texto-1",
+      "menu-item#texto-2",
+      "menu-item#texto-3",
+      "menu-item#texto-4",
+      "menu-item#texto-5",
+      "menu-item#texto-6"
+    ]
+  },
+
+   // 01
+  "menu-item#texto-1": {
+    "title": "Pergunta 1",
+    "props": {
+      "type": "custom",
+      "text": "Comida Boa e que faz Bem no seu Dia a Dia!"
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#texto-1"]
+  },
+  "vtex.menu@2.x:submenu.accordion#texto-1": {
+    "title": "Responder",
+    "props": {
+        "blockClass": "resposta"
+    },
+    "children": [
+      "rich-text#texto-1"
+    ]
+  },
+  "rich-text#texto-1": {
+    "title": "Resposta 1",
+    "props": {
+      "blockClass": "resposta",
+      "text": "Comida congelada saudável pode ser uma ótima opção se você precisa melhorar seus hábitos alimentares e também ganhar tempo no seu dia a dia. Para alcançar seus objetivos, montar um cardápio fitness pode ser de grande ajuda. \n Ao montar um cardápio de marmita fitness para a semana, você simplifica sua rotina e torna mais fácil manter uma alimentação saudável no dia a dia. Comidas congeladas e caseiras são uma ótima pedida para conseguir equilibrar uma rotina agitada. \n Para todos que querem fazer uma pausa prática com comida congelada saudável! Ainda somos os mesmos: a mesma qualidade, o mesmo carinho, mas de cara nova. Acreditamos que é necessário mudar, e essa mudança foi pensada em você, sim, você. \n Estamos trazendo um novo conceito de comida congelada saudável para o mercado, com muito sabor, alegria e proximidade, afinal, comida de verdade está diretamente relacionada com carinho! Nossas opções de cardápio para marmita fit são ultra congeladas e embaladas à vácuo, sem perder o sabor e a qualidade. \n Temos todos os tipos de pratos, massas, carnes e opções vegetarianas, sempre prezando pela saúde e praticidade de vocês. São pratos deliciosos e combinações que poderiam facilmente ser opções fitness nos cardápios dos melhores restaurantes. \n Se alguém te disse que comer saudável era o oposto de comer bem, estava completamente enganado. Nosso cardápio de comida congelada está aqui para provar o contrário!"
+    }
+  },
+
+  // 02
+  "menu-item#texto-2": {
+    "title": "Pergunta 2",
+    "props": {
+      "type": "custom",
+      "text": "Como descongelar e aquecer as marmitas congeladas?"
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#texto-2"]
+  },
+  "vtex.menu@2.x:submenu.accordion#texto-2": {
+    "title": "Responder",
+    "props": {
+        "blockClass": "resposta"
+    },
+    "children": [
+      "rich-text#texto-2"
+    ]
+  },
+  "rich-text#texto-2": {
+    "title": "Resposta 2",
+    "props": {
+      "blockClass": "resposta",
+      "text": "Um dos pontos que gera maior questionamento é o momento de aquecer a marmita congelada. Para você não se preocupar mais, confira esse guia básico para você aproveitar o melhor dos alimentos fit e todo nosso cardápio de comida congelada. \n É bom destacar que ao descongelar a marmita fitness, o ponto de maior atenção está nos legumes. \n Caso você os esquente demais, eles ficarão moles e sem cor, além de perder boa parte dos nutrientes que carregam. \n Por outro lado, ao esquentar de menos, uma parte da comida pode continuar congelada, o que é bem desagradável. \n Porém, não se preocupe, iremos abordar as principais formas para aquecer uma marmita: no microondas usando o próprio recipiente da marmita ou um prato, e utilizando um fogão em banho-maria. \n Assim, você poderá aproveitar nosso cardápio de marmita fitness em casa, na faculdade, no trabalho ou em qualquer outro lugar que você esteja. \n É importante lembrar que a forma mais indicada para descongelar a marmita é aos poucos, na geladeira. Os nutrientes e o sabor são totalmente preservados. Porém, com a rotina corrida, nem sempre é possível consumir o cardápio de comidas congeladas fit dessa maneira. \n Sem mais demora, vamos aprender de forma prática como esquentar sua marmita da forma correta:"
+    }
+  },
+
+  // 03
+  "menu-item#texto-3": {
+    "title": "Pergunta 3",
+    "props": {
+      "type": "custom",
+      "text": "Usando o microondas com o próprio recipiente da marmita"
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#texto-3"]
+  },
+  "vtex.menu@2.x:submenu.accordion#texto-3": {
+    "title": "Responder",
+    "props": {
+        "blockClass": "resposta"
+    },
+    "children": [
+      "rich-text#texto-3"
+    ]
+  },
+  "rich-text#texto-3": {
+    "title": "Resposta 3",
+    "props": {
+      "blockClass": "resposta",
+      "text": "Primeiramente, é importante verificar se o recipiente está adequado para ser aquecido no microondas. Alguns plásticos possuem uma substância tóxica que é liberada durante o aquecimento. \n Os recipientes utilizados pelas marmitas Fit Pratí são 100% livres de substância. Assim, você pode aproveitar todo nosso cardápio de comida congelada saudável com total segurança. \n\n Ao retirar a marmita do congelador, ainda com a tampa fechada, aqueça no microondas em potência média/alta \n Abra a marmita e confira a temperatura na parte de dentro da comida. Caso o meio do alimento ainda esteja frio, coloque a tampa novamente e aqueça por mais um ou dois minutos \n A temperatura ideal para consumo de um prato quente é de cerca de 60ºC. Ao esquentar demais você acaba afetando o sabor, aroma e também destruindo os nutrientes daquele alimento. Ao fazer isso, todo o sentido de consumir comida congelada saudável é comprometido."
+    }
+  },
+
+  // 04
+  "menu-item#texto-4": {
+    "title": "Pergunta 4",
+    "props": {
+      "type": "custom",
+      "text": "Usando o microondas com o prato"
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#texto-4"]
+  },
+  "vtex.menu@2.x:submenu.accordion#texto-4": {
+    "title": "Responder",
+    "props": {
+        "blockClass": "resposta"
+    },
+    "children": [
+      "rich-text#texto-4"
+    ]
+  },
+  "rich-text#texto-4": {
+    "title": "Resposta 4",
+    "props": {
+      "blockClass": "resposta",
+      "text": "Seja em casa ou em outro lugar onde você possa aproveitar um vasto cardápio de cardápio de marmita fit. \n Com mais espaço para consumir sua comida, é possível até servir junto uma salada ou algum complemento para a alimentação fitness. \n Ao colocar a marmita no prato, você terá um bloco de comida congelada, cubra-o com uma tampa apropriada e leve ao microondas por 5 minutos em potência média ou alta; \n Retire a tampa e cheque a temperatura. Caso ainda não esteja na temperatura ideal para consumir, aqueça por mais tempo."
+    }
+  },
+
+  // 05
+  "menu-item#texto-5": {
+    "title": "Pergunta 5",
+    "props": {
+      "type": "custom",
+      "text": "Usando o fogão em banho-maria"
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#texto-5"]
+  },
+  "vtex.menu@2.x:submenu.accordion#texto-5": {
+    "title": "Responder",
+    "props": {
+        "blockClass": "resposta"
+    },
+    "children": [
+      "rich-text#texto-5"
+    ]
+  },
+  "rich-text#texto-5": {
+    "title": "Resposta 5",
+    "props": {
+      "blockClass": "resposta",
+      "text": "Caso você não tenha, ou não queira usar um microondas, você poderá esquentar as marmitas no fogão, utilizando a técnica do banho-maria. \n Adicione água a uma panela até a metade. Deixe a marmita tampada e leve ao fogo por aproximadamente 15 minutos; \n Atenção à intensidade do fogo e ao tamanho da panela, esse fatores irão influenciar no tempo de cozimento."
+    }
+  },
+
+  // 06
+  "menu-item#texto-6": {
+    "title": "Pergunta 6",
+    "props": {
+      "type": "custom",
+      "text": "Validade das marmitas"
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#texto-6"]
+  },
+  "vtex.menu@2.x:submenu.accordion#texto-6": {
+    "title": "Responder",
+    "props": {
+        "blockClass": "resposta"
+    },
+    "children": [
+      "rich-text#texto-6"
+    ]
+  },
+  "rich-text#texto-6": {
+    "title": "Resposta 6",
+    "props": {
+      "blockClass": "resposta",
+      "text": "É importante estar sempre atento aos prazos de validade para aproveitar com segurança sua comida congelada saudável. O tempo pode variar de acordo com o tipo de alimento utilizado e modo de preparo. \n No entanto, de forma geral você pode seguir as seguintes regras: manter na geladeira por 3 dias; no congelador por 30 dias; no freezer por 90 dias. Depois de descongelar os alimentos uma vez, não os congele novamente. \n Gostou dessas dicas? Não deixe de aproveitar nosso cardápio de comidas congeladas. Porque todo mundo tem o seu jeito, e pra cada um deles, tem Pratí."
+    }
+  }
+
+}

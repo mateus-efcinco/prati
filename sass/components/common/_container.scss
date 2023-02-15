@@ -1,0 +1,13 @@
+.container {
+  // padding: 0 !important;
+
+  @media (min-width: $xl) {
+    // width: 90%;
+    max-width: 1338px;
+    // min-width: $xl - 30;
+  }
+
+  &--footer__newsletter {
+    padding: 20px 35px;
+  }
+}

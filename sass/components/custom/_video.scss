@@ -1,0 +1,23 @@
+.video {
+  &Container {
+    &--flow__video {
+      margin-bottom: 3rem;
+
+      @media only screen and (max-width: $screen-md-max) {
+        display: block;
+        position: relative;
+        height: 0;
+        overflow: hidden;
+        padding-bottom: 56.25%; // resolução 16:9
+
+        :first-child {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+}

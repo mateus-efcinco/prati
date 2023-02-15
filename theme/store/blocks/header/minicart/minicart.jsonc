@@ -1,0 +1,111 @@
+{
+  "minicart.v2":{
+    "children": ["minicart-base-content"],
+    "props": {
+        "itemCountMode": "totalAvailable"
+    }
+  },
+  "minicart-base-content": {
+    "blocks": ["minicart-empty-state"],
+    "children": ["flex-layout.row#minicart-header", "minicart-product-list", "flex-layout.row#minicart-footer"]
+  },
+  "flex-layout.row#minicart-header": {
+    "props":{
+      "blockClass": "minicart-header"
+    },
+    "children":[
+      "flex-layout.col#minicart-header"
+    ]
+  },
+  "flex-layout.col#minicart-header":{
+    "children":[
+      "rich-text#minicart-header-title"
+    ]
+  },
+  "rich-text#minicart-header-title":{
+    "props":{
+      "text":"Meu carrinho",
+      "blockClass": "minicart-header-title"
+    }
+  },
+  "flex-layout.row#minicart-footer": {
+    "props": {
+      "blockClass": "minicart-footer"
+    },
+    "children": ["flex-layout.col#minicart-footer"]
+  },
+  "flex-layout.col#minicart-footer": {
+    "children": [
+      //"minicart-bar",
+      "minicart-summary",
+      "minicart-checkout-button"
+    ]
+  },
+  "minicart-product-list": {
+    "blocks": ["product-list#minicart"]
+  },
+  "minicart-summary": {
+    "blocks": ["checkout-summary.compact#minicart"]
+  },
+
+  "checkout-summary.compact#minicart": {
+    "children": ["summary-totalizers#minicart"],
+    "props": {
+      "blockClass": "minicart-total-price",
+      "totalizersToShow": ["Items", "Discounts"],
+      "totalCalculation": "visibleTotalizers"
+    }
+  },
+  "summary-totalizers#minicart": {
+    "props": {
+      "showTotal": true,
+      "showDeliveryTotal": false,
+      "totalCalculation": "visibleTotalizers"
+    }
+  },
+  "minicart-empty-state": {
+    "children": ["flex-layout.row#empty-state"]
+  },
+  "flex-layout.row#empty-state": {
+    "children": ["flex-layout.col#empty-state"]
+  },
+  "flex-layout.col#empty-state": {
+    "children": [
+      "rich-text#minicart-default-empty-state",
+      "rich-text#minicart-default-empty-subtitle",
+      "link#ir-para-cardapio",
+      "link#ir-para-kits"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "middle",
+      "rowGap": 5
+    }
+  },
+  "rich-text#minicart-default-empty-state": {
+    "props": {
+      "text": "Seu carrinho está vazio.",
+      "blockClass": "empty-cart-title"
+    }
+  },
+  "rich-text#minicart-default-empty-subtitle":{
+    "props": {
+      "text": "Para continuar comprando, navegue pelas categorias do site ou faça uma busca pelo seu produto.",
+      "blockClass": "empty-cart-subtitle"
+    }
+  },
+  "link#ir-para-cardapio":{
+    "props": {
+      "href": "#",
+      "label":"ir para o cardápio!",
+      "blockClass": "empty-cart-button"
+    }
+  },
+  "link#ir-para-kits":{
+    "props": {
+      "href": "#",
+      "label":"ir para kits",
+      "blockClass": "empty-cart-button"
+    }
+  }
+}

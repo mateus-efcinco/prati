@@ -1,0 +1,524 @@
+{
+  "experimental__visibility-layout#cardapio":{
+    "title": "Visibilidade | Menu Cardapio",
+    "props": {
+      "visible": true
+    },
+    "children":[
+      "menu-item#cardapio"   
+    ]
+  },
+  "menu-item#cardapio": {
+    "props": {
+      "id": "menu-item-custom-cardapio",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+        "blockClass": "header-menu-item",
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Cardápio",
+        "text": "Cardápio"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#cardapio"
+    ]
+  },
+  "vtex.menu@2.x:submenu#cardapio": {
+    "props": {
+      "width": "100%"
+    },
+    "children": [
+      "flex-layout.row#menu-cardapio"
+    ]
+  },
+  "flex-layout.row#menu-cardapio": {
+    "children": [
+      "flex-layout.col#menu-cardapio-1",
+      "flex-layout.col#menu-cardapio-2"
+    ],
+    "props":{
+      "fullWidth": true,
+      "width":"100%",
+      "blockClass": "submenu"
+    }
+  },
+  "flex-layout.col#menu-cardapio-1": {
+    "children": [
+      "vtex.menu@2.x:menu#cardapio-menu"
+    ],
+    "props": {
+      "width": "25%",
+      "marginRight": 10
+    }
+  },
+  "vtex.menu@2.x:menu#cardapio-menu": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "experimental__visibility-layout#menu-item-carne",
+      "experimental__visibility-layout#menu-item-frango",
+      "experimental__visibility-layout#menu-item-peixe",
+      "experimental__visibility-layout#menu-item-low-carb",
+      "experimental__visibility-layout#menu-item-vegetariano",
+      "experimental__visibility-layout#menu-item-massa-panquecas-risotos",
+      "experimental__visibility-layout#menu-item-sopas",
+      "experimental__visibility-layout#menu-item-doces-fit",
+      "experimental__visibility-layout#menu-item-salgados-snacks",
+      "experimental__visibility-layout#menu-item-sucos-bebidas",
+      "experimental__visibility-layout#menu-item-pf-chefe",
+      "experimental__visibility-layout#menu-item-programa",
+      "experimental__visibility-layout#menu-item-todos-pratos"
+    ]
+  },
+  "experimental__visibility-layout#menu-item-carne":{
+    "title": "Visibilidade | menu-item-carne",
+    "props": {
+      "visible": true
+    },
+    "children":[
+      "menu-item#carne"   
+    ]
+  },
+  "menu-item#carne": {
+    "props": {
+      "id": "menu-item-carne",
+      "blockClass": "firs-item-menu",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "CARNE",
+        "text": "CARNE"
+      }
+    }
+  },
+  "experimental__visibility-layout#menu-item-frango":{
+    "title": "Visibilidade | menu-item-frango",
+    "props": {
+      "visible": true
+    },
+    "children":[
+      "menu-item#frango"   
+    ]
+  },
+  "menu-item#frango": {
+    "props": {
+      "id": "menu-item-frango",      
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "FRANGO",
+        "text": "FRANGO"
+      }
+    }
+  },
+  "experimental__visibility-layout#menu-item-peixe":{
+    "title": "Visibilidade | menu-item-peixe",
+    "props": {
+      "visible": true
+    },
+    "children":[
+      "menu-item#peixe"   
+    ]
+  },
+  "menu-item#peixe": {
+    "props": {
+      "id": "menu-item-peixe",      
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "PEIXE",
+        "text": "PEIXE"
+      }
+    }
+  },
+  "experimental__visibility-layout#menu-item-low-carb":{
+    "title": "Visibilidade | menu-item-low-carb",
+    "props": {
+      "visible": true
+    },
+    "children":[
+      "menu-item#low-carb"   
+    ]
+  },
+  "menu-item#low-carb": {
+    "props": {
+      "id": "menu-item-low-carb",      
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "LOW CARB",
+        "text": "LOW CARB"
+      }
+    }
+  },
+  "experimental__visibility-layout#menu-item-vegetariano":{
+    "title": "Visibilidade | menu-item-vegetariano",
+    "props": {
+      "visible": true
+    },
+    "children":[
+      "menu-item#vegetariano"   
+    ]
+  },
+  "menu-item#vegetariano": {
+    "props": {
+      "id": "menu-item-vegetariano",      
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "VEGETARIANO",
+        "text": "VEGETARIANO"
+      }
+    }
+  },
+  "experimental__visibility-layout#menu-item-massa-panquecas-risotos":{
+    "title": "Visibilidade | menu-item-massa-panquecas-risotos",
+    "props": {
+      "visible": true
+    },
+    "children":[
+      "menu-item#massa-panquecas-risotos"   
+    ]
+  },
+  "menu-item#massa-panquecas-risotos": {
+    "props": {
+      "id": "menu-item-massa-panquecas-risotos",      
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "MASSAS, PANQUECAS E RISOTOS",
+        "text": "MASSAS, PANQUECAS E RISOTOS"
+      }
+    }
+  },
+  "experimental__visibility-layout#menu-item-sopas":{
+    "title": "Visibilidade | menu-item-sopas",
+    "props": {
+      "visible": true
+    },
+    "children":[
+      "menu-item#sopas"   
+    ]
+  },
+  "menu-item#sopas": {
+    "props": {
+      "id": "menu-item-sopas",      
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "SOPAS",
+        "text": "SOPAS"
+      }
+    }
+  },
+  "experimental__visibility-layout#menu-item-doces-fit":{
+    "title": "Visibilidade | menu-item-doces-fit",
+    "props": {
+      "visible": true
+    },
+    "children":[
+      "menu-item#doces-fit"   
+    ]
+  },
+  "menu-item#doces-fit": {
+    "props": {
+      "id": "menu-item-doces-fit",      
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "DOCES FIT E ESTES PODEM",
+        "text": "DOCES FIT E ESTES PODEM"
+      }
+    }
+  },
+  "experimental__visibility-layout#menu-item-salgados-snacks":{
+    "title": "Visibilidade | menu-item-salgados-snacks",
+    "props": {
+      "visible": true
+    },
+    "children":[
+      "menu-item#salgados-snacks"   
+    ]
+  },
+  "menu-item#salgados-snacks": {
+    "props": {
+      "id": "menu-item-salgados-snacks",      
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "SALGADOS E SNACKS",
+        "text": "SALGADOS E SNACKS"
+      }
+    }
+  },
+  "experimental__visibility-layout#menu-item-sucos-bebidas":{
+    "title": "Visibilidade | menu-item-sucos-bebidas",
+    "props": {
+      "visible": true
+    },
+    "children":[
+      "menu-item#sucos-bebidas"   
+    ]
+  },
+  "menu-item#sucos-bebidas": {
+    "props": {
+      "id": "menu-item-sucos-bebidas",      
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "SUCOS E BEBIDAS",
+        "text": "SUCOS E BEBIDAS"
+      }
+    }
+  },
+  "experimental__visibility-layout#menu-item-pf-chefe":{
+    "title": "Visibilidade | menu-item-pf-chefe",
+    "props": {
+      "visible": true
+    },
+    "children":[
+      "menu-item#pf-chefe"   
+    ]
+  },
+  "menu-item#pf-chefe": {
+    "props": {
+      "id": "menu-item-pf-chefe",      
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "PF DO CHEF",
+        "text": "PF DO CHEF"
+      }
+    }
+  },
+  "experimental__visibility-layout#menu-item-programa":{
+    "title": "Visibilidade | menu-item-programa",
+    "props": {
+      "visible": true
+    },
+    "children":[
+      "menu-item#programa"   
+    ]
+  },
+  "menu-item#programa": {
+    "props": {
+      "id": "menu-item-programa",      
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "PROGRAMA",
+        "text": "PROGRAMA"
+      }
+    }
+  },
+  "experimental__visibility-layout#menu-item-programa":{
+    "title": "Visibilidade | menu-item-programa",
+    "props": {
+      "visible": true
+    },
+    "children":[
+      "menu-item#programa"   
+    ]
+  },
+  "experimental__visibility-layout#menu-item-todos-pratos":{
+    "title": "Visibilidade | menu-item-todos-pratos",
+    "props": {
+      "visible": true
+    },
+    "children":[
+      "menu-item#todos-pratos"   
+    ]
+  },
+  "menu-item#todos-pratos": {
+    "props": {
+      "id": "menu-item-todos-pratos",      
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "last-item",
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Todos os pratos",
+        "text": "Todos os pratos"
+      }
+    }
+  },
+  "flex-layout.col#menu-cardapio-2": {
+    "children": [
+      "flex-layout.row#cardapio-destaque-line-1",
+      "flex-layout.row#cardapio-destaque-line-2"
+    ],
+    "props": {
+      "width": "50%",
+      "blockClass": "sub-menu"
+    }
+  },
+  "flex-layout.row#cardapio-destaque-line-1":{
+    "children":["rich-text#kit-destaque"],
+    "props":{
+      
+    }
+  },
+  "rich-text#kit-destaque":{
+    "props": {
+      "text": "cardapio em destaque",
+      "textAlignment": "Left",
+      "textPosition": "Left",
+      "blockClass": "title-destaque"
+    }
+  },
+  "flex-layout.row#cardapio-destaque-line-2":{
+    "children":[
+      "flex-layout.col#destaque-kit1",
+      "flex-layout.col#destaque-kit2"
+    ],
+    "props":{
+      
+    }
+  },
+  "flex-layout.col#destaque-kit1":{
+    "children":[
+      "image#destaque-kit1",
+      "link#destaque-kit1"
+    ]
+  },
+  "image#destaque-kit1":{
+    "props": {
+      "src": "https://pratidev--luccofit.myvtex.com/arquivos/banner-destaque-ex.png",
+      "link" :"#",
+      "width":"100%"
+    }
+  },
+  "link#destaque-kit1": {
+    "props": {
+      "href": "#",
+      "label":"Risoto de arroz negro com frango em crosta acompanhado com berinjela - 400g - Lucco Fit"
+    }
+  },
+  "flex-layout.col#destaque-kit2":{
+    "children":[
+      "image#destaque-kit2",
+      "link#destaque-kit2"
+    ]
+  },
+  "image#destaque-kit2":{
+    "props": {
+      "src": "https://pratidev--luccofit.myvtex.com/arquivos/banner-destaque-ex.png",
+      "link" :"#",
+      "width":"100%"
+    }
+  },
+  "link#destaque-kit2": {
+    "props": {
+      "href": "#",
+      "label":"Risoto de arroz negro com frango em crosta acompanhado com berinjela - 400g - Lucco Fit"
+    }
+  },
+  "experimental__visibility-layout#cardapio-mobile":{
+    "title": "Visibilidade | Menu Cardapio Mobile",
+    "props": {
+      "visible": true
+    },
+    "children":[
+      "menu-item#cardapio-mobile"   
+    ]
+  },
+  "menu-item#cardapio-mobile": {
+    "props": {
+      "blockClass": "category-nav__item__mobile",
+      "id": "menu-item-cardapio",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Cardápio",
+        "text": "Cardápio"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#cardapio"]
+  },
+  "vtex.menu@2.x:submenu.accordion#cardapio": {
+    "props": {
+      "blockClass": "category-nav__submenu"
+    },
+    "children": ["vtex.menu@2.x:menu#cardapio-drawer"]
+  },
+  "vtex.menu@2.x:menu#cardapio-drawer": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "experimental__visibility-layout#menu-item-carne",
+      "experimental__visibility-layout#menu-item-frango",
+      "experimental__visibility-layout#menu-item-peixe",
+      "experimental__visibility-layout#menu-item-low-carb",
+      "experimental__visibility-layout#menu-item-vegetariano",
+      "experimental__visibility-layout#menu-item-massa-panquecas-risotos",
+      "experimental__visibility-layout#menu-item-sopas",
+      "experimental__visibility-layout#menu-item-doces-fit",
+      "experimental__visibility-layout#menu-item-salgados-snacks",
+      "experimental__visibility-layout#menu-item-sucos-bebidas",
+      "experimental__visibility-layout#menu-item-pf-chefe",
+      "experimental__visibility-layout#menu-item-programa",
+      "experimental__visibility-layout#menu-item-todos-pratos"
+    ]
+  }
+}

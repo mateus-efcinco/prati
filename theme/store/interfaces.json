@@ -1,0 +1,34 @@
+{
+    "button-quantity" : {
+        "component": "ButtonQuantity"
+    },
+    "search-result-info": {
+        "component": "SearchResult"
+    },
+    "departament-breadcrumb": {
+        "component": "DepartamentBread"
+    },
+    "trigger-pagination": {
+        "component": "TriggerPagination"
+    },
+    "institucional-clicked": {
+        "component": "InstitucionalClicked"
+    },
+    "about-product": {
+        "component": "AboutProduct"
+    },
+    "condition-notshow": {
+        "component": "ConditionNotShow",
+        "composition": "children"
+    },
+    "condition-show": {
+        "component": "ConditionShow",
+        "composition": "children"
+    },
+    "kit-item-unit": {
+        "component": "KitUnit"
+    },
+    "show-descontos": {
+        "component": "Descontos"
+    }
+}

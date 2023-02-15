@@ -1,0 +1,20 @@
+.notification{
+  &Bar{
+    &Container{
+      background:$color-1-500;
+      text-decoration: none;
+    }
+    &Inner{
+      color: $white;
+      text-transform: uppercase;
+      font-size: $font-size-sm;
+      font-weight: $light;
+      @include mobile{
+        text-align: center;
+        padding: 12px 39px;
+        font-size: $font-size-xxs;
+        line-height: 13px;
+      }
+    }
+  }
+}

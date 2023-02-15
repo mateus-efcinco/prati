@@ -1,0 +1,170 @@
+.minicartQuantityBadge {
+  position: absolute;
+  top: -27px;
+  background: $color-1-500;
+  @include mobile{
+    top: -26px;
+  }
+}
+.minicartWrapperContainer{
+  .minicart{
+    &Container{
+      position: relative;
+      margin-left: 20px;
+      margin-right: 20px;
+      @include mobile{
+        margin-right: 15px;
+      }
+      :global(.vtex-button){
+        background: transparent !important;
+        &:hover{
+          background: transparent !important;
+        }
+        &:focus{
+          outline: none;
+        }
+      }
+      &::before{
+        content: '';
+        width: 37px;
+        height: 29px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        background: $minicart-icon;
+        background-size: contain;
+        @include mobile{
+          top: 0;
+        }
+      }
+    }
+  }
+}
+.openIcon {
+  &Container {
+
+  }
+}
+.cartIcon {
+  display: none;
+}
+
+.drawer{
+  z-index: 9999999999;
+
+  @include desktop{
+    width: 100% !important;
+    max-width: 550px  !important;
+  }
+  @include notebook{
+    max-width: 360px  !important;
+  }
+  @include mobile{
+    width: 100% !important;
+    max-width: unset  !important;
+  }
+  &Content{
+    position: relative;
+    .closeIcon{
+      &Container{
+        position: absolute;
+        right: 20px;
+        background: $white;
+        top: 10px;
+        width: 48px;
+        height: 48px;
+      }
+      &Button{
+        padding: 0;
+        width: 48px;
+        height: 48px;
+      }
+    }
+  }
+}
+
+.minicart{
+  &Title{
+    display: none;
+  }
+  &ProductListContainer{
+    :global(.vtex-product-list-0-x-productImageContainer){
+      @include mobile{
+        width: 90px !important;
+      }
+    }
+    :global(.vtex-product-list-0-x-productBrandName){
+      display: none;
+    }
+    :global(.vtex-product-list-0-x-productName){
+      font-size: $font-size-sm;
+      color: $text-color-1-500;
+      line-height: 22px;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      font-weight: $normal;
+    }
+    :global(.vtex-product-list-0-x-removeButtonContainer){
+      background: #F5F5F5;
+      :global(.vtex-product-list-0-x-removeButton){
+        height: 30px;
+        width: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+    :global(.vtex-product-list-0-x-price){
+      text-align: left;
+      font-size: $font-size-lg;
+      color: $text-color-1-500;
+      font-weight: $bold;
+    }
+  }
+  &Summary{
+    :global(.vtex-checkout-summary-0-x-summarySmallContent--minicart-total-price){
+      border-top: 2px solid #eaeaea;
+    }
+    :global(.vtex-checkout-summary-0-x-summaryItemContainer){
+      &:first-child{
+        :global(.vtex-checkout-summary-0-x-summaryItemLabel),
+        :global(.vtex-checkout-summary-0-x-summaryItemPrice){
+          display: none;
+        }
+      }
+      :global(.vtex-checkout-summary-0-x-summaryItemLabel){
+        font-size: $font-size-lg;
+        text-transform: uppercase;
+        color: $text-color-1-500;
+      }
+      :global(.vtex-checkout-summary-0-x-summaryItemPrice){
+        font-size: $font-size-lg;
+        text-transform: uppercase;
+        color: $text-color-1-500;
+        font-weight: $bold;
+      }
+    }
+    :global(.vtex-checkout-summary-0-x-summarySmallDisclaimer){
+      display: none;
+    }
+  }
+  &CheckoutButton{
+    :global(.vtex-button){
+      height: 60px;
+    }
+    :global(.vtex-button__label){
+      font-size: 0;
+      &::before{
+        content: 'finalizar compra';
+        font-size: $font-size-lg;
+        text-transform: uppercase;
+        font-weight: $bold;
+      }
+    }
+  }
+}

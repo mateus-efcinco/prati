@@ -1,0 +1,28 @@
+.imageElement {
+  &--footer__payment {
+    max-width: 45px;
+    margin-right: 0.3rem;
+  }
+
+  &--footer__legal--vtex {
+    &::before {
+      content: 'Powered by';
+
+      font-size: $font-size-xxs;
+      font-weight: normal;
+      display: block;
+      margin-bottom: 5px;
+    }
+  }
+
+  &--footer__legal--maeztra {
+    &::before {
+      content: 'Developed by';
+
+      font-size: $font-size-xxs;
+      font-weight: normal;
+      display: block;
+      margin-bottom: 5px;
+    }
+  }
+}

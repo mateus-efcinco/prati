@@ -1,0 +1,159 @@
+{
+  "vtex.menu@2.x:menu#social": {
+    "props": {
+      "orientation": "vertical",
+      "width":"100%",
+      "blockClass": "footer__social__menu"
+    },
+    "children": [
+      "image#Instagram",
+      "image#Facebook",
+      "image#whatsapp"
+    ]
+  },
+  "image#Instagram": {
+    "props": {
+      "src": "assets/svg/Instagram.svg",
+      "blockClass": "footer__social",
+      "width": "32px",
+      "link":{
+        "url": "https://instagram.com/luccofitfoods?utm_medium=copy_link",
+        "openNewTab": true
+      }
+    }
+  },
+  "image#Facebook": {
+      "title": "image facebook",
+    "props": {
+      "src": "assets/svg/Facebook.svg",
+      "blockClass": "footer__social",
+      "width": "32px",
+      "link":{
+        "url": "https://www.facebook.com/luccofit/",
+        "openNewTab": true
+      }
+    }
+  },
+  "image#whatsapp": {
+      "title": "image whatsapp",
+    "props": {
+      "src": "assets/svg/whatsapp.svg",
+      "blockClass": "footer__social",
+      "width": "32px",
+      "link":{
+        "url": "https://api.whatsapp.com/send?phone=5511973759937&text=Oi!%20Vim%20do%20Insta",
+        "openNewTab": true
+      }
+    }
+  },
+
+  "flex-layout.row#social-footer-mobile": {
+    "children": [
+        "flex-layout.col#social-footer-mobile"
+    ]
+  },
+  "flex-layout.row#social-footer-desktop": {
+    "children": [
+        "flex-layout.col#social-footer-desktop"
+    ]
+  },
+
+  "flex-layout.col#social-footer-mobile": {
+    "children": [
+        "rich-text#social-title",
+        "flex-layout.row#social-footer-wrapper-mobile"
+    ]
+  },
+  "flex-layout.row#social-footer-wrapper-mobile": {
+      "props": {
+          "blockClass": "social-footer-wrapper"
+      },
+    "children": [
+        "link#insta-mobile",
+        "link#face-mobile",
+        "link#whats-mobile"
+    ]
+  },
+  "flex-layout.col#social-footer-desktop": {
+    "children": [
+        "rich-text#social-title",
+        "flex-layout.row#social-footer-wrapper-desktop"
+    ]
+  },
+  "flex-layout.row#social-footer-wrapper-desktop": {
+      "props": {
+          "blockClass": "social-footer-wrapper"
+      },
+    "children": [
+        "link#insta-desktop",
+        "link#face-desktop",
+        "link#whats-desktop"
+    ]
+  },
+
+
+
+  
+  "link#insta-mobile": {
+      "title": "link Instagram Mobile",
+      "props": {
+          "href": "/",
+          "target": "_blank"
+      },
+      "children": [
+          "image#Instagram"
+      ]
+  },
+  "link#whats-mobile": {
+      "title": "link Whatsapp Mobile",
+      "props": {
+          "href": "/",
+          "target": "_blank"
+      },
+      "children": [
+          "image#whatsapp"
+      ]
+  },
+  "link#face-mobile": {
+      "title": "link Facebook Mobile",
+      "props": {
+          "href": "/",
+          "target": "_blank"
+      },
+      "children": [
+          "image#Facebook"
+      ]
+  },
+
+  "link#insta-desktop": {
+      "title": "link Instagram Desktop",
+      "props": {
+          "href": "/",
+          "target": "_blank"
+      },
+      "children": [
+          "image#Instagram"
+      ]
+  },
+  "link#whats-desktop": {
+      "title": "link Whatsapp Desktop",
+      "props": {
+          "href": "/",
+          "target": "_blank"
+      },
+      "children": [
+          "image#whatsapp"
+      ]
+  },
+  "link#face-desktop": {
+      "title": "link Facebook Desktop",
+      "props": {
+          "href": "/",
+          "target": "_blank"
+      },
+      "children": [
+          "image#Facebook"
+      ]
+  }
+
+}

@@ -1,0 +1,31 @@
+@mixin container ($margin: 0 auto){
+  width: calc(100% - 80px);
+  margin: $margin;
+}
+
+
+@mixin containerMaxWidth ($margin: 0 auto){
+  max-width: 1410px;
+  width: calc(100% - 80px);
+  margin: $margin;
+  @include mobile{
+    width: calc(100% - 10px);
+  }
+}
+
+// AJUSTE APENAS PARA NOTEBOOKS, MAIS TARDE DEVE-SE PESQUISAR UMA OUTRA FORMA MAIS CONCISA
+@mixin notebook{
+  @media (min-width: $l + 30) and (max-width: $lp + 1) {
+    @content;
+  }
+}
+@mixin mobile{
+  @media (max-width: $screen-sm) {
+    @content;
+  }
+}
+@mixin desktop{
+  @media (min-width: $screen-sm) {
+    @content;
+  }
+}

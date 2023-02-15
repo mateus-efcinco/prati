@@ -1,0 +1,99 @@
+.flex {
+  &Row {
+    &--drawer-col {
+      width: 100%;
+    }
+
+    &Content {
+      &--main-header {
+        @include container;
+        background: #f5f5f5;
+        width: auto;
+        box-shadow: none !important;
+
+        &-mobile {
+          background: #f5f5f5;
+          backdrop-filter: unset;
+          :global(.vtex-store-components-3-x-logoContainer) {
+            max-width: 120px;
+            max-height: 50px;
+          }
+        }
+      }
+      &--quantity-wrapper-minicart {
+        justify-content: flex-end;
+      }
+      &--minicart-info-prod {
+        margin-bottom: 10px;
+      }
+      &--minicart-prod {
+        border-bottom: 1px solid #dedede;
+        padding: 10px 0;
+        position: relative;
+        right: 7px;
+        :global(.vtex-product-list-0-x-productImageContainer){
+          width: 100px !important;
+          margin-right: 10px;
+        }
+        :global(.vtex-flex-layout-0-x-flexCol){
+          margin-right: 0;
+        }
+      }
+      &--minicart-price-qtd-wrapper {
+        display: flex;
+        justify-content: space-around;
+        .stretchChildrenWidth {
+          width: 50% !important;
+        }
+      }
+      &--submenu {
+        display: flex;
+        justify-content: space-between !important;
+      }
+      &--drawer-col {
+        height: 100%;
+
+        :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+          height: 100%;
+        }
+      }
+    }
+    &--submenu {
+      @include container;
+      padding-bottom: 40px;
+      max-width: 1300px;
+      @include notebook{
+        max-width: 1050px;
+      }
+    }
+    &--rowGreen-header {
+      width: 100%;
+      background-color: $color-1-500;
+    }
+  }
+
+  &Col {
+    &--sub-menu {
+      display: flex;
+    }
+    &--priceWrapper {
+      margin-left: 0;
+      justify-content: flex-end;
+    }
+    &--minicart-remove-prod {
+      justify-content: flex-start;
+    }
+    &Child {
+      &--header--menu {
+        //height: 100%!important;
+      }
+      &--sub-menu {
+        height: unset !important;
+      }
+      &--col-btn-b2b {
+        display: flex;
+        align-items: flex-end;
+      }
+    }
+  }
+}

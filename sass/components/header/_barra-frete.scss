@@ -1,0 +1,70 @@
+.freigthScaleContainer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  box-shadow: none;
+  .text1{
+    display: none;
+  }
+}
+.sliderContainer{
+  width: 100%;
+  order: 2;
+  height: 25px;
+  background: #CDCDCD;
+  border-radius: unset;
+  text-align: center;
+  .barContainer{
+    height: 24px;
+    background: $color-1-500;
+    border-radius: unset;
+  }
+  &::after{
+    content: "*Válido para RJ, SP, Campinas e Região";
+    font-size: $font-size-xs;
+    font-family: $main-font;
+    position: relative;
+    top: 10px;
+    color: #434343;
+  }
+}
+.sliderText{
+  order: 1;
+}
+
+.text3{
+  font-size: 0 !important;
+  position: relative;
+  &::before{
+    content: '';
+    background: $barra-de-frente-truck-icon;
+    position: absolute;
+    left: -30px;
+    top: -16px;
+    width: 24px;
+    height: 19px;
+  }
+  &::after{
+    content: 'Faltam só ';
+    font-size: $font-size-sm;
+    font-family: $main-font;
+    color: #434343;
+  }
+}
+
+.currencyText{
+  font-size: 0 !important;
+  &::after{
+    content: ' para Frete Grátis';
+    font-size: $font-size-sm;
+    font-weight: $normal;
+    font-family: $main-font;
+    color: #434343;
+  }
+  .currencyContainer{
+    font-size: $font-size-sm;
+    font-weight: $normal;
+    font-family: $main-font;
+    color: #434343;
+  }
+}

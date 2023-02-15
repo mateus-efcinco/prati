@@ -1,0 +1,162 @@
+{
+  "flex-layout.row#home-newsletter-home": {
+    "title": "Newsletter",
+    "children": [
+      "flex-layout.col#text-newsletter-home",
+      "flex-layout.col#form-newsletter-home"
+    ],
+    "props": {
+      "blockClass": "row-newsletter-home",
+      "colSizing": "auto"
+    }
+  },
+  "flex-layout.col#text-newsletter-home": {
+    "children": [
+      "rich-text#newsletter-text-home"
+    ],
+    "props": {
+      "width": "100%"
+    }
+  },
+  "flex-layout.col#form-newsletter-home": {
+    "children": [
+      "newsletter-form#home"
+    ],
+    "props": {
+      "width": "100%"
+    }
+  },
+  "rich-text#newsletter-text-home": {
+    "props": {
+      "text": "Cadastre-se e receba **ofertas exclusivas :)**",
+      "blockClass": "newsletter-text-home",
+      "textAlignment": "center"
+    }
+  },
+  "newsletter-form#home": {
+    "children": [
+      "newsletter-input-name",
+      "newsletter-input-email",
+      "newsletter-submit"
+    ],
+    "props": {
+      "blockClass": "home"
+    }
+  },
+  "newsletter-input-name": {
+    "props": {
+      "placeholderText": "Digite seu nome"
+    }
+  },
+  "newsletter-input-email": {
+    "props": {
+      "placeholderText": "Digite seu e-mail"
+    }
+  },
+  
+  "modal-layout#news": {
+    "props": {
+      "blockClass": "modal-news"
+    },
+    "children": [
+      "modal-header#news",
+      "flex-layout.row#news-popup"
+    ]
+  },
+  "modal-header#news": {
+    "props": {
+      "blockClass": "popup-news-close"
+    },
+    "children": []
+  },
+  "modal-trigger#news": {
+    "children": [
+      "modal-layout#news"
+    ],
+    "props": {
+      "trigger": "load-session"
+      //"trigger": "load"
+    }
+  },
+  "flex-layout.row#news-popup": {
+    "children": [
+      "flex-layout.col#news-popup-text",
+      "newsletter-form#popup"
+    ]
+  },
+  "flex-layout.col#news-popup-text": {
+    "props": {
+      "blockClass": "news-popup-text-wrapper"
+    },
+    "children": [
+      "rich-text#popup-title",
+      "rich-text#popup-text"
+    ]
+  },
+  "rich-text#popup-title": {
+    "props": {
+      "text": "## SUA PRIMEIRA VEZ POR AQUI? E JÁ GANHOU PRESENTE!",
+      "blockClass": "popup-title"
+    }
+  },
+  "rich-text#popup-text": {
+    "props": {
+      "text": "Cadastre seu e-mail ao lado",
+      "blockClass": "popup-text"
+    }
+  },
+  "rich-text#popup-text-form": {
+    "props": {
+      "blockClass": "popup-text-form",
+      "text": "Aproveite frete grátis na sua primeira compra*"
+    }
+  },
+  "flex-layout.col#popup-success": {
+    "props": {
+      "blockClass": "popup-success-wrapper-col"
+    },
+    "children": [
+      "rich-text#popup-success-title",
+      "rich-text#popup-success-text1",
+      "rich-text#popup-success-text2"
+    ]
+  },
+  "flex-layout.row#popup-success": {
+    "props": {
+      "blockClass": "popup-success-wrapper"
+    },
+    "children": [
+      "flex-layout.col#popup-success"
+    ]
+  },
+  "rich-text#popup-success-title": {
+    "props": {
+      "text": "## PARABÉNS!",
+      "blockClass": "popup-success-title"
+    }
+  },
+  "rich-text#popup-success-text1": {
+    "props": {
+      "text": "Seu cadastro foi realizado com sucesso. ",
+      "blockClass": "popup-success-text1"
+    }
+  },
+  "rich-text#popup-success-text2": {
+    "props": {
+      "text": "Confira o cupom no seu e-mail, e aproveite o frete grátis :)",
+      "blockClass": "popup-success-text2"
+    }
+  },
+  "newsletter-form#popup": {
+    "children": [
+      "newsletter-input-name",
+      "newsletter-input-email",
+      "newsletter-submit",
+      "rich-text#popup-text-form"
+    ],
+    "props": {
+      "blockClass": "popup-news",
+      "SuccessState": "flex-layout.row#popup-success"
+    }
+  }
+}

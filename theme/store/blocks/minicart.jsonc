@@ -1,0 +1,25 @@
+{
+  "add-to-cart-button": {
+    "props": {
+      "addToCartFeedback": "customEvent",
+      "customPixelEventId": "add-to-cart-button",
+      "text": "Comprar"
+    }
+  },
+
+  "add-to-cart-button#pdp": {
+    "props": {
+      "addToCartFeedback": "customEvent",
+      "customPixelEventId": "add-to-cart-button",
+      "text": "Comprar"
+    }
+  },
+
+  "minicart.v2#novo": {
+    "props": {
+      "customPixelEventName": "addToCart",
+      "blockclass": "minicart"
+    },
+    "children": ["minicart-base-content"]
+  }
+}

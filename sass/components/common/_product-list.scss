@@ -1,0 +1,43 @@
+.product {
+  &Name {
+    font-weight: $normal;
+    font-size: $font-size-sm;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+
+    @media (max-width: $l) {
+      font-size: $font-size-xs;
+    }
+  }
+  &VariationsContainer {
+    font-size: $font-size-xxs;
+  }
+  &Price {
+    font-weight: $bold;
+    color: $text-color-1-500;
+    font-size: $font-size-xs;
+  }
+}
+
+.quantity {
+  position: absolute;
+  right: 0;
+  top: 66px;
+
+  :global(.vtex-dropdown__container) {
+    border-radius: 0;
+    border: 1px solid $color-5-200;
+  }
+
+  :global(.vtex-dropdown__arrow) {
+    color: $color-1-500;
+  }
+}
+
+.productImage {
+  background: #f0f0f0;
+  border-radius: 0;
+}

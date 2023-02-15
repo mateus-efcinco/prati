@@ -1,0 +1,44 @@
+{
+    //seo
+    "flex-layout.row#seo": {
+        "children": [
+            "flex-layout.col#seo"
+        ],
+        "props": {
+            "fullWidth": true,
+            "horizontalAlign": "center",
+            "blockClass": "search-seo-wrapper",
+            "width": "100%"
+        }
+    },
+    "flex-layout.col#seo": {
+        "title": "Seo",
+        "children": [
+            "rich-text#seo",
+            "rich-text#seo-description"
+        ],
+        "props": {
+            "blockClass": "search-seo",
+            //"fullWidth": true,
+            "horizontalAlign": "center"
+        }
+    },
+
+    "rich-text#seo": {
+        "title": "Titulo Seo",
+        "props": {
+            "text": "## Kit Comida Fitness Congelada para o Dia a Dia",
+            "blockClass":"search-seo-title",
+            "textPosition": "center"
+        }
+    },
+    "rich-text#seo-description": {
+        "title": "Seo Texto",
+        "props": {
+            "text": "Está com dificuldades em mudar sua alimentação para uma melhor e mais saudável?. Então vocÊ precisa conhecer o as nossas opções de Comida Congelada saudável! Elas são feitas para facilitar o seu dia a dia e auxiliar e criar um hábito alimentar mais saudável. Preparamos comida de verdade para seu dia a dia, 100% natural e com sabor de comida caseira. O kit conta com lanche da manhã, almoço, lanche da tarde e jantar. Aqui na LuccoFit você encontra os mais diferentes tipos de Kits de Alimentação para seus objetivos, desde kits de marmita low carb até kits de refeições completos para o almoço ou jantar! Então selecione o combo que mais combina com você e aproveite a praticidade e o sabor de ter em casa ou no trabalho opções de Comidas Saudáveis Congeladas da LuccoFit! Todos os pratos são embalados separadamente à vácuo, para melhor qualidade de sabor e preservação dos nutrientes de cada alimento, sejam eles pratos com arroz integral, batata doce até pratos com proteínas.",
+            "blockClass":"search-seo-description",
+            "textPosition": "CENTER",
+            "textAlignment": "CENTER"
+        }
+    }
+}

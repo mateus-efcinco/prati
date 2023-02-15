@@ -1,0 +1,85 @@
+.wrapper {
+  .paragraph {
+    &--lojas {
+      &__title {
+        font-size: $font-size-h5;
+        font-weight: $bold;
+        text-transform: uppercase;
+        color: $text-color-1-500;
+        margin-top: 4rem;
+      }
+    }
+  }
+
+  &--flow {
+    &__text {
+      padding: 0 1rem;
+      max-width: 670px;
+
+      .headingLevel4 {
+        text-transform: uppercase;
+        font-size: $font-size-h5;
+        margin-top: 3rem;
+        margin-bottom: 0;
+        color: $text-color-1-500;
+      }
+
+      .headingLevel5 {
+        font-size: $font-size-xlg;
+        font-weight: $bold !important;
+        margin-top: 3rem;
+        margin-bottom: 1.5rem;
+        color: $text-color-1-500;
+      }
+
+      .paragraph {
+        font-size: $font-size-md;
+        margin-top: 0.4rem;
+        margin-bottom: 2rem;
+      }
+
+      &--success,
+      &--danger {
+        text-align: left;
+        // padding: 0 1.5rem;
+        line-height: 1.3rem;
+
+        .headingLevel6 {
+          font-size: $font-size-lg !important;
+          font-weight: $bold !important;
+          margin-top: 1rem;
+          margin-bottom: 0.5rem;
+          color: $text-color-1-500;
+        }
+
+        .list {
+          padding: 0 1.5rem;
+        }
+
+        .listItem {
+          margin-bottom: 0.8rem;
+        }
+      }
+
+      &--success {
+        .listItem {
+          list-style-image: url('https://hopelingerie.vtexassets.com/assets/vtex/assets-builder/hopelingerie.lingerie-hope-theme/0.23.0/svg/bullet-success___1b4282712c4153e4865f6f9aedd1d2ec.svg');
+
+          &::marker {
+            font-size: 2rem;
+          }
+        }
+      }
+
+      &--danger {
+        .listItem {
+          list-style-image: url('https://hopelingerie.vtexassets.com/assets/vtex/assets-builder/hopelingerie.lingerie-hope-theme/0.23.0/svg/bullet-danger___e33c53b102bdca069d819e94e9e6fc31.svg');
+
+          &::marker {
+            font-size: 2rem;
+          }
+        }
+      }
+    }
+  }
+}

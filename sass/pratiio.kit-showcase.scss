@@ -1,0 +1,74 @@
+@import 'variables/all';
+
+.wrapper {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 4rem 0;
+  padding-bottom: 0;
+  max-width: 1300px;
+  @include notebook{
+    max-width: 1050px;
+  }
+}
+
+.product {
+  max-width: 250px;
+  @include notebook{
+    max-width: 222px;
+  }
+  @media (max-width: $m) {
+    max-width: 45%;
+    margin: 0;
+  }
+
+  &Name {
+    text-align: left;
+    font-size: $font-size-md;
+  }
+}
+
+.mealDay {
+  &Container {
+    @media (max-width: $m) {
+      width: 100%;
+      padding: 0 15px;
+    }
+
+    &:not(:last-child) {
+      .mealDayGrid {
+        &::after {
+          content: '';
+          border-bottom: 1px solid #efefef;
+          width: 530px;
+        }
+      }
+    }
+  }
+
+  &Grid {
+      //height: 100%;
+    @media (max-width: $m) {
+      justify-content: space-between;
+    }
+  }
+
+  &Title {
+    font-size: 32px;
+    font-weight: $normal;
+    color: $color-1-500;
+    @include mobile{
+      font-size: 22px;
+    }
+  }
+}
+
+.mealType {
+  &Name {
+    font-size: $font-size-lg;
+    @include mobile{
+      font-size: $font-size-sm;
+    }
+  }
+}

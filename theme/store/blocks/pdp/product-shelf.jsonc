@@ -1,0 +1,45 @@
+{
+    // vitrine 1
+    "rich-text#product-shelf-title": {
+        "title": "Titulo Vitrine 1",
+        "props": {
+            "text": "## Você também vai gostar",
+            "blockClass": "shelfTitle",
+            "textPosition": "CENTER"
+        }
+    },
+    "flex-layout.row#product-shelf": {
+        "title": "Vitrine 1",
+        "children": ["list-context.product-list#product-shelf"],
+        "props": {
+            "blockClass": "home-shelf1"
+        }
+    },
+    "list-context.product-list#product-shelf": {
+        "blocks": ["product-summary.shelf"],
+        "children": ["slider-layout#product-shelf"],
+        "props": {
+            "collection": "196",
+            "orderBy": "OrderByTopSaleDESC",
+            "hideUnavailableItems":true
+        }
+    },
+    "slider-layout#product-shelf": {
+        "props": {
+            "itemsPerPage": {
+                "desktop": 4,
+                "tablet": 3,
+                "phone": 2
+            },
+            "infinite": true,
+            "fullWidth": false,
+            "blockClass": "shelf",
+            "showPaginationDots": "never",
+            "showNavigationArrows": "desktopOnly",
+            "autoplay":{
+                "timeout": 4000,
+                "stopOnHover": true
+            }
+        }
+    }
+}

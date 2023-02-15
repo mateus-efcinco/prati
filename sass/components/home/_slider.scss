@@ -1,0 +1,128 @@
+.slider {
+  position: relative;
+  &Arrows {
+    position: absolute;
+  }
+  &LeftArrow{
+    &--carousel{
+      left: 2%;
+      @include mobile{
+        left: 0;
+      }
+    }
+    &--shelf{
+      left: -45px;
+      @include mobile{
+        left: -32px;
+      }
+    }
+  }
+  &RightArrow{
+    &--carousel{
+      right: 2%;
+      @include mobile{
+        right: 0;
+      }
+    }
+    &--shelf{
+      right: -45px;
+      @include mobile{
+        right: -32px;
+      }
+    }
+  }
+  &LayoutContainer {
+    &--shelf{
+      margin-bottom: 25px;
+      padding-bottom: 25px;
+      @include mobile{
+        padding: 0 !important;
+      }
+      @include desktop {
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+      }
+    }
+    &--category-carousel {
+      margin: 30px auto;
+      max-width: 1300px;
+      padding: 0 40px;
+    }
+  }
+  &Track{
+    &--tipbarslider{
+      @include mobile{
+        width: 300%!important
+      }
+    }
+    &--minibanners-mob{
+      @include mobile {
+        margin-top: 30px;
+      }
+    }
+  }
+}
+
+.slide {
+  @include mobile{
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+  }
+  &--tipbarslider{
+    width: 299px !important;
+    position: relative;
+  }
+  &--minibanners-mob{
+    margin-left: 10px;
+    margin-right: 15px;
+  }
+  &--shelf{
+    @include mobile{
+      width: 152px !important;
+      padding: 0;
+    }
+  }
+  &--category-carousel {
+    justify-content: center;
+  }
+}
+
+.pagination {
+  &DotsContainer {
+    bottom: 5%;
+    &--shelf{
+      bottom: 0;
+    }
+    &--category-carousel {
+      bottom: 0;
+    }
+
+
+  }
+  &Dot {
+    &--category-carousel {
+      background: #BABABA;
+
+      &--isActive {
+        background: #009180;
+      }
+    }
+  }
+}
+
+.caretIcon{
+  stroke: $color-1-500 !important;
+}
+
+:global(.vtex-slider-layout-0-x-slide--shelf) {
+  margin: 0 10px!important;
+}
+
+.imageElementLink--carousel {
+  width: 100%;
+}
+
+.imageElement{
+  max-height: unset!important;
+  height: auto;
+}

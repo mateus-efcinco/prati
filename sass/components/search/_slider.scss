@@ -1,0 +1,8 @@
+.sliderLayoutContainer{
+    &--search-banner-full {
+        margin-bottom: 30px; 
+        @include mobile{
+            display: none;
+        }
+    }
+}

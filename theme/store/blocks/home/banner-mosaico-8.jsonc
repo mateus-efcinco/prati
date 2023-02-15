@@ -1,0 +1,186 @@
+{
+  "rich-text#titulo-mosaico-8":{
+      "title": "Titulo Mosaico",
+    "props": {
+      "text": "## Categorias mais acessadas",
+      "blockClass": "title-mosaico-8",
+      "textPosition": "CENTER"
+    }
+  },
+  "flex-layout.row#banner-mosaico-8":{
+      "title": "mosaico 2",
+    "children":[
+      "flex-layout.col#banner-mosaico-8-1",
+      "flex-layout.col#banner-mosaico-8-2",
+      "flex-layout.col#banner-mosaico-8-3",
+      "flex-layout.col#banner-mosaico-8-4",
+      "flex-layout.col#banner-mosaico-8-5",
+      "flex-layout.col#banner-mosaico-8-6",
+      "flex-layout.col#banner-mosaico-8-7",
+      "flex-layout.col#banner-mosaico-8-8"
+    ],
+    "props":{
+      "colSizing": "auto",
+      "blockClass": "banner-mosaico-8"
+    }
+  },
+  "flex-layout.row#banner-mosaico-8-slider": {
+    "title": "tip bar",
+    "children": [
+      "slider-layout#banner-mosaico-8-slider"
+    ],
+    "props": {
+      "blockClass": "banner-mosaico-8-slider",
+      "fullWidth": true,
+      "horizontalAlign": "center"
+    }
+  },
+  "slider-layout#banner-mosaico-8-slider":{
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 3,
+        "phone": 1
+      },
+      "infinite": false,
+      "fullWidth": true,
+      "showPaginationDots": "never",
+      "showNavigationArrows": "never",
+      "blockClass": "minibanners-mob",
+      "autoplay":{
+        "timeout": 4000,
+        "stopOnHover": true
+      }
+    },
+    "children":[
+      "flex-layout.col#banner-mosaico-8-1",
+      "flex-layout.col#banner-mosaico-8-2",
+      "flex-layout.col#banner-mosaico-8-3",
+      "flex-layout.col#banner-mosaico-8-4",
+      "flex-layout.col#banner-mosaico-8-5",
+      "flex-layout.col#banner-mosaico-8-6",
+      "flex-layout.col#banner-mosaico-8-7",
+      "flex-layout.col#banner-mosaico-8-8"
+    ]
+  },
+  "flex-layout.col#banner-mosaico-8-1":{
+    "children": [
+      "image#image-mosaico-8-1"
+    ],
+    "props":{
+      "width": "33%"
+    }
+  },
+  "image#image-mosaico-8-1": {
+    "props": {
+      "src": "https://pratidev--luccofit.myvtex.com/arquivos/banner-mosaico-8-1.png",
+      "blockClass": "footer__developers",
+      "width": "320px"
+    }
+  },
+  "flex-layout.col#banner-mosaico-8-2":{
+    "children": [
+      "image#image-mosaico-8-2"
+    ],
+    "props":{
+      "width": "33%"
+    }
+  },
+  "image#image-mosaico-8-2": {
+    "props": {
+      "src": "https://pratidev--luccofit.myvtex.com/arquivos/banner-mosaico-8-2.png",
+      "blockClass": "footer__developers",
+      "width": "320px"
+    }
+  },
+  "flex-layout.col#banner-mosaico-8-3":{
+    "children": [
+      "image#image-mosaico-8-3"
+    ],
+    "props":{
+      "width": "33%"
+    }
+  },
+  "image#image-mosaico-8-3": {
+    "props": {
+      "src": "https://pratidev--luccofit.myvtex.com/arquivos/banner-mosaico-8-3.png",
+      "blockClass": "footer__developers",
+      "width": "320px"
+    }
+  },
+  "flex-layout.col#banner-mosaico-8-4":{
+    "children": [
+      "image#image-mosaico-8-4"
+    ],
+    "props":{
+      "width": "33%"
+    }
+  },
+  "image#image-mosaico-8-4": {
+    "props": {
+      "src": "https://pratidev--luccofit.myvtex.com/arquivos/banner-mosaico-8-4.png",
+      "blockClass": "footer__developers",
+      "width": "320px"
+    }
+  },
+  "flex-layout.col#banner-mosaico-8-5":{
+    "children": [
+      "image#image-mosaico-8-5"
+    ],
+    "props":{
+      "width": "33%"
+    }
+  },
+  "image#image-mosaico-8-5": {
+    "props": {
+      "src": "https://pratidev--luccofit.myvtex.com/arquivos/banner-mosaico-8-5.png",
+      "blockClass": "footer__developers",
+      "width": "320px"
+    }
+  },
+  "flex-layout.col#banner-mosaico-8-6":{
+    "children": [
+      "image#image-mosaico-8-6"
+    ],
+    "props":{
+      "width": "33%"
+    }
+  },
+  "image#image-mosaico-8-6": {
+    "props": {
+      "src": "https://pratidev--luccofit.myvtex.com/arquivos/banner-mosaico-8-6.png",
+      "blockClass": "footer__developers",
+      "width": "320px"
+    }
+  },
+  "flex-layout.col#banner-mosaico-8-7":{
+    "children": [
+      "image#image-mosaico-8-7"
+    ],
+    "props":{
+      "width": "33%"
+    }
+  },
+  "image#image-mosaico-8-7": {
+    "props": {
+      "src": "https://pratidev--luccofit.myvtex.com/arquivos/banner-mosaico-8-7.png",
+      "blockClass": "footer__developers",
+      "width": "320px"
+    }
+  },
+  "flex-layout.col#banner-mosaico-8-8":{
+    "children": [
+      "image#image-mosaico-8-8"
+    ],
+    "props":{
+      "width": "33%"
+    }
+  },
+  "image#image-mosaico-8-8": {
+    "props": {
+      "src": "https://pratidev--luccofit.myvtex.com/arquivos/banner-mosaico-8-8.png",
+      "blockClass": "footer__developers",
+      "width": "320px"
+    }
+  }
+}

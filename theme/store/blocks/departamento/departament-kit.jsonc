@@ -1,0 +1,309 @@
+{
+    "store.custom#departament-kit": {
+        "blocks": [
+            "list-context.image-list#banner-full",
+            "flex-layout.row#banner-full-text-dep",
+            "departament-breadcrumb",
+
+            "rich-text#departament-title1",
+            "flex-layout.row#shelf-departament1",
+
+            "rich-text#departament-title2",
+            "flex-layout.row#shelf-departament2",
+
+            "rich-text#departament-title3",
+            "flex-layout.row#shelf-departament3",
+
+            "rich-text#departament-title4",
+            "flex-layout.row#shelf-departament4",
+
+            "rich-text#departament-title5",
+            "flex-layout.row#shelf-departament5",
+
+            "rich-text#departament-title6",
+            "flex-layout.row#shelf-departament6",
+
+            "rich-text#departament-title7",
+            "flex-layout.row#shelf-departament7",
+
+            "rich-text#departament-title8",
+            "flex-layout.row#shelf-departament8",
+
+            "rich-text#departament-title9",
+            "flex-layout.row#shelf-departament9",
+
+            "rich-text#departament-title10",
+            "flex-layout.row#shelf-departament10",
+
+            "flex-layout.row#faq"
+            //"rich-text#titulo-mosaico-department",
+            //"flex-layout.row#banner-mosaico-department",
+            //"flex-layout.row#seo"
+        ]
+    },
+
+    // mosaico
+    "rich-text#titulo-mosaico-department":{
+        "title": "Titulo Mosaico",
+        "props": {
+            "text": "## Categorias mais acessadas",
+            "blockClass": "title-mosaico-search",
+            "textPosition": "CENTER"
+        }
+    },
+
+    "flex-layout.row#banner-mosaico-department":{
+        "title": "Mosaico",
+        "children":[
+            "flex-layout.col#banner-mosaico-departament-1",
+            "flex-layout.col#banner-mosaico-departament-2",
+            "flex-layout.col#banner-mosaico-departament-3",
+            "flex-layout.col#banner-mosaico-departament-4",
+            "flex-layout.col#banner-mosaico-departament-5",
+            "flex-layout.col#banner-mosaico-departament-6",
+            "flex-layout.col#banner-mosaico-departament-7",
+            "flex-layout.col#banner-mosaico-departament-8"
+        ],
+        "props":{
+            "colSizing": "auto",
+            "blockClass": "banner-mosaico-search"
+        }
+    },
+
+    "flex-layout.col#banner-mosaico-departament-1":{
+        "children": [
+            "image#image-mosaico-departament-1"
+        ],
+        "props":{
+            "width": "33%"
+        }
+    },
+    "flex-layout.col#banner-mosaico-departament-2":{
+        "children": [
+            "image#image-mosaico-departament-2"
+        ],
+        "props":{
+            "width": "33%"
+        }
+    },
+    "flex-layout.col#banner-mosaico-departament-3":{
+        "children": [
+            "image#image-mosaico-departament-3"
+        ],
+        "props":{
+            "width": "33%"
+        }
+    },
+    "flex-layout.col#banner-mosaico-departament-4":{
+        "children": [
+            "image#image-mosaico-departament-4"
+        ],
+        "props":{
+            "width": "33%"
+        }
+    },
+    "flex-layout.col#banner-mosaico-departament-5":{
+        "children": [
+            "image#image-mosaico-departament-5"
+        ],
+        "props":{
+            "width": "33%"
+        }
+    },
+    "flex-layout.col#banner-mosaico-departament-6":{
+        "children": [
+            "image#image-mosaico-departament-6"
+        ],
+        "props":{
+            "width": "33%"
+        }
+    },
+    "flex-layout.col#banner-mosaico-departament-7":{
+        "children": [
+            "image#image-mosaico-departament-6"
+        ],
+        "props":{
+            "width": "33%"
+        }
+    },
+    "flex-layout.col#banner-mosaico-departament-8":{
+        "children": [
+            "image#image-mosaico-departament-8"
+        ],
+        "props":{
+            "width": "33%"
+        }
+    },
+
+
+    "image#image-mosaico-departament-1": {
+        "props": {
+            "src": "https://pratidev--luccofit.myvtex.com/arquivos/banner-mosaico-8-1.png",
+            "blockClass": "footer__developers",
+            "width": "320px"
+        }
+    },
+    "image#image-mosaico-departament-2": {
+        "props": {
+            "src": "https://pratidev--luccofit.myvtex.com/arquivos/banner-mosaico-8-1.png",
+            "blockClass": "footer__developers",
+            "width": "320px"
+        }
+    },
+    "image#image-mosaico-departament-3": {
+        "props": {
+            "src": "https://pratidev--luccofit.myvtex.com/arquivos/banner-mosaico-8-1.png",
+            "blockClass": "footer__developers",
+            "width": "320px"
+        }
+    },
+    "image#image-mosaico-departament-4": {
+        "props": {
+            "src": "https://pratidev--luccofit.myvtex.com/arquivos/banner-mosaico-8-1.png",
+            "blockClass": "footer__developers",
+            "width": "320px"
+        }
+    },
+    "image#image-mosaico-departament-5": {
+        "props": {
+            "src": "https://pratidev--luccofit.myvtex.com/arquivos/banner-mosaico-8-1.png",
+            "blockClass": "footer__developers",
+            "width": "320px"
+        }
+    },
+    "image#image-mosaico-departament-6": {
+        "props": {
+            "src": "https://pratidev--luccofit.myvtex.com/arquivos/banner-mosaico-8-1.png",
+            "blockClass": "footer__developers",
+            "width": "320px"
+        }
+    },
+    "image#image-mosaico-departament-7": {
+        "props": {
+            "src": "https://pratidev--luccofit.myvtex.com/arquivos/banner-mosaico-8-1.png",
+            "blockClass": "footer__developers",
+            "width": "320px"
+        }
+    },
+    "image#image-mosaico-departament-8": {
+        "props": {
+            "src": "https://pratidev--luccofit.myvtex.com/arquivos/banner-mosaico-8-1.png",
+            "blockClass": "footer__developers",
+            "width": "320px"
+        }
+    },
+
+
+
+    //seo
+    "flex-layout.row#seo": {
+        "children": [
+            "flex-layout.col#seo"
+        ],
+        "props": {
+            "fullWidth": true,
+            "horizontalAlign": "center",
+            "blockClass": "search-seo-wrapper",
+            "width": "100%"
+        }
+    },
+    "flex-layout.col#seo": {
+        "title": "Seo",
+        "children": [
+            "rich-text#seo",
+            "rich-text#seo-description"
+        ],
+        "props": {
+            "blockClass": "search-seo",
+            //"fullWidth": true,
+            "horizontalAlign": "center"
+        }
+    },
+
+    "rich-text#seo": {
+        "title": "Titulo Seo",
+        "props": {
+            "text": "## Kit Comida Fitness Congelada para o Dia a Dia",
+            "blockClass":"search-seo-title",
+            "textPosition": "center"
+        }
+    },
+    "rich-text#seo-description": {
+        "title": "Seo Texto",
+        "props": {
+            "text": "Está com dificuldades em mudar sua alimentação para uma melhor e mais saudável?. Então vocÊ precisa conhecer o as nossas opções de Comida Congelada saudável! Elas são feitas para facilitar o seu dia a dia e auxiliar e criar um hábito alimentar mais saudável. Preparamos comida de verdade para seu dia a dia, 100% natural e com sabor de comida caseira. O kit conta com lanche da manhã, almoço, lanche da tarde e jantar. Aqui na LuccoFit você encontra os mais diferentes tipos de Kits de Alimentação para seus objetivos, desde kits de marmita low carb até kits de refeições completos para o almoço ou jantar! Então selecione o combo que mais combina com você e aproveite a praticidade e o sabor de ter em casa ou no trabalho opções de Comidas Saudáveis Congeladas da LuccoFit! Todos os pratos são embalados separadamente à vácuo, para melhor qualidade de sabor e preservação dos nutrientes de cada alimento, sejam eles pratos com arroz integral, batata doce até pratos com proteínas.",
+            "blockClass":"search-seo-description",
+            "textPosition": "CENTER",
+            "textAlignment": "CENTER"
+        }
+    },
+
+    // banner full
+    "list-context.image-list#banner-full": {
+        "title": "Banner Principal",
+        "children": ["slider-layout#banner-full"],
+        "props": {
+            "height": 300,
+            "width": "100%",
+            "blockClass": "search-banner-fulll",
+            "images": [
+                {
+                    "image": "https://pratidev--luccofit.myvtex.com/arquivos/banner-full-exemplo.png",
+                    "mobileImage": "https://pratidev--luccofit.myvtex.com/arquivos/banner_full-mobile.png",
+                    "width": "100%"
+                }
+            ]
+        }
+    },
+
+    "slider-layout#banner-full": {
+        "props": {
+            "itemsPerPage": {
+                "desktop": 1,
+                "tablet": 1,
+                "phone": 1
+            },
+            "infinite": true,
+            "showNavigationArrows": "never",
+            "blockClass": "search-banner-full",
+            "fullWidth": true,
+            "width": "100%"
+        }
+    },
+
+    "flex-layout.row#banner-full-text-dep": {
+        "props": {
+            "blockClass": "banner--full--text--wrapper-dep"
+        },
+        "children": [
+            "flex-layout.col#banner-full-text"
+        ]
+    },
+
+    "flex-layout.col#banner-full-text": {
+        "children": [
+            "rich-text#banner-full-title",
+            "rich-text#banner-full-text"
+        ]
+    },
+
+    "rich-text#banner-full-title": {
+        "title": "Titulo Banner Full",
+        "props": {
+            "text": "## Carnes Vermelhas",
+            "blockClass": "banner--full--title",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER"
+        }
+    },
+    "rich-text#banner-full-text": {
+        "title": "Texto Banner Full",
+        "props": {
+            "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+            "blockClass": "banner--full--text",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER"
+        }
+    }
+
+}

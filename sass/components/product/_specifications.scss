@@ -1,0 +1,61 @@
+.specification {
+  &Value {
+    font-size: 0;
+
+    &[data-specification-group='Outras Informações'] {
+      &::before {
+        content: '';
+        display: inline-block;
+        width: 55px;
+        height: 75px;
+        background-size: cover;
+        background-position: top center;
+        margin-right: 12px;
+      }
+
+      &[data-specification-value='Low carb'] {
+        &::before {
+          background-image: url(assets/svg/specifications/lowcarb.svg);
+        }
+      }
+
+      &[data-specification-value='Sem açúcar'] {
+        &::before {
+          background-image: url(assets/svg/specifications/sem_acucar.svg);
+        }
+      }
+
+      &[data-specification-value='Sem glúten'] {
+        &::before {
+          background-image: url(assets/svg/specifications/sem_gluten.svg);
+        }
+      }
+
+      &[data-specification-value='Sem lactose'] {
+        &::before {
+          background-image: url(assets/svg/specifications/sem_lactose.svg);
+        }
+      }
+
+      &[data-specification-value='Vegetariano'] {
+        &::before {
+          background-image: url(assets/svg/specifications/vegetariano.svg);
+        }
+      }
+
+      &[data-specification-value='Vegano'] {
+        &::before {
+          background-image: url(assets/svg/specifications/vegan.svg);
+        }
+      }
+    }
+
+    &--last {
+      &[data-specification-group='Outras Informações'] {
+        &::before {
+          margin-right: 0px;
+        }
+      }
+    }
+  }
+}

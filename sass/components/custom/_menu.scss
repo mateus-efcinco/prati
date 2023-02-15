@@ -1,0 +1,53 @@
+.menu {
+  &Container {
+    &--flow__menu {
+      .menuItem {
+        background: white;
+        border-radius: 2rem;
+        padding: 1rem;
+        margin-bottom: 0.5rem;
+
+        .submenuAccordion {
+          padding: 0;
+        }
+
+        &--flow__menu--value {
+          padding: 0;
+        }
+
+        &:first-child {
+          margin-top: 1.5rem;
+        }
+      }
+
+      .styledLink {
+        &Content {
+          &--flow__menu--title {
+            font-weight: $bold;
+            font-size: $font-size-md;
+            color: $text-color-1-500;
+          }
+
+          &--flow__menu--value {
+            font-weight: $normal;
+            font-size: $font-size-sm;
+          }
+        }
+      }
+
+      .accordionIcon {
+        background: url(assets/svg/Union.svg) no-repeat center;
+        width: 17px;
+        height: 11px;
+        transition: transform 333ms ease-in-out;
+        color: transparent;
+        margin-top: 4px;
+
+        &--isOpen {
+          transform: rotate(180deg);
+        }
+      }
+    }
+  }
+}
+

@@ -1,0 +1,60 @@
+.paragraph {
+  &--title-destaque{
+    font-size: $font-size-lg;
+    font-weight: $bold;
+    color: $color-1-500;
+    text-transform: uppercase;
+  }
+  &--icon-search{
+    text-indent: -9999px;
+    position: relative;
+    &::before{
+      content: '';
+      position: absolute;
+      left: -23px;
+      top: -5px;
+      background: $search-icon;
+      background-size: contain;
+      width: 34px;
+      height: 35px;
+    }
+  }
+  &--HeaderTitle{
+    color: $white;
+    font-size: $font-size-lg;
+    padding-left: 20px;
+    font-weight: $bold;
+  }
+  &--minicart-header-title{
+    font-size: $font-size-md;
+    font-weight: $bold;
+    padding-left: 25px;
+  }
+}
+.wrapper{
+  &--empty-cart-title{
+    color: $color-1-500;
+    font-size: 18px;
+    font-weight: $bold;
+    text-transform: uppercase;
+  }
+  &--empty-cart-subtitle{
+    font-size: 16px;
+    color: $text-color-1-500;
+    width: 64%;
+    text-align: center;
+    margin: auto;
+  }
+}
+.container{
+  &--minicart-header-title{
+    background: $color-1-500;
+    color: $white;
+    height: 65px;
+    display: flex;
+    align-items: center;
+  }
+}
+.strong {
+  
+}

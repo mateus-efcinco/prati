@@ -1,0 +1,74 @@
+.newsletter{
+  &Form{
+      &--popup-news {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          background-color:#009180;
+            padding-top: 30px;
+          :global(.vtex-styleguide-9-x-hideDecorators){
+              margin: 0!important;
+              font-size: $font-size-sm;
+          }
+
+          .nameInputContainer, .emailInputContainer {
+              margin-bottom: 10px;
+          }
+
+      }
+    &--home{
+
+      .nameInputContainer, .emailInputContainer{
+        :global(.vtex-input-prefix__group){
+          :global(.vtex-styleguide-9-x-input){
+            border: 1px solid $color-1-500;
+            color: $color-1-500;
+            font-size: $font-size-md;
+            text-transform: uppercase;
+            font-weight: $light;
+            @include mobile{
+              margin-right: 0;
+              border: 1px solid #989898;
+              text-transform: unset;
+            }
+            &::placeholder{
+              color: $color-1-500;
+              @include mobile {
+                color: #989898;
+                }
+            }
+          }
+        }
+      }
+      
+      .formSubmitContainer{
+        :global(.vtex-button){
+          background: $color-1-500 !important;
+          &:hover{
+            background: transparent !important;
+            border: 2px solid $color-1-500;
+            :global(.vtex-button__label){
+              color: $color-1-500;
+            }
+          }
+          &:focus{
+            outline: none;
+          }
+          :global(.vtex-button__label){
+            padding: 0;
+            width: 300px;
+            height: 100%;
+            position: relative;
+            color: $white;
+            font-weight: $bold;
+            font-size: $font-size-lg;
+          }
+        }
+      }
+    }
+  }
+}
+
+.defaultSuccessMessage{
+}
+

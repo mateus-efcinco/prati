@@ -1,0 +1,71 @@
+.newsletter{
+  &Form{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+    @include mobile{
+      flex-wrap: wrap;
+    }
+  }
+}
+.nameInputContainer, .emailInputContainer{
+  @include mobile{
+    margin-bottom: 20px;
+  }
+  :global(.vtex-input-prefix__group){
+    height: 60px;
+    border-color: transparent;
+    :global(.vtex-styleguide-9-x-input){
+      background-color: transparent;
+      border: 1px solid $white;
+      width: 300px;
+      height: 100%;
+      margin-right: 25px;
+      color: $white;
+      text-align: center;
+      @include mobile{
+        margin-right: 0;
+      }
+      &::placeholder{
+        color: $white;
+      }
+    }
+  }
+}
+
+.formSubmitContainer{
+  :global(.vtex-button){
+    height: 60px;
+    background: $white !important;
+    &:hover{
+      background: transparent !important;
+      border: 2px solid $white;
+      :global(.vtex-button__label){
+        color: $white;
+      }
+    }
+    &:focus{
+      outline: none;
+    }
+    :global(.vtex-button__label){
+      padding: 0;
+      width: 300px;
+      height: 100%;
+      position: relative;
+      color: $color-1-500;
+      font-weight: $bold;
+    }
+  }
+}
+
+.defaultSuccessMessage{
+  width: 300px;
+  margin: 10px auto ;
+  color: $white;
+  font-weight: $bold;
+  font-size: 16px;
+  text-align: center;
+  border: 2px solid $white;
+  padding: 20px;
+  border-radius: 5px;
+}

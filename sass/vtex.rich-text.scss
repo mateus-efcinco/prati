@@ -1,0 +1,15 @@
+@import 'variables/all';
+//header
+@import 'components/header/rich';
+//footer
+@import 'components/footer/rich';
+
+//home
+@import 'components/home/rich';
+@import 'components/orderPlaced/rich';
+@import 'components/institucional/rich';
+@import 'components/search/rich';
+@import 'components/product/rich';
+
+// NOT FOUND
+@import 'components/not-found/text';

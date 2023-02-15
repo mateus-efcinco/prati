@@ -1,0 +1,69 @@
+.container--lojasTable {
+  .wrapper,
+  .table {
+    width: 100%;
+  }
+
+  .tableTr {
+    display: grid;
+    grid-template-columns: 1fr repeat(4, 2fr);
+    @media only screen and (min-width: $l) {
+      grid-template-columns: 1fr 3fr 3fr 2fr 2fr;
+    }
+  }
+
+  .tableTd,
+  .tableTh {
+    margin: 12px 4px;
+    @media only screen and (min-width: $l) {
+      margin: 12px;
+    }
+    line-height: 18px;
+
+    &:first-child {
+      text-transform: uppercase;
+    }
+  }
+
+  .tableTd {
+    display: flex;
+    align-items: center;
+  }
+
+  .tableBody {
+    .tableTr {
+      font-size: $font-size-xs;
+
+      &:nth-child(odd) {
+        background-color: $color-5-50;
+      }
+    }
+  }
+
+  .link {
+    font-weight: $normal;
+    white-space: nowrap;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .image {
+    margin-right: 2px;
+    width: 0.75rem;
+    height: 0.75rem;
+
+    @media only screen and (min-width: $l) {
+      margin-right: 4px;
+      width: 1rem;
+      height: 1rem;
+    }
+  }
+
+  @media only screen and (max-width: $l) {
+    .tableTd:nth-child(even) .image {
+      display: none;
+    }
+  }
+}

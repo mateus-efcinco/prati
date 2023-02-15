@@ -1,0 +1,154 @@
+{
+    "flex-layout.row#preparo": {
+        "children": [
+            "flex-layout.col#preparo-wrapper"
+        ]
+    },
+
+    "flex-layout.col#preparo-wrapper": {
+        "props": {
+            "blockClass": "preparo--wrapper"
+        },
+        "children": [
+            "flex-layout.col#preparo-title",
+            "flex-layout.row#preparo-box"
+        ]
+    },
+
+    "flex-layout.col#preparo-title":{
+        "children": [
+            "rich-text#preparo-title",
+            "rich-text#preparo-descricao"
+        ]
+    },
+
+    "rich-text#preparo-title": {
+        "title": "Preparo Titulo",
+        "props": {
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "text": "## Antes de se deliciar, é só aquecer",
+            "blockClass": "titulo--preparo"
+        }
+    },
+
+    "rich-text#preparo-descricao": {
+        "title": "Preparo Descricao",
+        "props": {
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "text": "*O modo de preparo serve para todos os produtos LuccoFit",
+            "blockClass": "descricao--preparo"
+        }
+    },
+
+
+    "flex-layout.row#preparo-box": {
+        "props": {
+            "blockClass": "preparo--wrapper"
+        },
+        "children": [
+            "flex-layout.col#preparo-left",
+            "flex-layout.col#preparo-right"
+        ]
+    },
+
+    "flex-layout.col#preparo-right": {
+        "props": {
+            "blockClass": "preparo--box",
+            "horizontalAlign": "center",
+            "marginLeft": 4 
+        },
+        "children": [
+            "image#preparo-right-image-1",
+            "rich-text#preparo-right-1",
+            "rich-text#preparo-right-2",
+            "rich-text#preparo-right-3"
+        ]
+    },
+    "flex-layout.col#preparo-left": {
+        "props": {
+            "blockClass": "preparo--box",
+            "horizontalAlign": "center",
+            "marginRight": 4
+        },
+        "children": [
+            "image#preparo-left-image-1",
+            "rich-text#preparo-left-1",
+            "rich-text#preparo-left-2",
+            "rich-text#preparo-left-3"
+        ]
+    },
+    "image#preparo-left-image-1": {
+        "props": {
+            "src": "assets/svg/preparo-1.svg",
+            "blockClass": "preparo--img",
+            "width": "100%"
+        }
+    },
+
+    "rich-text#preparo-left-1": {
+        "title": "Texto 1",
+        "props": {
+            "textAlignment": "LEFT",
+            "textPosition": "CENTER",
+            "text": "Rasgue a lateral da embalagem (aproximadamente 2,5 cm)",
+            "blockClass": "texto--preparo"
+        }
+    },
+
+    "rich-text#preparo-left-2": {
+        "title": "Texto 2",
+        "props": {
+            "textAlignment": "LEFT",
+            "textPosition": "CENTER",
+            "text": "Coloque a embalagem em um recipiente e aqueça conforme descrição na embalagem.",
+            "blockClass": "texto--preparo"
+        }
+    },
+    "rich-text#preparo-left-3": {
+        "title": "Texto 3",
+        "props": {
+            "textAlignment": "LEFT",
+            "textPosition": "CENTER",
+            "text": "Agora é só servir e apreciar!",
+            "blockClass": "texto--preparo"
+        }
+    },
+    "image#preparo-right-image-1": {
+        "props": {
+            "src": "assets/svg/preparo-2.svg",
+            "blockClass": "preparo--img",
+            "width": "100%"
+        }
+    },
+
+    "rich-text#preparo-right-1": {
+        "title": "Texto 1",
+        "props": {
+            "textAlignment": "LEFT",
+            "textPosition": "CENTER",
+            "text": "Em uma panela coloque água suficiente para cobrir a embalagem e espere ferver.",
+            "blockClass": "texto--preparo"
+        }
+    },
+
+    "rich-text#preparo-right-2": {
+        "title": "Texto 2",
+        "props": {
+            "textAlignment": "LEFT",
+            "textPosition": "CENTER",
+            "text": "Mergulhe a embalagem na água até descongelar.",
+            "blockClass": "texto--preparo"
+        }
+    },
+    "rich-text#preparo-right-3": {
+        "title": "Texto 3",
+        "props": {
+            "textAlignment": "LEFT",
+            "textPosition": "CENTER",
+            "text": "Agora é só servir e apreciar!",
+            "blockClass": "texto--preparo"
+        }
+    }
+}

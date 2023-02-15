@@ -1,0 +1,31 @@
+.productHighlightWrapper--collection {
+    position: relative;
+    top: 10px;
+    left: 5px;
+    //width: 100%;
+    margin-bottom: 15px;
+    text-align: left;
+    margin-right: 10px;
+}
+
+.productHighlightText {
+    //background: antiquewhite;
+    background: #009180;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 20px;  width: auto!important;
+    padding: 0px 10px;
+    text-transform: uppercase;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 26px;
+    width: auto!important;
+    line-height: 26px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    &[data-highlight-name="FLAG PROMOÇÃO"]{
+        display: none;
+    }   
+}

@@ -1,0 +1,24 @@
+{
+  "vtex.menu@2.x:menu#seguranca": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "footer__seguranca__menu",
+      "width": "100%"
+    },
+    "children": ["image#reciclo", "image#confianca"]
+  },
+  "image#reciclo": {
+    "props": {
+      "src": "assets/svg/eureciclo.svg",
+      "blockClass": "footer__seguranca",
+      "width": "114px"
+    }
+  },
+  "image#confianca": {
+    "props": {
+      "src": "assets/svg/LOJA_CONFIAVEL.svg",
+      "blockClass": "footer__seguranca",
+      "width": "50px"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+.container {
+  &--sticky-header {
+    &__mobile {
+      &__buy {
+        position: fixed !important;
+        bottom: 63px !important;
+      }
+    }
+  }
+}
+
+.wrapper {
+  &--sticky-header {
+    &__mobile {
+      &__buy {
+        height: 0 !important;
+      }
+    }
+  }
+}

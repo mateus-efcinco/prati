@@ -1,0 +1,32 @@
+.wrapper {
+  &--content-institucional{
+    .paragraph {
+      font-size: 18px;
+      color: $text-color-1-500;
+      @include mobile{
+        font-size: 16px;
+      }
+    }  
+  }
+  .paragraph {
+    &--title-insitucional{
+      font-size: 32px;
+      color: $text-color-1-500;
+      font-weight: $bold;
+      margin-top: 0;
+      @include mobile{
+        font-size: 28px;
+      }
+    }
+    &--subtitle-insitucional{
+      font-size: 18px;
+      color: $text-color-1-500;
+      font-weight: $bold;
+    }
+  }
+  .heading{
+  }
+}
+
+.container{
+}

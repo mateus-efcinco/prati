@@ -1,0 +1,56 @@
+.flex {
+  &Row {
+
+    &Content{
+      &--institucional-row{
+          max-width: 1300px;
+          margin: 80px auto 60px;
+          @include notebook{
+            max-width: 1050px;
+          }
+        .stretchChildrenWidth{
+          &:first-child{
+            width: 20% !important;
+            @include mobile{
+              width: 100% !important;
+            }
+          }
+          &:last-child{
+            width: 80% !important;
+            padding-left: 150px;
+            @include mobile{
+              width: 100% !important;
+              padding: 0 20px;
+            }
+          }
+        }
+
+
+        :global(.vtex-menu-2x-x-menuItem-clicked) {
+            color:#009180!important;
+            font-weight: $bold;
+            position: relative;
+            display: flex;
+            align-items: center;
+            &::before {
+                content: '';
+                width: 2px;
+                background: #009180;
+                height: 40px;
+                display: flex;
+                position: absolute;
+                left: 0px;
+            }
+        }
+      }
+
+    }
+  }
+
+  &Col {
+    
+    &Child {
+      
+    }
+  }
+}

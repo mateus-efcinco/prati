@@ -1,0 +1,593 @@
+{
+    "store.search": {
+        "blocks": [
+            "search-result-layout"
+        ],
+        "props": {
+            "context": {
+                "skusFilter": "ALL",
+                "simulationBehavior": "default"
+            }
+        }
+    },
+
+    "store.search#brand": {
+        "blocks": ["search-result-layout"],
+        "props": {
+            "context": {
+                "orderByField": "OrderByReleaseDateDESC",
+                "hideUnavailableItems": true,
+                "maxItemsPerPage": 10,
+                "skusFilter": "ALL",
+                "simulationBehavior": "default"
+            }
+        }
+    },
+
+    "store.search#department": {
+        "blocks": ["search-result-layout"],
+        "props": {
+            "context": {
+                "skusFilter": "ALL",
+                "simulationBehavior": "default"
+            }
+        }
+    },
+
+    "store.search#category": {
+        "blocks": ["search-result-layout"],
+        "props": {
+            "context": {
+                "skusFilter": "ALL",
+                "simulationBehavior": "default"
+            }
+        }
+    },
+
+    "store.search#subcategory": {
+        "blocks": ["search-result-layout"],
+        "props": {
+            "context": {
+                "skusFilter": "ALL",
+                "simulationBehavior": "default"
+            }
+        }
+    },
+
+    "search-result-layout": {
+        "blocks": [
+            "search-result-layout.desktop",
+            "search-not-found-layout"
+
+        ]
+    },
+
+    "search-result-layout.desktop": {
+        "children": [
+            "list-context.image-list#banner-full",
+            "flex-layout.row#banner-full-text",
+            //"flex-layout.row#banner-full",
+            "flex-layout.row#searchbread",
+            "flex-layout.row#searchtitle",
+            "flex-layout.row#result",
+            //"rich-text#titulo-mosaico-search",
+            //"flex-layout.row#banner-mosaico-search",
+            "flex-layout.row#seo",
+            "trigger-pagination"
+        ],
+        "props": {
+            "pagination": "show-more",
+            //"pagination": "infinite",
+            "preventRouteChange": false,
+            "defaultGalleryLayout": "grid",
+            "blockClass": "search--wrapper"
+        }
+    },
+
+    "flex-layout.row#searchbread": {
+        "children": ["breadcrumb.search"],
+        "props": {
+            "preserveLayoutOnMobile": true,
+            "fullWidth": true,
+            "blockClass": "search-bread"
+        }
+    },
+
+    "breadcrumb.search": {
+        "props": {
+            "showOnMobile": true
+        }
+    },
+
+    "flex-layout.row#searchtitle": {
+        "children": ["search-title.v2"],
+        "props": {
+            "fullWidth": true,
+            "blockClass": "search-title"
+        }
+    },
+
+    "flex-layout.row#result": {
+        "children": [
+            // "flex-layout.col#filter",
+            "flex-layout.col#content"
+        ],
+        "props": {
+            // "preventHorizontalStretch": true,
+            "fullWidth": true,
+            "blockClass": "search-result"
+        }
+    },
+
+    "flex-layout.col#filter": {
+        "children": ["filter-navigator.v3"],
+        "props": {
+            "blockClass": "filterCol"
+        }
+    },
+
+    "flex-layout.col#content": {
+        "children": [
+        "flex-layout.row#searchinfo",
+        "flex-layout.row#fetchprevious",
+        "flex-layout.row#products",
+        "flex-layout.row#fetchmore"
+        ],
+        "props": {
+            "width": "100%",
+            "fullWidth": true,
+            "preventVerticalStretch": true
+        }
+    },
+
+    "flex-layout.row#searchinfo": {
+        "children": [
+            //"flex-layout.row#productCount",
+            "search-result-info",
+            "flex-layout.row#orderByAndSwitcher"
+        ],
+        "props": {
+            "blockClass": "search-info"
+        }
+    },
+
+    "flex-layout.row#orderByAndSwitcher": {
+        "children": [
+            "order-by.v2"
+                // "gallery-layout-switcher"
+        ],
+        "props": {
+            "horizontalAlign": "right",
+            "preventHorizontalStretch": true,
+            "blockClass": "orderByAndSwitcher",
+            "colGap": 3
+        }
+    },
+
+    "flex-layout.row#productCount": {
+        "children": [
+            //"total-products.v2",
+            //"rich-text#from-products",
+            //"search-title.v2",
+            //"search-result-info"
+        ],
+        "props": {
+            "blockClass": "productCountCol"
+        }
+    },
+
+    "rich-text#from-products": {
+        "title": "Total produtos",
+        "props": {
+            "text": "para",
+            "blockClass":"search-from-products",
+            "textPosition": "CENTER",
+            "textAlignment": "CENTER"
+        }
+    },
+
+    "flex-layout.row#fetchprevious": {
+        "props": {
+            "marginBottom": 3,
+            "blockClass": "search-fetch-previous"
+        },
+        "children": ["search-fetch-previous"]
+    },
+
+    "flex-layout.row#fetchmore": {
+        "props": {
+            "marginTop": 3,
+            "blockClass": "search-fetch-more"
+        },
+        "children": ["search-fetch-more"]
+    },
+
+    "flex-layout.row#products": {
+        "children": ["search-content"]
+    },
+
+    "search-content": {
+        "blocks": ["gallery", "not-found"]
+    },
+
+    "search-not-found-layout": {
+        "children": [
+            "flex-layout.row#searchbread",
+            "flex-layout.row#notfound",
+            "rich-text#titulo-mosaico-search",
+            "flex-layout.row#banner-mosaico-search",
+            "flex-layout.row#seo"
+        ]
+    },
+
+    "flex-layout.row#notfound": {
+        "children": ["not-found"],
+        "props": {
+            "fullWidth": true
+        }
+    },
+
+    "breadcrumb": {
+        "props": {
+            "showOnMobile": true
+        }
+    },
+
+    "gallery": {
+        "props": {
+            "layouts": [
+            {
+                "name": "grid",
+                "component": "GridSummary",
+                "itemsPerRow": {
+                    "(min-width:1300px)": 4,
+                    "desktop": 3,
+                    "tablet": 3,
+                    "phone": 2
+                }
+            },
+            {
+                "name": "list",
+                "component": "ListSummary",
+                "itemsPerRow": 1
+            }
+            ],
+            "ListSummary": "product-summary.shelf#listLayout",
+            "GridSummary": "product-summary.shelf"
+        }
+    },
+    "gallery-layout-switcher": {
+        "children": [
+            /*
+             * For accessbility to work properly,
+             * It's important to define the options in the same order as the layouts
+             */
+            "gallery-layout-option#grid",
+            "gallery-layout-option#list"
+        ]
+    },
+
+    "gallery-layout-option#grid": {
+        "props": {
+            "name": "grid"
+        },
+        "children": ["icon-grid", "responsive-layout.desktop#textOptionGrid"]
+    },
+
+    "gallery-layout-option#list": {
+        "props": {
+            "name": "list"
+        },
+        "children": ["icon-inline-grid", "responsive-layout.desktop#textOptionList"]
+    },
+
+    "responsive-layout.desktop#textOptionGrid": {
+        "children": ["rich-text#option-grid"]
+    },
+
+    "responsive-layout.desktop#textOptionList": {
+        "children": ["rich-text#option-list"]
+    },
+
+    "rich-text#option-grid": {
+        "props": {
+            "text": "Grid",
+            "textColor": "c-auto",
+            "blockClass": "layout-option"
+        }
+    },
+
+    "rich-text#option-list": {
+        "props": {
+            "text": "List",
+            "textColor": "c-auto",
+            "blockClass": "layout-option"
+        }
+    },
+
+    "rich-text#titulo-mosaico-search":{
+        "title": "Titulo Mosaico",
+        "props": {
+            "text": "## Categorias mais acessadas",
+            "blockClass": "title-mosaico-search",
+            "textPosition": "CENTER"
+        }
+    },
+
+    "flex-layout.row#banner-mosaico-search":{
+        "title": "Mosaico",
+        "children":[
+            "flex-layout.col#banner-mosaico-8-1",
+        "flex-layout.col#banner-mosaico-8-2",
+        "flex-layout.col#banner-mosaico-8-3",
+        "flex-layout.col#banner-mosaico-8-4",
+        "flex-layout.col#banner-mosaico-8-5",
+        "flex-layout.col#banner-mosaico-8-6",
+        "flex-layout.col#banner-mosaico-8-7",
+        "flex-layout.col#banner-mosaico-8-8"
+        ],
+        "props":{
+            "colSizing": "auto",
+            "blockClass": "banner-mosaico-search"
+        }
+    },
+
+    "flex-layout.col#banner-mosaico-8-1":{
+        "children": [
+            "image#image-mosaico-8-1"
+        ],
+        "props":{
+            "width": "33%"
+        }
+    },
+
+    "image#image-mosaico-8-1": {
+        "props": {
+            "src": "https://pratidev--luccofit.myvtex.com/arquivos/banner-mosaico-8-1.png",
+            "blockClass": "footer__developers",
+            "width": "320px"
+        }
+    },
+
+    "flex-layout.col#banner-mosaico-8-2":{
+        "children": [
+            "image#image-mosaico-8-2"
+        ],
+        "props":{
+            "width": "33%"
+        }
+    },
+
+    "image#image-mosaico-8-2": {
+        "props": {
+            "src": "https://pratidev--luccofit.myvtex.com/arquivos/banner-mosaico-8-2.png",
+            "blockClass": "footer__developers",
+            "width": "320px"
+        }
+    },
+
+    "flex-layout.col#banner-mosaico-8-3":{
+        "children": [
+            "image#image-mosaico-8-3"
+        ],
+        "props":{
+            "width": "33%"
+        }
+    },
+
+    "image#image-mosaico-8-3": {
+        "props": {
+            "src": "https://pratidev--luccofit.myvtex.com/arquivos/banner-mosaico-8-3.png",
+            "blockClass": "footer__developers",
+            "width": "320px"
+        }
+    },
+
+    "flex-layout.col#banner-mosaico-8-4":{
+        "children": [
+            "image#image-mosaico-8-4"
+        ],
+        "props":{
+            "width": "33%"
+        }
+    },
+
+    "image#image-mosaico-8-4": {
+        "props": {
+            "src": "https://pratidev--luccofit.myvtex.com/arquivos/banner-mosaico-8-4.png",
+            "blockClass": "footer__developers",
+            "width": "320px"
+        }
+    },
+
+    "flex-layout.col#banner-mosaico-8-5":{
+        "children": [
+            "image#image-mosaico-8-5"
+        ],
+        "props":{
+            "width": "33%"
+        }
+    },
+
+    "image#image-mosaico-8-5": {
+        "props": {
+            "src": "https://pratidev--luccofit.myvtex.com/arquivos/banner-mosaico-8-5.png",
+            "blockClass": "footer__developers",
+            "width": "320px"
+        }
+    },
+
+    "flex-layout.col#banner-mosaico-8-6":{
+        "children": [
+            "image#image-mosaico-8-6"
+        ],
+        "props":{
+            "width": "33%"
+        }
+    },
+
+    "image#image-mosaico-8-6": {
+        "props": {
+            "src": "https://pratidev--luccofit.myvtex.com/arquivos/banner-mosaico-8-6.png",
+            "blockClass": "footer__developers",
+            "width": "320px"
+        }
+    },
+
+    "flex-layout.col#banner-mosaico-8-7":{
+        "children": [
+            "image#image-mosaico-8-7"
+        ],
+        "props":{
+            "width": "33%"
+        }
+    },
+
+    "image#image-mosaico-8-7": {
+        "props": {
+            "src": "https://pratidev--luccofit.myvtex.com/arquivos/banner-mosaico-8-7.png",
+            "blockClass": "footer__developers",
+            "width": "320px"
+        }
+    },
+
+    "flex-layout.col#banner-mosaico-8-8":{
+        "children": [
+            "image#image-mosaico-8-8"
+        ],
+        "props":{
+            "width": "33%"
+        }
+    },
+
+    "image#image-mosaico-8-8": {
+        "props": {
+            "src": "https://pratidev--luccofit.myvtex.com/arquivos/banner-mosaico-8-8.png",
+            "blockClass": "footer__developers",
+            "width": "320px"
+        }
+    },
+
+    "flex-layout.row#seo": {
+        "children": [
+            "flex-layout.col#seo"
+        ],
+        "props": {
+            "fullWidth": true,
+            "horizontalAlign": "center",
+            "blockClass": "search-seo-wrapper",
+            "width": "100%"
+        }
+    },
+    "flex-layout.col#seo": {
+        "title": "Seo",
+        "children": [
+            "rich-text#seo",
+            "rich-text#seo-description"
+        ],
+        "props": {
+            "blockClass": "search-seo",
+            //"fullWidth": true,
+            "horizontalAlign": "center"
+        }
+    },
+
+    "rich-text#seo": {
+        "title": "Titulo Seo",
+        "props": {
+            "text": "## Kit Comida Fitness Congelada para o Dia a Dia",
+            "blockClass":"search-seo-title",
+            "textPosition": "center"
+        }
+    },
+    "rich-text#seo-description": {
+        "title": "Seo Texto",
+        "props": {
+            "text": "Está com dificuldades em mudar sua alimentação para uma melhor e mais saudável?. Então vocÊ precisa conhecer o as nossas opções de Comida Congelada saudável! Elas são feitas para facilitar o seu dia a dia e auxiliar e criar um hábito alimentar mais saudável. Preparamos comida de verdade para seu dia a dia, 100% natural e com sabor de comida caseira. O kit conta com lanche da manhã, almoço, lanche da tarde e jantar. Aqui na LuccoFit você encontra os mais diferentes tipos de Kits de Alimentação para seus objetivos, desde kits de marmita low carb até kits de refeições completos para o almoço ou jantar! Então selecione o combo que mais combina com você e aproveite a praticidade e o sabor de ter em casa ou no trabalho opções de Comidas Saudáveis Congeladas da LuccoFit! Todos os pratos são embalados separadamente à vácuo, para melhor qualidade de sabor e preservação dos nutrientes de cada alimento, sejam eles pratos com arroz integral, batata doce até pratos com proteínas.",
+            "blockClass":"search-seo-description",
+            "textPosition": "CENTER",
+            "textAlignment": "CENTER"
+        }
+    },
+
+
+    "flex-layout.row#banner-full": {
+        "props": {
+            "blockClass": "wrapper--banner"
+        },
+        "children": [
+            "list-context.image-list#banner-full",
+            "flex-layout.row#banner-full-text"
+        ]
+    },
+
+
+    "list-context.image-list#banner-full": {
+        "title": "Banner Principal",
+        "children": [
+            //"flex-layout.row#banner-full-text"
+            //"slider-layout#banner-full"
+        ],
+        "props": {
+            "height": 300,
+            "width": "100%",
+            "blockClass": "search-banner-fulll",
+            "images": []
+        }
+    },
+
+
+
+    "slider-layout#banner-full": {
+        "props": {
+            "itemsPerPage": {
+                "desktop": 1,
+                "tablet": 1,
+                "phone": 1
+            },
+            "infinite": true,
+            "showNavigationArrows": "never",
+            "blockClass": "search-banner-full",
+            "fullWidth": true,
+            "width": "100%"
+        }
+
+    },
+
+    "flex-layout.row#banner-full-text": {
+        "props": {
+            "blockClass": "banner--full--text--wrapper"
+        },
+        "children": [
+            "flex-layout.col#banner-full-text"
+        ]
+    },
+
+    "flex-layout.col#banner-full-text": {
+        "children": [
+            "rich-text#banner-full-title",
+            "rich-text#banner-full-text"
+        ]
+    },
+
+    "rich-text#banner-full-title": {
+        "title": "Titulo Banner Full",
+        "props": {
+            "text": "## Carnes Vermelhas",
+            "blockClass": "banner--full--title",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER"
+        }
+    },
+    "rich-text#banner-full-text": {
+        "title": "Texto Banner Full",
+        "props": {
+            "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+            "blockClass": "banner--full--text",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER"
+        }
+    }
+
+
+}

@@ -1,0 +1,19 @@
+.mzSearchResultInfo {
+    display: flex;
+}
+.mzSearchResultInfo span{
+    display: flex;
+    align-items: center;
+}
+.mzSearchResultInfo h4 {
+    margin: 0;
+    color:#434343;
+    text-transform:uppercase;
+}
+.mzSearchResultInfo strong {
+    color: #009180;
+    font-size: 16px;
+}
+.mzSearchResultInfo p {
+    margin: 0 5px;
+}

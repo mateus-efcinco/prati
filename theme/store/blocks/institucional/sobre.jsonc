@@ -1,0 +1,85 @@
+{
+  "store.custom#sobre": {
+    "blocks": [
+      "flex-layout.row#sobre"
+    ]
+  },
+
+  "flex-layout.row#sobre": {
+    "children": [
+      "flex-layout.col#menu-institucional",
+      "flex-layout.col#text-sobre"
+    ],
+    "props":{
+      "blockClass": "institucional-row" 
+    }
+  },
+  "flex-layout.col#menu-institucional":{
+    "children":[
+      "vtex.menu@2.x:menu#institucional"
+    ],
+    "props":{
+      "blockClass": "institucional-menu"
+    }
+  },
+  "flex-layout.col#text-sobre":{
+    "children":[
+      "rich-text#title-institucional",
+      "rich-text#content-institucional01",
+      "rich-text#content-institucional02",
+      "rich-text#content-institucional03",
+      "rich-text#content-institucional04",
+      "rich-text#content-institucional05",
+      "rich-text#content-institucional06",
+      "rich-text#content-institucional07"
+    ]
+  },
+  "rich-text#title-institucional":{
+    "props":{
+      "text": "Sobre Nós",
+      "blockClass": "title-insitucional"
+    }
+  },
+  "rich-text#content-institucional01":{
+    "props":{
+      "text": "Somos uma empresa apaixonada pela alimentação saudável, que ama transformar pratos do dia a dia em releituras saudáveis, mas deixando aquele gostinho de caseiro, sabe?\n Trabalhamos com alimentos 100% naturais, que ajudam no bom funcionamento do nosso organismo, isso garante nossa disposição para encarar o dia com mais energia!\n Sabemos que a falta de tempo é nossa maior inimiga, por isso levamos nossas refeições, doces e sucos até sua porta, assim fica mais fácil comer bem ?.\n Acreditamos que a união do sabor artesanal, o melhor em tecnologia e processos para produção de refeições saudáveis congeladas, garantem que nossos pratos (também chamados de marmitas fitness) superem as expectativas dos nossos clientes e amigos.",
+      "blockClass": "content-institucional"
+    }
+  },
+  "rich-text#content-institucional02":{
+    "props":{
+      "text": "Nossa História",
+      "blockClass": "subtitle-insitucional"
+    }
+  },
+  "rich-text#content-institucional03":{
+    "props":{
+      "text": "A ligação da família Lucco com a alimentação de qualidade começou na década de 30, passando de geração a geração até ser inaugurada a Lucco Fit, que além de manter a tradição, se preocupa em fazer a combinação perfeita de alimentos saudáveis, integrais e com altas propriedades nutricionais.",
+      "blockClass": "content-institucional"
+    }
+  },
+  "rich-text#content-institucional04":{
+    "props":{
+      "text": "Nosso Propósito",
+      "blockClass": "subtitle-insitucional"
+    }
+  },
+  "rich-text#content-institucional05":{
+    "props":{
+      "text": "Espalhar a uma nova cultura, onde ajudamos pessoas a comerem melhor, alcançarem seus objetivos e serem mais felizes consigo mesmas.",
+      "blockClass": "content-institucional"
+    }
+  },
+  "rich-text#content-institucional06":{
+    "props":{
+      "text": "Responsabilidade Ambiental",
+      "blockClass": "subtitle-insitucional"
+    }
+  },
+  "rich-text#content-institucional07":{
+    "props":{
+      "text": "O selo eu-reciclo faz a compensação ambiental das embalagens que colocamos no mercado. E, certifica que a Lucco Fit cumpra com a Política Nacional de Resíduos Sólidos.\nAlém disto, as embalagens plásticas são livres de BPA, Totalmente atóxicas em temperaturas altas (até 120ºC) ou baixas (congelamento) e não soltam cheiro ou gosto.\nEm nossas lojas substituímos os materiais descartáveis como canudos, talheres, por materiais que possam ser reutilizados de forma consciente.\nConheça o eu-reciclo.",
+      "blockClass": "content-institucional"
+    }
+  }
+}

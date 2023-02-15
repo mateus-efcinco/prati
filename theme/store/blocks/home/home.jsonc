@@ -1,0 +1,125 @@
+{
+  "store.home": {
+    "blocks": [
+      "list-context.image-list#banner-full-top",
+      "flex-layout.row#Tipbar",
+      "__fold__.experimentalLazyAssets",
+      //"flex-layout.row#banner-mosaico-6",
+      //"flex-layout.row#banner-mosaico-6-slider",
+      //"rich-text#shelf-title4",
+      //"flex-layout.row#shelf4",
+      "rich-text#shelf-title1",
+      "flex-layout.row#shelf1",
+      "slider-layout#category-slider",
+      "rich-text#shelf-title2",
+      "flex-layout.row#shelf2",
+      //"flex-layout.row#home-newsletter-home",
+      "rich-text#shelf-title3",
+      "flex-layout.row#shelf3",
+      //"rich-text#titulo-mosaico-8",
+      //"flex-layout.row#banner-mosaico-8",
+      "flex-layout.row#entenda-processo"
+      //"flex-layout.row#banner-mosaico-8-slider"
+      //"flex-layout.row#news-popup"
+      //"responsive-layout.desktop#modal"
+    ]
+  },
+
+  "responsive-layout.desktop#modal": {
+    "children": ["modal-trigger#news"]
+  },
+
+  //banner principal
+  "list-context.image-list#banner-full-top": {
+    "title": "banner-principal",
+    "children": ["slider-layout#banner-full-slider"],
+    "props": {
+      "height": 500,
+      "width": "100%",
+      "images": [
+        {
+          "image": "https://pratidev--luccofit.myvtex.com/arquivos/banner-full-exemplo.png",
+          "mobileImage": "https://pratidev--luccofit.myvtex.com/arquivos/banner_full-mobile.png",
+          "width": "100%"
+        },
+        {
+          "image": "https://pratidev--luccofit.myvtex.com/arquivos/banner-full-exemplo.png",
+          "mobileImage": "https://pratidev--luccofit.myvtex.com/arquivos/banner_full-mobile.png",
+          "width": "100%"
+        }
+      ]
+    }
+  },
+  "slider-layout#banner-full-slider": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "always",
+      "blockClass": "carousel",
+      "fullWidth": true,
+      "width": "100%"
+    }
+  },
+  //*banner principal
+
+  //category slider
+  "slider-layout#category-slider": {
+    "title": "Slider - Categorias",
+    "props": {
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 3,
+        "phone": 2
+      },
+      "infinite": true,
+      "showNavigationArrows": "always",
+      "blockClass": "category-carousel",
+      "fullWidth": true,
+      "width": "100%"
+    },
+    "children": [
+      "flex-layout.row#category-item1",
+      "flex-layout.row#category-item2",
+      "flex-layout.row#category-item3",
+      "flex-layout.row#category-item4",
+      "flex-layout.row#category-item5",
+      "experimental__visibility-layout#category-6",
+      "experimental__visibility-layout#category-7",
+      "experimental__visibility-layout#category-8"
+    ]
+  },
+
+  //*category slider
+
+  "info-card#home": {
+    "props": {
+      "id": "info-card-home",
+      "isFullModeStyle": false,
+      "textPosition": "left",
+      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
+      "headline": "Clearance Sale",
+      "callToActionText": "DISCOVER",
+      "callToActionUrl": "/sale/d",
+      "blockClass": "info-card-home",
+      "textAlignment": "center"
+    }
+  },
+
+  "rich-text#question": {
+    "props": {
+      "text": "**This is an example store built using the VTEX platform.\nWant to know more?**",
+      "blockClass": "question"
+    }
+  },
+
+  "rich-text#link": {
+    "props": {
+      "text": "\n**Reach us at**\nwww.vtex.com.br",
+      "blockClass": "link"
+    }
+  }
+}

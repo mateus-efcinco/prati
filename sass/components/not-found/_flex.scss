@@ -1,0 +1,20 @@
+.flex {
+  &Row {
+    &Content {
+      &--mz-not-found-page {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        @include desktop {
+          min-height: 70vh;
+        }
+
+        @include mobile {
+          height: 100%;
+          padding: 30px 1rem;
+        }
+      }
+    }
+  }
+}

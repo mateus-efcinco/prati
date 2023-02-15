@@ -1,0 +1,120 @@
+.diagonalCross {
+  transition: all 0.2s ease-out;
+  background-color: #cacaca;
+  border-radius: 30px;
+  width: 28px;
+  height: 28px;
+  top: -1px;
+  left: -1px;
+  z-index: 2;
+  opacity: 0.8;
+  background-image: none;
+
+  &:hover {
+    background-image: linear-gradient(
+      to top right,
+      transparent 45%,
+      #ffffff 49%,
+      currentColor 41%,
+      currentColor 21%,
+      transparent 2%
+    );
+  }
+}
+
+.sku {
+  &Selector {
+    &Options {
+      &List {
+        margin: 0;
+      }
+    }
+
+    &Internal {
+      &Box {
+        border: none;
+      }
+    }
+
+    &Item {
+      transition: all 0.2s ease-out;
+
+      font-size: $font-size-xs;
+      border: 1px solid $color-6-500;
+      background-color: $white;
+      border-radius: 30px;
+      width: 28px;
+      height: 28px;
+
+      &:hover,
+      &:focus,
+      &:active {
+        background-color: $color-2-500;
+        border: 1px solid $color-2-500;
+        color: $white;
+
+        .skuSelectorItemTextValue {
+          color: $white;
+        }
+      }
+
+      &--selected {
+        background-color: $color-1-300;
+        border: 1px solid $color-1-300;
+        color: $white;
+
+        .skuSelectorItemTextValue {
+          color: $white;
+        }
+
+        .diagonalCross {
+          background-color: #666666;
+          border: 1px solid #666666;
+          background-image: linear-gradient(
+            to top right,
+            transparent 45%,
+            #adadad 49%,
+            currentColor 41%,
+            currentColor 21%,
+            transparent 2%
+          );
+
+          &:hover {
+            background-image: linear-gradient(
+              to top right,
+              transparent 45%,
+              #adadad 49%,
+              currentColor 41%,
+              currentColor 21%,
+              transparent 2%
+            );
+          }
+        }
+      }
+
+      &TextValue {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 !important;
+        max-width: 2.1rem;
+      }
+
+      .frameAround {
+        display: none;
+      }
+    }
+
+    &Text {
+      &Container {
+        margin: 0;
+      }
+    }
+
+    &Name {
+      color: $text-color-1-500;
+      font-weight: $normal;
+      font-size: $font-size-sm;
+    }
+  }
+}

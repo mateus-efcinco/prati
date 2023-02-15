@@ -1,0 +1,134 @@
+@import '../../extends/container';
+
+.loadingOverlay {
+  :global(.vtex-store-components-3-x-container) {
+    padding: 0;
+  }
+}
+:global(.vtex-store-components-3-x-searchBarContainer) {
+    display: flex!important;
+    align-items: center!important;
+}
+.gallery {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.galleryTitle--layout {
+  margin-top: 0;
+  color: $color-1-500;
+  font-weight: $bold;
+  font-size: 38px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+
+  @include mobile {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+}
+
+.totalProducts {
+  &--layout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 0;
+    color: $color-1-500;
+    font-weight: $bold;
+    font-size: $font-size-md;
+
+    //@extend %container-margin;
+    //padding-left: 0;
+    padding:0!important;
+  }
+
+  &Message {
+    display: inline;
+    font-weight: $normal;
+    color: $text-color-1-500;
+    text-transform: lowercase;
+
+    @media (min-width: $screen-lg) {
+      font-weight: $bold;
+    }
+  }
+}
+
+.filterPopupTitle {
+  color: $text-color-1-500;
+  text-transform: none;
+}
+
+.filterPopupArrowIcon {
+    padding: 0;
+    display: flex;
+}
+
+.orderByDropdown {
+    display: flex;
+    align-items: center;
+    &::before {
+        content: 'Ordenar por:';
+        min-width: fit-content;
+        margin-right: 10px;
+        font-size: 14px;
+        color:#434343;
+
+        @include mobile {
+            display: none;
+        }
+    }
+}
+.orderByButton {
+  padding: 12px;
+  border: 1px solid $text-color-1-400;
+  border-radius: 5px;
+  min-width: 150px;
+  display: flex;
+  justify-content: space-between;
+
+  .orderByText {
+      display: none;
+  }
+
+}
+
+.orderBy--layout {
+  //margin-right: 2rem;
+
+  //@extend %container-margin;
+  @include mobile {
+      margin-left: auto;
+  }
+}
+
+.orderByOptionsContainer {
+    width: auto;
+    min-width: 150px;
+}
+.orderByOptionItem {
+  font-family: $main-font;
+  min-width: 150px;
+
+  &--selected {
+    color: $color-1-500;
+  }
+}
+
+.caretIcon {
+  height: auto;
+  width: 18px;
+}
+
+.buttonShowMore {
+    margin:0;
+  //margin: 1.725rem 0;
+}
+
+.searchResultContainer--search--wrapper {
+        margin: 0;
+        max-width: initial;
+        padding: 0;
+}

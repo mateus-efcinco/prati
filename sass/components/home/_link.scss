@@ -1,0 +1,27 @@
+.link {
+  &--btn-processo{
+    text-align: center;
+    width: 305px !important;
+    height: 60px;
+    background: $color-1-500;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-decoration-color: transparent !important;
+    border-radius: 8px;
+    margin-bottom: 78px;
+    @include mobile {
+        margin-bottom: 40px;
+    }
+  }
+}
+
+.label {
+  &--btn-processo{
+    color: $white;
+    text-decoration: none;
+    font-size: $font-size-lg;
+    font-weight: $bold;
+    text-transform: uppercase;
+  }
+}

@@ -1,0 +1,70 @@
+.wrapper {
+  &--mz-not-found-page {
+    &__title {
+      :global(.vtex-rich-text-0-x-paragraph) {
+        font-size: 32px;
+        font-weight: 700;
+        color: $color-1;
+        margin: 0 0 54px;
+
+        @include mobile {
+          margin-bottom: 42px;
+        }
+      }
+    }
+
+    &__subtitle {
+      :global(.vtex-rich-text-0-x-paragraph) {
+        text-transform: uppercase;
+        font-size: 16px;
+        line-height: 21px;
+        font-weight: 400;
+        color: $color-8;
+        margin: 0 0 30px;
+        max-width: 360px;
+
+        @include mobile {
+          margin-bottom: 24px;
+        }
+      }
+    }
+
+    &__text {
+      :global(.vtex-rich-text-0-x-paragraph) {
+        color: $color-9;
+        font-size: 12px;
+        line-height: 18px;
+        font-weight: 400;
+        margin: 0;
+      }
+    }
+
+    &__button {
+      :global(.vtex-rich-text-0-x-link) {
+        width: 345px;
+        height: 56px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: $color-1;
+        font-size: 18px;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: white;
+        border-radius: 4px;
+        margin-top: 56px;
+        border: 1px solid $color-1;
+
+        @include mobile {
+          margin-top: 42px;
+          min-width: 100%;
+        }
+
+        &:hover {
+          background: white;
+          color: $color-1;
+        }
+      }
+    }
+  }
+}

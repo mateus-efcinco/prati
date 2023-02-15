@@ -1,0 +1,117 @@
+.aboutProduct {
+    background-color: #f5f5f5;
+    margin-bottom: 50px;
+}
+.aboutProductWrapper{
+    display: flex;
+    justify-content: center;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+.aboutProduct h3 {
+    font-size: 21px;
+    color: #009180;
+    margin: 0;
+    margin-bottom: 23px;
+}
+.aboutProduct,
+.aboutProduct div  {
+    font-size: 16px;
+    color: #434343;
+    margin-bottom: 40px;
+    padding-right: 70px;
+    white-space: break-spaces;
+}
+@media (max-width:767px) {
+    .aboutProduct,
+    .aboutProduct div  {
+        padding-right: 0;
+    }  
+}
+.aboutProduct a{
+    color: #009180;
+}
+
+.aboutProduct ul{
+    list-style: none;
+}
+
+.aboutProductBox {
+    width: 100%;
+}
+
+.aboutProductTable {
+    border-spacing:0; /* Removes the cell spacing via CSS */
+    border-collapse: collapse;  /* Optional - if you don't want to have double border where cells touch */
+    width: 100%;
+}
+.aboutProductTable thead {
+    background-color: #009180;
+    color: #fff;
+    font-size: 15px;
+}
+.aboutProductTable thead th{
+    padding: 12px 12px;
+    text-align: inherit;
+}
+
+.aboutProductTable tbody td{
+    font-size: 15px;
+    color: #434343;
+    font-weight: 400;
+    padding: 12px 15px;
+    border-bottom: 1px solid black;
+}
+
+.aboutProductWrapper span {
+    position: relative;
+    display: block;
+}
+
+.aboutProductToggle {
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    top: -15px;
+    right: 0;
+    border: none;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.aboutProductToggle::after {
+    content: '';
+    width: 15px;
+    height: 15px;
+    border-bottom: 1px solid;
+    border-left: 1px solid;
+    display: block;
+    transform: rotate(135deg);
+    margin-top: 10px;
+}
+@media (min-width: 1054px) and (max-width: 1368px){
+    .aboutProductWrapper{
+        max-width: 1050px;
+    }
+}
+@media( max-width: 768px ) {
+    .aboutProductWrapper{
+        flex-direction: column;
+        padding: 35px 20px;
+    }
+    .aboutProductWrapper h3{
+        font-size: 22px;
+        margin-bottom:35px;
+    }
+    .aboutProductWrapper p{
+        font-size: 16px;
+    }
+    .aboutProductTable thead{
+        font-size: 12px;
+    }
+    .aboutProductTable tbody td{
+        font-size: 12px;
+    }
+}

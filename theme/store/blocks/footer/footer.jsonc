@@ -1,0 +1,201 @@
+{
+  "footer": {
+    "blocks": ["footer-layout.desktop", "footer-layout.mobile"]
+  },
+  "footer-layout.desktop": {
+    "children": [
+      "flex-layout.row#whatsapp-button",
+      "flex-layout.row#footer-newsletter",
+      "flex-layout.row#buscas",
+      "flex-layout.row#footer-1-desktop",
+      "flex-layout.row#footer-2-desktop",
+      "flex-layout.row#footer-3-desktop"
+    ]
+  },
+  "flex-layout.row#whatsapp-button":{
+    "props": {
+      "position": "bottom",
+      "blockClass": "fixed-whtsapp"
+    },
+    "children": [
+      "image#whatsapp-button"
+    ]
+  },
+  "image#whatsapp-button": {
+    "title": "image whatsapp",
+    "props": {
+      "src": "https://cdn.awsli.com.br/588/588344/arquivos/baixados.svg",
+      "blockClass": "icon-whatsapp-fixed",
+      "width": "58px",
+      "link":{
+        "url": "https://api.whatsapp.com/send?1=pt_BR&phone=5511973759937",
+        "openNewTab": true
+      }
+    }
+  },
+  "flex-layout.row#footer-newsletter": {
+    "children": [
+      "flex-layout.col#text-newsletter",
+      "flex-layout.col#form-newsletter"
+    ],
+    "props": {
+      "blockClass": "row-newsletter",
+      "colSizing": "auto"
+    }
+  },
+
+  "flex-layout.col#text-newsletter": {
+    "children": ["rich-text#newsletter-text"],
+    "props": {
+      "width": "100%"
+    }
+  },
+  "flex-layout.col#form-newsletter": {
+    "children": ["newsletter-form#footer"],
+    "props": {
+      "width": "100%"
+    }
+  },
+  "rich-text#newsletter-text": {
+      "title":"Newsletter Texto Tituto",
+    "props": {
+      "text": "Cadastre seu e-mail e fique por dentro das nossas **novidades e ofertas especiais!**",
+      "blockClass": "newsletter-text",
+      "textAlignment": "center"
+    }
+  },
+  "newsletter-form#footer": {
+    "children": [
+      "newsletter-input-name",
+      "newsletter-input-email",
+      "newsletter-submit"
+    ],
+    "props": {
+      "blockClass": "footer"
+    }
+  },
+  "newsletter-submit": {
+    "props": { "submitButtonLabel": "Cadastrar" }
+  },
+  "flex-layout.row#footer-1-desktop": {
+    "children": [
+      "vtex.menu@2.x:menu#conheca",
+      "vtex.menu@2.x:menu#fale-conosco",
+      "flex-layout.col#payment-col1",
+      "flex-layout.col#wrapper-col"
+    ],
+    "props": {
+      "blockClass": "menu-row",
+      "paddingTop": 6,
+      "paddingBottom": 3
+    }
+  },
+  "flex-layout.col#payment-col1": {
+    "children": ["rich-text#payment-title", "vtex.menu@2.x:menu#payment"],
+    "props": {
+      "blockClass": "payment-wrap"
+    }
+  },
+  "rich-text#payment-title": {
+      "title": "Formas de pagamento",
+    "props": {
+      "text": "formas de pagamento",
+      "blockClass": "payment-title"
+    }
+  },
+  "flex-layout.col#wrapper-col": {
+    "children": [
+      //"flex-layout.row#social",
+      "flex-layout.row#social-footer-desktop",
+      "flex-layout.row#segurança",
+      "flex-layout.row#developers"
+    ]
+  },
+
+  "flex-layout.row#social": {
+    "children": ["rich-text#social-title", "vtex.menu@2.x:menu#social"],
+    "props": {
+      "blockClass": "row-footer"
+    }
+  },
+  "rich-text#social-title": {
+      "title": "Social Titulo",
+    "props": {
+      "text": "redes sociais",
+      "blockClass": "social-title",
+      "width": "100%"
+    }
+  },
+  "flex-layout.row#segurança": {
+    "children": ["rich-text#segurança-title", "vtex.menu@2.x:menu#seguranca"],
+    "props": {
+      "blockClass": "row-footer"
+    }
+  },
+  "rich-text#segurança-title": {
+      "title": "Certificao e seguranca",
+    "props": {
+      "text": "Certificação | Segurança:",
+      "blockClass": "security-title",
+      "width": "100%"
+    }
+  },
+  "flex-layout.row#developers": {
+    "children": ["rich-text#developers-title", "vtex.menu@2.x:menu#developers"],
+    "props": {
+      "blockClass": "row-footer",
+      "horizontalAlign": "left",
+      "width": "100%"
+    }
+  },
+  "rich-text#developers-title": {
+    "props": {
+      "text": "Developers:",
+      "blockClass": "desenvolvido-title"
+    }
+  },
+  "flex-layout.row#footer-2-desktop": {
+    "children": ["link#btn-b2b-footer"],
+    "props": {
+      "blockClass": "buttons",
+      "preventHorizontalStretch": true
+    }
+  },
+  "link#btn-b2b-footer":{
+    "props":{
+      "href": "https://b2b.comaprati.com.br/",
+      "label": "Para Empresas",
+      "blockClass": "btn-b2b-footer",
+      "target": "_blank"
+    }
+  },
+  "flex-layout.row#footer-3-desktop": {
+    "children": ["flex-layout.col#logo-footer", "rich-text#footer"],
+    "props": {
+      "blockClass": "credits"
+    }
+  },
+  "flex-layout.col#logo-footer": {
+    "children": ["logo#footer"],
+    "props": {
+      "width": "20%"
+    }
+  },
+  "logo#footer": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "assets/svg/logo-extendido-mobile.svg",
+      "width": "112px"
+    }
+  },
+  "rich-text#footer": {
+      "title": "Copyright texto",
+    "props": {
+      "text": "LuccoFit alimentação - CNPJ 00.000.000/0000-00 | Rua Bela Cintra - 1561 - Jardins - São Paulo | SP | CEP 01415-001",
+      "blockClass": "footer",
+      "width": "80%",
+      "textPosition": "RIGHT"
+    }
+  }
+}

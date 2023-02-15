@@ -1,0 +1,134 @@
+{
+  "vtex.menu@2.x:menu#fale-conosco": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "menu-footer"
+    },
+    "children": [
+      "menu-item#fale-conosco",
+      "menu-item#duvidas",
+      "menu-item#solucoes",
+      "menu-item#loja",
+      "rich-text#email",
+      "rich-text#contato",
+      "rich-text#endereco"
+    ]
+  },
+
+  "menu-item#fale-conosco": {
+    "props": {
+      "id": "menu-item-fale-conosco",
+      "blockClass": "title",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Fale conosco",
+        "text": "Fale conosco"
+      }
+    }
+  },
+
+  "menu-item#duvidas": {
+    "props": {
+      "id": "menu-item-duvidas",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Dúvidas Frequentes",
+        "text": "Dúvidas Frequentes"
+      }
+    }
+  },
+
+  "menu-item#solucoes": {
+    "props": {
+      "id": "menu-item-solucoes",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Soluções para empresas",
+        "text": "Soluções para empresas"
+      }
+    }
+  },
+  "menu-item#loja": {
+    "props": {
+      "id": "menu-item-loja",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Loja",
+        "text": "Loja"
+      }
+    }
+  },
+  "rich-text#email": {
+    "props": {
+      "text": "**contato@prati.com.br**",
+      "blockClass": "menu-footer-item"
+    }
+  },
+  "rich-text#contato": {
+    "props": {
+      "text": "**WhatsApp:** 11 97651 - 9064",
+      "blockClass": "menu-footer-item"
+    }
+  },
+  "rich-text#endereco": {
+    "props": {
+      "text": "**Rua Bela Cintra 1561 - jardins - SP**",
+      "blockClass": "menu-footer-item"
+    }
+  },
+  "menu-item#fale-conosco-mobile": {
+    "props": {
+      "id": "menu-item-fale-conosco",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Fale conosco",
+        "text": "Fale conosco"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#fale-conosco"]
+  },
+  "vtex.menu@2.x:submenu.accordion#fale-conosco": {
+    "props": {
+      "blockClass": "category-nav__submenu"
+    },
+    "children": ["vtex.menu@2.x:menu#fale-conosco-drawer"]
+  },
+  "vtex.menu@2.x:menu#fale-conosco-drawer": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#duvidas",
+      "menu-item#solucoes",
+      "menu-item#loja",
+      "rich-text#email",
+      "rich-text#contato",
+      "rich-text#endereco"
+    ]
+  }
+}

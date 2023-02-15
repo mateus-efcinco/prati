@@ -1,0 +1,379 @@
+{
+  "experimental__visibility-layout#emporio":{
+    "title": "Visibilidade | Menu Emporio ",
+    "props": {
+      "visible": true
+    },
+    "children":[
+      "menu-item#emporio"   
+    ]
+  },
+  "menu-item#emporio": {
+    "props": {
+      "id": "menu-item-custom-emporio",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "header-menu-item",
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "empório",
+        "text": "empório"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#emporio"
+    ]
+  },
+  "vtex.menu@2.x:submenu#emporio": {
+    "props": {
+      "width": "100%"
+    },
+    "children": [
+      "flex-layout.row#menu-emporio"
+    ]
+  },
+  "flex-layout.row#menu-emporio": {
+    "children": [
+      "flex-layout.col#menu-emporio-1",
+      "flex-layout.col#menu-emporio-2"
+    ],
+    "props":{
+      "fullWidth": true,
+      "width":"100%",
+      "blockClass": "submenu"
+    }
+  },
+  "flex-layout.col#menu-emporio-1": {
+    "children": [
+      "vtex.menu@2.x:menu#emporio-menu"
+    ],
+    "props": {
+      "width": "25%",
+      "marginRight": 10
+    }
+  },
+  "vtex.menu@2.x:menu#emporio-menu": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "experimental__visibility-layout#menu-item-suplementos",
+      "experimental__visibility-layout#menu-item-proteinas-colageno",
+      "experimental__visibility-layout#menu-item-termogenicos",
+      "experimental__visibility-layout#menu-item-desincha",
+      "experimental__visibility-layout#menu-item-pastas",
+      "experimental__visibility-layout#menu-item-barrinha-chocolate",
+      "experimental__visibility-layout#menu-item-todos-itens"
+    ]
+  },
+  "experimental__visibility-layout#menu-item-suplementos":{
+    "title": "Visibilidade | menu-item-suplementos ",
+    "props": {
+      "visible": true
+    },
+    "children":[
+      "menu-item#suplementos"   
+    ]
+  },
+  "menu-item#suplementos": {
+    "props": {
+      "id": "menu-item-suplementos",
+      "blockClass": "firs-item-menu",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "SUPLEMENTOS",
+        "text": "SUPLEMENTOS"
+      }
+    }
+  },
+  "experimental__visibility-layout#menu-item-proteinas-colageno":{
+    "title": "Visibilidade | menu-item-proteinas-colageno ",
+    "props": {
+      "visible": true
+    },
+    "children":[
+      "menu-item#proteinas-colageno"   
+    ]
+  },
+  "menu-item#proteinas-colageno": {
+    "props": {
+      "id": "menu-item-proteinas-colageno",      
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "PROTEÍNAS E COLÁGENOS",
+        "text": "PROTEÍNAS E COLÁGENOS"
+      }
+    }
+  },
+  "experimental__visibility-layout#menu-item-termogenicos":{
+    "title": "Visibilidade | menu-item-termogenicos ",
+    "props": {
+      "visible": true
+    },
+    "children":[
+      "menu-item#termogenicos"   
+    ]
+  },
+  "menu-item#termogenicos": {
+    "props": {
+      "id": "menu-item-termogenicos",      
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "TERMOGÊNICOS",
+        "text": "TERMOGÊNICOS"
+      }
+    }
+  },
+  "experimental__visibility-layout#menu-item-desincha":{
+    "title": "Visibilidade | menu-item-desincha ",
+    "props": {
+      "visible": true
+    },
+    "children":[
+      "menu-item#desincha"   
+    ]
+  },
+  "menu-item#desincha": {
+    "props": {
+      "id": "menu-item-desincha",      
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "DESINCHÁ",
+        "text": "DESINCHÁ"
+      }
+    }
+  },
+  "experimental__visibility-layout#menu-item-pastas":{
+    "title": "Visibilidade | menu-item-pastas ",
+    "props": {
+      "visible": true
+    },
+    "children":[
+      "menu-item#pastas"   
+    ]
+  },
+  "menu-item#pastas": {
+    "props": {
+      "id": "menu-item-pastas",      
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "PASTAS",
+        "text": "PASTAS"
+      }
+    }
+  },
+  "experimental__visibility-layout#menu-item-barrinha-chocolate":{
+    "title": "Visibilidade | menu-item-barrinha-chocolate ",
+    "props": {
+      "visible": true
+    },
+    "children":[
+      "menu-item#barrinha-chocolate"   
+    ]
+  },
+  "menu-item#barrinha-chocolate": {
+    "props": {
+      "id": "menu-item-barrinha-chocolate",      
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "BARRINHA E CHOCOLATES",
+        "text": "BARRINHA E CHOCOLATES"
+      }
+    }
+  },
+  "experimental__visibility-layout#menu-item-todos-itens":{
+    "title": "Visibilidade | menu-item-barrinha-chocolate ",
+    "props": {
+      "visible": true
+    },
+    "children":[
+      "menu-item#todos-itens"   
+    ]
+  },
+  "menu-item#todos-itens": {
+    "props": {
+      "id": "menu-item-todos-itens",      
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "last-item",
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Todos os itens",
+        "text": "Todos os itens"
+      }
+    }
+  },
+  "flex-layout.col#menu-emporio-2": {
+    "children": [
+      "flex-layout.row#emporio-destaque-line-1",
+      "flex-layout.row#emporio-destaque-line-2"
+    ],
+    "props": {
+      "width": "50%",
+      "blockClass": "sub-menu"
+    }
+  },
+  "flex-layout.row#emporio-destaque-line-1":{
+    "children":["rich-text#kit-destaque"],
+    "props":{
+      
+    }
+  },
+  "rich-text#kit-destaque":{
+    "props": {
+      "text": "emporio em destaque",
+      "textAlignment": "Left",
+      "textPosition": "Left",
+      "blockClass": "title-destaque"
+    }
+  },
+  "flex-layout.row#emporio-destaque-line-2":{
+    "children":[
+      "flex-layout.col#destaque-kit1",
+      "flex-layout.col#destaque-kit2",
+      "flex-layout.col#destaque-kit3"
+    ],
+    "props":{
+      
+    }
+  },
+  "flex-layout.col#destaque-kit1":{
+    "children":[
+      "image#destaque-kit1",
+      "link#destaque-kit1"
+    ]
+  },
+  "image#destaque-kit1":{
+    "props": {
+      "src": "https://pratidev--luccofit.myvtex.com/arquivos/banner-destaque-ex.png",
+      "link" :"#",
+      "width":"100%"
+    }
+  },
+  "link#destaque-kit1": {
+    "props": {
+      "href": "#",
+      "label":"Risoto de arroz negro com frango em crosta acompanhado com berinjela - 400g - Lucco Fit"
+    }
+  },
+  "flex-layout.col#destaque-kit2":{
+    "children":[
+      "image#destaque-kit2",
+      "link#destaque-kit2"
+    ]
+  },
+  "image#destaque-kit2":{
+    "props": {
+      "src": "https://pratidev--luccofit.myvtex.com/arquivos/banner-destaque-ex.png",
+      "link" :"#",
+      "width":"100%"
+    }
+  },
+  "link#destaque-kit2": {
+    "props": {
+      "href": "#",
+      "label":"Risoto de arroz negro com frango em crosta acompanhado com berinjela - 400g - Lucco Fit"
+    }
+  },
+  "flex-layout.col#destaque-kit3":{
+    "children":[
+      "image#destaque-kit3",
+      "link#destaque-kit3"
+    ]
+  },
+  "image#destaque-kit3":{
+    "props": {
+      "src": "https://pratidev--luccofit.myvtex.com/arquivos/banner-destaque-ex.png",
+      "link" :"#",
+      "width":"100%"
+    }
+  },
+  "link#destaque-kit3": {
+    "props": {
+      "href": "#",
+      "label":"Risoto de arroz negro com frango em crosta acompanhado com berinjela - 400g - Lucco Fit"
+    }
+  },
+  "experimental__visibility-layout#emporio-mobile":{
+    "title": "Visibilidade | Menu Emporio Mobile",
+    "props": {
+      "visible": true
+    },
+    "children":[
+      "menu-item#emporio-mobile"   
+    ]
+  },
+  "menu-item#emporio-mobile": {
+    "props": {
+      "blockClass": "category-nav__item__mobile",
+      "id": "menu-item-emporio",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "empório",
+        "text": "empório"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#emporio"]
+  },
+  "vtex.menu@2.x:submenu.accordion#emporio": {
+    "props": {
+      "blockClass": "category-nav__submenu"
+    },
+    "children": ["vtex.menu@2.x:menu#emporio-drawer"]
+  },
+  "vtex.menu@2.x:menu#emporio-drawer": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "experimental__visibility-layout#menu-item-suplementos",
+      "experimental__visibility-layout#menu-item-proteinas-colageno",
+      "experimental__visibility-layout#menu-item-termogenicos",
+      "experimental__visibility-layout#menu-item-desincha",
+      "experimental__visibility-layout#menu-item-pastas",
+      "experimental__visibility-layout#menu-item-barrinha-chocolate",
+      "experimental__visibility-layout#menu-item-todos-itens"
+    ]
+  }
+}

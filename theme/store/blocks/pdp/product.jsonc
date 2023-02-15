@@ -1,0 +1,253 @@
+{
+    "store.product": {
+        "children": [
+            "flex-layout.row#product-breadcrumb",
+            "flex-layout.row#product-main",
+            //"flex-layout.row#description",
+            "condition-show#description",
+            "kit-showcase",
+            // "product-reviews"
+            //"flex-layout.row#product",
+            //"product-specification-group",
+            //"flex-layout.row#preparo",
+            "condition-notshow#about",
+            "condition-notshow#preparo",
+            "condition-notshow#shelf",
+            //"rich-text#product-shelf-title",
+            //"flex-layout.row#product-shelf",
+            //"rich-text#titulo-mosaico-product",
+            //"flex-layout.row#banner-mosaico-product",
+            "flex-layout.row#seo"
+        ]
+    },
+
+
+
+    "condition-show#description": {
+        "props": {
+            "show": [4, "Kit"]
+        },
+        "children": [
+            "flex-layout.row#description"
+        ]
+    },
+
+    "condition-notshow#about": {
+        "props": {
+            "notshow": [4, "Kit"]
+        },
+        "children": [
+            "about-product"
+        ]
+    },
+
+    "condition-notshow#preparo": {
+        "props": {
+            "notshow": [4, "Kit", 8, "Empório"]
+        },
+        "children": [
+            "flex-layout.row#preparo"
+        ]
+    },
+
+    "condition-notshow#shelf": {
+        "props": {
+            "notshow": [4, "Kit"]
+        },
+        "children": [
+            "rich-text#product-shelf-title",
+            "flex-layout.row#product-shelf"
+        ]
+    },
+
+    "flex-layout.row#product-breadcrumb": {
+        "props": {
+            "marginTop": 4,
+            "blockClass": "product--breadcrumb"
+        },
+        "children": ["breadcrumb"]
+    },
+    "flex-layout.row#description": {
+        "props": {
+            "blockClass": ["description"],
+            "marginBottom": 7
+        },
+        "children": ["product-description"]
+    },
+    "product-description": {
+        "props": {
+            "title": "Descrição",
+            "collapseContent": false
+        }
+    },
+    "flex-layout.row#product-main": {
+        "props": {
+            "colGap": 7,
+            "rowGap": 7,
+            "marginTop": 4,
+            "marginBottom": 7,
+            "paddingTop": 7,
+            "paddingBottom": 7,
+            "blockClass": "product--wrapper"
+        },
+        "children": ["flex-layout.col#stack", "flex-layout.col#right-col"]
+    },
+
+    "stack-layout": {
+        "props": {
+            "blockClass": "product"
+        },
+        "children": [
+            "flex-layout.row#product-image",
+            "product-bookmark",
+            "product-specification-badges"
+            //"vtex.product-highlights@2.x:product-highlights#collection"
+        ]
+    },
+
+
+  "vtex.product-highlights@2.x:product-highlights#collection": {
+    "props": {
+      "type": "collection"
+    },
+    "children": ["product-highlight-wrapper"]
+  },
+  "product-highlight-wrapper": {
+    "props": {
+      "blockClass": "collection"
+    },
+    "children": ["product-highlight-text"]
+  },
+  "product-highlight-text": {
+    "props": {
+      "message": "{highlightName}"
+    }
+  },
+
+
+
+    "product-specification-badges": {
+        "props": {
+            "specificationGroupName": "Group",
+            "specificationName": "On Sale",
+            "visibleWhen": "True",
+            "displayValue": "SPECIFICATION_NAME"
+        }
+    },
+
+    "flex-layout.col#stack": {
+        "children": ["stack-layout"],
+        "props": {
+            //"width": "60%",
+            "rowGap": 0
+        }
+    },
+    "flex-layout.row#product-image": {
+        "children": ["product-images"]
+    },
+    "product-images": {
+        "props": {
+            "aspectRatio": {
+                "desktop": "auto",
+                "phone": "16:9"
+            },
+            "displayThumbnailsArrows": true
+        }
+    },
+    "flex-layout.col#right-col": {
+        "props": {
+            "blockClass": ["product--rightCol"],
+            "preventVerticalStretch": true,
+            "rowGap": 0
+        },
+        "children": [
+            "flex-layout.row#product-name",
+            //"product-rating-summary",
+            "flex-layout.row#list-price-savings",
+            "flex-layout.row#selling-price",
+            //"kit-unit-price",
+            //"kit-item-unit",
+            //"condition-show#kit-unit",
+            "product-quantity",
+            "add-to-cart-button#pdp",
+            //"flex-layout.row#buy-button",
+            "flex-layout.row#buy-button-hide",
+            "availability-subscriber",
+            //"flex-layout.row#social",
+            "product-specification-group#table"
+        ]
+    },
+
+    "condition-show#kit-unit": {
+        "props": {
+            "show": [4, "Kit"]
+        },
+        "children": [
+            "kit-item-unit"
+        ]
+    },
+
+    "flex-layout.row#social": {
+        "children": [
+            "share#default",
+            "link#instagram"
+        ],
+        "props": {
+            "blockClass": "social-wrapper"
+        }
+    },
+    "link#instagram": {
+        "props": {
+            "href": "https://www.instagram.com/luccofitfoods",
+            "target": "_blank",
+            "label": "instagram",
+            "blockClass": "social-instagram"
+        }
+    },
+
+    "flex-layout.row#product-name": {
+        "props": {
+            "marginBottom": 3
+        },
+        "children": ["vtex.store-components:product-name"]
+    },
+
+    "sku-selector": {
+        "props": {
+            "variationsSpacing": 3,
+            "showValueNameForImageVariation": true
+        }
+    },
+
+    "flex-layout.row#buy-button": {
+        "props": {
+            "marginTop": 4,
+            "marginBottom": 7,
+            "blockClass": "button--add--cart"
+        },
+        "children": [
+            //"add-to-cart-button#pdp",
+            "button-quantity"
+        ]
+    },
+    "flex-layout.row#buy-button-hide": {
+        "props": {
+            "blockClass": "add--cart--hide"
+        },
+        "children": [
+            "add-to-cart-button#pdp"
+        ]
+    },
+
+    "share#default": {
+        "props": {
+            "options": {
+                "size": 52
+            },
+            "social": {
+                "Facebook": true,
+                "WhatsApp": true
+            }
+        }
+    }
+}

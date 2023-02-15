@@ -1,0 +1,119 @@
+{
+  "flex-layout.row#Tipbar": {
+      "title": "Tipbar",
+    "children": [
+      "slider-layout#tipBarMob"
+    ],
+    "props": {
+      "blockClass": "Tipbar"
+    }
+  },
+  "slider-layout#tipBarMob":{
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 3,
+        "phone": 1
+      },
+      "infinite": false,
+      "fullWidth": true,
+      "showPaginationDots": "never",
+      "showNavigationArrows": "never",
+      "blockClass": "tipbarslider",
+      "autoplay":{
+        "timeout": 4000,
+        "stopOnHover": true
+      }
+    },
+    "children":[
+      "flex-layout.col#Tipbar1",
+      "flex-layout.col#Tipbar2",
+      "flex-layout.col#Tipbar3",
+      "flex-layout.col#Tipbar4"
+    ]
+  },
+  "flex-layout.col#Tipbar1": {
+    "children": [
+      "image#tip1",
+      "rich-text#tip1"
+    ],
+    "props":{
+      "blockClass": "Tipbar__box"
+    }
+  },
+  "image#tip1": {
+    "props": {
+      "src": "assets/svg/tip-whats.svg",
+      "maxHeight": "45px"
+    }
+  },
+  "rich-text#tip1": {
+    "props": {
+      "text": "Faça seu pedido pelo WhatsApp! É prático e rápido :)",
+      "blockClass": "Tipbar"
+    }
+  },
+  "flex-layout.col#Tipbar2": {
+    "children": [
+      "image#tip2",
+      "rich-text#tip2"
+    ],
+    "props":{
+      "blockClass": "Tipbar__box"
+    }
+  },
+  "image#tip2": {
+    "props": {
+      "src": "assets/svg/tip-card.svg",
+      "maxHeight": "45px"
+    }
+  },
+  "rich-text#tip2": {
+    "props": {
+      "text": "Aceitamos Vale refeição e Vale alimentação :)",
+      "blockClass": "Tipbar"
+    }
+  },
+  "flex-layout.col#Tipbar3": {
+    "children": [
+      "image#tip3",
+      "rich-text#tip3"
+    ],
+    "props":{
+      "blockClass": "Tipbar__box"
+    }
+  },
+  "image#tip3": {
+    "props": {
+      "src": "assets/svg/tip-delivery-moto.svg",
+      "maxHeight": "45px"
+    }
+  },
+  "rich-text#tip3": {
+    "props": {
+      "text": "Frete Grátis válido para compras acima de R$250,00",
+      "blockClass": "Tipbar"
+    }
+  },
+  "flex-layout.col#Tipbar4": {
+    "children": [
+      "image#tip4",
+      "rich-text#tip4"
+    ],
+    "props":{
+      "blockClass": "Tipbar__box"
+    }
+  },
+  "image#tip4": {
+    "props": {
+      "src": "assets/svg/tip-map.svg",
+      "maxHeight": "45px"
+    }
+  },
+  "rich-text#tip4": {
+    "props": {
+      "text": "Entregas para RJ, SP, Campinas | interior e litoral Paulista :)",
+      "blockClass": "Tipbar"
+    }
+  }
+}

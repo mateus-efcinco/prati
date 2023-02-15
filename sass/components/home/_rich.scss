@@ -1,0 +1,181 @@
+.wrapper {
+  &--Tipbar{
+    margin-left: 15px;
+    @include mobile{
+      width: 170px;
+    }
+  }
+  &--title-processo{
+    height: 100px;
+  }
+  &--category-title {
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+  .paragraph {
+    &--Tipbar{
+      font-size: $font-size-sm;
+    }
+      &--popup-text {
+          font-size: 18px;
+          color:#fff;
+      }
+      &--popup-text-form {
+          font-size: 12px;
+          color:#fff;
+          margin: 0;
+            margin-top: 5px;
+      }
+        &--popup-success-text1 {
+          display:flex;
+          flex-direction:column;
+          align-items:center;
+            &::after {
+              content: '';
+              width: 125px;
+              height: 1px;
+              background-color: white;
+              display: block;
+              margin-top: 10px;
+              margin-bottom: 10px;
+            }
+        }
+      &--popup-success-text1,&--popup-success-text2 {
+          font-size: 18px;
+          color:#fff;
+          margin:0;
+          max-width: 310px;
+          text-align:center;
+      }
+    &--title-processo{
+      font-size: $font-size-xlg + 1px;
+      color: $color-1-500;
+      font-weight: $bold;
+      padding: 0px 50px;
+      text-align: center;
+      line-height: 30px;
+
+      @include mobile {
+          max-width: 150px;
+          padding: 0;
+          font-size: 22px;
+        margin-top: 25px;
+      }
+    }
+    &--desc-processo{
+      position: relative;
+      min-height: 170px;
+      padding-left: 10px;
+      padding-right: 10px ;
+      padding-top: 23px;
+      text-align: center;
+      font-size:  $font-size-md;
+      color: $text-color-1-500;
+      &::before{
+        content: '';
+        height: 2px;
+        width: 45%;
+        background: $text-color-1-400;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+      }
+      
+      @include mobile {
+          font-size: 18px;
+          min-height:initial;
+          max-width: 250px;
+          margin-top: 0;
+          margin-bottom: 30px;
+      }
+    }
+    &--newsletter-text-home{
+      color: $color-1-500;
+      font-size: $font-size-xlg + 6px;
+      margin-bottom: 25px;
+      margin-top: 30px;
+      @include mobile{
+        font-size: $font-size-xlg + 2px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        line-height: 25px;
+      }
+    }
+  }
+  .heading{
+      &--popup-title {
+          font-size: 20px;
+          color:#fff;
+          text-align:center;
+          margin: 0;
+          display:flex;
+          flex-direction:column;
+          align-items:center;
+          &::after {
+              content: '';
+              width: 125px;
+              height: 1px;
+              background-color: white;
+              display: block;
+              margin-top: 10px;
+          }
+      }
+
+      &--popup-success-title {
+          font-size: 22px;
+          color:#fff;
+          margin:0;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          &::before {
+              content: url(/arquivos/newsletter-success-check.png);
+              margin-bottom: 30px;
+          }
+      }
+
+      &--title-entenda-processo {
+          @include mobile {
+            margin-top: 45px;
+          }
+      }
+      &--title-mosaico-search {
+          margin-top: 100px;
+          @include mobile {
+              margin-top: 50px;
+              max-width: 170px;
+              text-align: center;
+          }
+      }
+      &--title-mosaico-product {
+          margin-top: 40px;
+      }
+
+
+
+    &--shelfTitle, &--title-entenda-processo, &--title-mosaico-8, &--title-mosaico-search, &--title-mosaico-product{
+      font-size: $font-size-h3;
+      color: $color-1-500;
+      font-weight: $bold;
+      @include mobile{
+        font-size: $font-size-xlg + 4px;
+      }
+    }
+  }
+}
+
+.container{
+  &--newsletter-text-home{
+    display: flex;
+    justify-content: center;
+  }
+  &--category-title {
+    display: flex;
+    justify-content: center;
+  }
+}

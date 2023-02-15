@@ -1,0 +1,141 @@
+.menu {
+  &Container {
+    &--menu-footer{
+      .styledLinkContent{
+        &--title{
+          color: $color-1-500;
+          font-weight: $bold;
+          font-size: $font-size-lg;
+          text-transform: uppercase;
+          margin-bottom: 26px;
+          pointer-events: none;
+        }
+        text-transform: none;
+        font-size: $font-size-md;
+        padding:4px 14px;
+
+        &:hover{
+          font-weight: $normal;
+        }
+      }
+    }
+
+    &Nav {
+      &--menu-footer{
+        margin-left: 0;
+        :global(.vtex-menu-2-x-styledLinkContent--title-menu-institucional) {
+            font-size: 18px!important;
+            text-transform: uppercase;
+            padding-left: 14px!important;
+            margin-bottom: 26px!important;
+        }
+        :global(.vtex-menu-2-x-styledLinkContent--menu-institucional-item) {
+            margin: 0;
+            padding: 4px 14px;
+        }
+      }
+      &--footer__payment__menu{
+        margin: 0;
+        .menuContainer{
+          display: block;
+          margin-top: 20px;
+          width: 18em;
+          @include mobile{
+            margin: 20px auto 20px;
+          }
+          :global(.vtex-store-components-3-x-imageElement){
+            margin-right: 12px;
+            margin-bottom: 11px;
+          }
+        }
+      }
+
+      &--footer__seguranca__menu, &--footer__social__menu, &--footer__developers__menu{
+        margin: 0;
+        .menuContainer{
+          display: block;
+
+          @include mobile{
+            display: flex;
+            justify-content: center;
+            flex-direction: revert;
+            margin-bottom: 20px;
+          }
+        }
+      }
+      &--footer__social__menu{
+        :global(.vtex-store-components-3-x-imageElement){
+          margin-right: 24px;
+          @include mobile {
+              margin: 0 20px;
+          }
+        }
+      }
+      &--footer__seguranca__menu{
+        .menuContainer{
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+        }
+        :global(.vtex-store-components-3-x-imageElement){
+          margin-right: 13px;
+        }
+      }
+      &--footer__developers__menu{
+        :global(.vtex-store-components-3-x-imageElement){
+          &:last-child{
+            position: relative;
+            bottom: 10px;
+            padding-left: 13px;
+            @include mobile{
+              bottom: 0;
+            }
+          }
+        }
+      }
+      &--menu-mobile-footer{
+        padding: 30px 20px;
+        .menuItem{
+          border-bottom: 2px solid #989898;
+          .styledLinkContent{
+            font-size: $font-size-lg;
+            font-weight: $bold;
+            color: $color-1-500;
+            padding: 15px!important;
+          }
+          .accordionIcon{
+            text-indent: -9999px;
+            position: relative;
+            &::before{
+              content: "";
+              position: absolute;
+              width: 20px;
+              height: 20px;
+              background: $arrow-icon-footer;
+              right: 0px;
+              transform: rotate(90deg);
+            }
+            &--isOpen{
+              &::before{
+                transform: rotate(270deg);
+              }
+            }
+            
+          }
+          .submenuAccordion{
+            .menuItem{
+              border-bottom: none;
+              .styledLinkContent{
+                font-size: $font-size-lg;
+                font-weight: $normal;
+                color: $text-color-1-500;
+                padding-bottom:0 !important;
+                margin-bottom:0!important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

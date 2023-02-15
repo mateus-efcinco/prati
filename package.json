@@ -1,0 +1,30 @@
+{
+  "name": "maeztra",
+  "version": "1.1.4",
+  "readme": "no readme file",
+  "license": "UNLICENSED",
+  "private": true,
+  "scripts": {
+    "vl": "cd theme && vtex link --verbose",
+    "vrm": "cd theme && vtex release minor stable",
+    "vrp": "cd theme && vtex release patch stable",
+    "vprod": "cd theme && vtex workspace create prod --production && vtex use prod && vtex install",
+    "vprom": "cd theme && vtex workspace create prod --production && vtex use prod && vtex install && vtex promote",
+    "vwr": "vtex workspace reset"
+  },
+  "dependencies": {
+    "@vtex/create-react-library": "^3.3.1",
+    "babel": "^6.23.0",
+    "babel-core": "^6.26.0",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-preset-env": "^1.6.1",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^7.0.0",
+    "gulp-debug": "^4.0.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-sass": "^4.0.2",
+    "gulp-util": "^3.0.8",
+    "gulp-watch-sass": "^1.4.1",
+    "node-sass": "^4.14.0"
+  }
+}

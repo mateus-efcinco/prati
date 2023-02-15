@@ -1,0 +1,217 @@
+.flex {
+  &Row {
+    &--popup-success-wrapper {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: 0;
+      padding: 0;
+      border: none;
+      background-image:url('/arquivos/bg-newsletter-success.png');
+      background-repeat:no-repeat;
+      background-size: cover;
+
+      .flexColChild {
+        height: auto!important;
+      }
+    }
+
+    &--category-container {
+      
+    }
+    &--Tipbar{
+      padding: 0;
+      background: $color-c-3;
+      @include desktop{
+        margin-top: -5px;
+      }
+      @include mobile {
+        padding: 0;
+      }
+    }
+    &--row-newsletter-home{
+      @include mobile {
+        :global(.vtex-store-components-3-x-container){
+          padding: 0;
+          margin-bottom: 30px;
+        }
+      }
+    }
+    &--banner-mosaico-8, &--banner-mosaico-search{
+      margin-top: 46px;
+        margin-bottom: 85px;
+      @include mobile{
+        margin-top: 15px;
+        margin-bottom:40px;
+      }
+    }
+    &--banner-mosaico-6-slider, &--banner-mosaico-8-slider{
+      display: none;
+      @include mobile{
+        display: block;
+      }
+    }
+    &--entenda-processo-wrap{
+      background: $color-c-3;
+      @include mobile {
+        margin-bottom: 30px;
+        }
+    }
+    &Content{
+
+      &--Tipbar {
+        max-width: 1300px;
+        margin-left: auto;
+        margin-right: auto;
+        @include notebook{
+          max-width: 1050px;
+        }
+      }
+
+      &--banner-mosaico-6, &--banner-mosaico-8, &--home-shelf1, &--home-shelf2, &--home-shelf3, &--row-newsletter-home {
+        max-width: 1300px;
+        margin-left: auto;
+        margin-right: auto;
+        @include notebook{
+          max-width: 1050px;
+        }
+        @include mobile{
+          max-width: 91%;
+        }
+      }
+
+      &--banner-mosaico-8, &--banner-mosaico-search {
+        @include mobile {
+          flex-wrap: nowrap!important;
+          overflow: auto;
+          margin-bottom: 40px;
+
+          .flexColChild {
+            width: 335px!important;
+          }
+        }
+      }
+      &--banner-mosaico-6 {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: initial;
+        flex-wrap: wrap;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        .stretchChildrenWidth{
+          @include desktop {
+            width: 33% !important;
+          }
+          @include mobile {
+            padding-right: 10px;
+          }
+          :global(.vtex-store-components-3-x-imageElement){
+            width: 100% !important;
+            height: auto;
+          }
+        }
+
+        @include mobile {
+          flex-wrap: nowrap;
+          overflow: auto;
+          margin-top: 15px;
+
+          .flexColChild{
+            width: 335px!important;
+          }
+          .flexCol {
+            width: max-content!important;
+          }
+        }
+      }
+      &--banner-mosaico-8, &--banner-mosaico-search{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: initial;
+        flex-wrap: wrap;
+        .stretchChildrenWidth{
+          @include desktop{
+            width: 24.5% !important;
+          }
+          @include mobile {
+            padding-right: 25px;
+          }
+          :global(.vtex-store-components-3-x-imageElement){
+            width: 100% !important;
+            height: auto;
+          }
+        }
+      }
+      &--entenda-processo-wrap{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: initial;
+        flex-wrap: wrap;
+        max-width: 1300px;
+        margin: 0 auto;
+        @include notebook{
+          max-width: 1050px;
+        }
+        .stretchChildrenWidth{
+          width: 100% !important;
+        }
+      }
+      &--row-newsletter-home{
+        background: $color-c-3;
+        display: block;
+        :global(.vtex-store-components-3-x-container){
+            padding: 0;
+        }
+
+        :global(.vtex-store-newsletter-1-x-defaultSuccessMessage) {
+            color: #009180;
+            border: 2px solid #009180;
+        }
+      }
+    }
+  }
+
+  &Col {
+    &--news-popup-text-wrapper {
+      background: #9e9e9e;
+      background-image:url('/arquivos/bg-newsletter.png');
+      background-repeat: no-repeat;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      .flexColChild {
+        height: auto!important;
+          max-width: 300px;
+      }
+    }
+    &--popup-success-wrapper-col {
+      display: flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:center;
+    }
+    &--Tipbar__box{
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      align-items: center;
+    }
+    &Child {
+      &--Tipbar__box{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+        :global(.vtex-store-components-3-x-imageElement){
+          max-width: unset !important;
+        }
+      }
+    }
+  }
+}
+
+
+

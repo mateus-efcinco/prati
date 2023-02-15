@@ -1,0 +1,9 @@
+{
+  "vtex.menu@2.x:menu#footer-mobile": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "menu-mobile-footer"
+    },
+    "children": ["menu-item#conheca-mobile", "menu-item#fale-conosco-mobile"]
+  }
+}

@@ -1,0 +1,51 @@
+.link {
+  &--link-destaque{
+    text-align: center;
+    font-size: $font-size-lg;
+    color: $text-color-1-500;
+    text-decoration: none;
+    margin-top: 31px;
+  }
+  
+  &--empty-cart-button{
+    background: $color-1-500;
+    color: $white;
+    text-decoration: unset;
+    display: flex;
+    width: 250px;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: $bold;
+    text-transform: uppercase;
+    border-radius: 4px;
+    height: 55px;
+  }
+
+  &--btn-b2b-header {
+    width: auto;
+    background: $color-1-500;
+    text-decoration-color: transparent !important;
+    border-radius: 4px;
+    padding: 12px 48px;
+    margin: 16px 32px 16px 56px;
+
+    @include mobile {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin: 0 16px;
+      border-radius: 16px;
+    }
+  }
+}
+
+.label {
+  &--btn-b2b-header {
+    color: $white;
+    text-decoration: none;
+    font-size: $font-size-md;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+}

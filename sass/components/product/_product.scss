@@ -1,0 +1,18 @@
+.product {
+  &Brand {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: $font-size-h5;
+    line-height: $font-size-h5;
+    font-weight: $normal;
+
+    @media (min-width: $l) {
+      justify-content: flex-start;
+      text-align: left;
+      font-size: 32px;
+      line-height: $font-size-h2;
+      font-weight: $normal;
+    }
+  }
+}

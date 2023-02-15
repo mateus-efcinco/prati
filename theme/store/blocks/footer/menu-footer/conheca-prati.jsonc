@@ -1,0 +1,119 @@
+{
+  "vtex.menu@2.x:menu#conheca": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "menu-footer"
+    },
+    "children": [
+      "menu-item#conheca-prati",
+      "menu-item#sobre",
+      "menu-item#secreto",
+      "menu-item#congelado",
+      "menu-item#blog"
+    ]
+  },
+  "menu-item#conheca-prati": {
+    "props": {
+      "id": "menu-item-conheca-prati",
+      "blockClass": "title",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Conheça a pratí",
+        "text": "Conheça a pratí"
+      }
+    }
+  },
+  "menu-item#sobre": {
+    "props": {
+      "id": "menu-item-sobre",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/sobre",
+        "noFollow": false,
+        "tagTitle": "sobre",
+        "text": "Sobre"
+      }
+    }
+  },
+  "menu-item#secreto": {
+    "props": {
+      "id": "menu-item-secreto",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Qual é o nosso segredo?",
+        "text": "Qual é o nosso segredo?"
+      }
+    }
+  },
+  "menu-item#congelado": {
+    "props": {
+      "id": "menu-item-congelado",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Por que congelados",
+        "text": "Por que congelados"
+      }
+    }
+  },
+  "menu-item#blog": {
+    "props": {
+      "id": "menu-item-blog",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Conheça nosso Blog",
+        "text": "Conheça nosso Blog"
+      }
+    }
+  },
+  "menu-item#conheca-mobile": {
+    "props": {
+      "id": "menu-item-conheca",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Conheça a pratí",
+        "text": "Conheça a pratí"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#conheca"]
+  },
+  "vtex.menu@2.x:submenu.accordion#conheca": {
+    "props": {
+      "blockClass": "category-nav__submenu"
+    },
+    "children": ["vtex.menu@2.x:menu#conheca-drawer"]
+  },
+  "vtex.menu@2.x:menu#conheca-drawer": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": ["menu-item#sobre", "menu-item#secreto", "menu-item#congelado", "menu-item#blog"]
+  }
+}

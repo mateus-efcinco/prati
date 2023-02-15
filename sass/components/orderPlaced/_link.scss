@@ -1,0 +1,33 @@
+.link {
+  &--nova-compra, &--meus-pedidos{
+    border-radius: 3px;
+    width: 292px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: $bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    &:hover{
+      text-decoration: none;
+    }
+    @include mobile{
+      width: 100%;
+    }
+  }
+  &--nova-compra{
+    color: $color-1-500;
+    border: 1px solid $color-1-500; 
+  }
+  &--meus-pedidos{
+    color: $white;
+    background: $color-1-500;
+    margin-left: 25px;
+    @include mobile{
+      margin-left: 0;
+      margin-top: 25px;
+    }
+  }
+}

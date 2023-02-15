@@ -1,0 +1,72 @@
+{
+  "store.custom#template-colecoes": {
+    "title": "Collection Template",
+    "blocks": [
+      "search-result-layout.customQuery#collection-fetch"
+    ]
+  },
+  "search-result-layout.customQuery#collection-fetch": {
+    "title": "Resultado de pesquisa por coleção",
+    "props": {
+      "querySchema": {
+        "name": "aaa0",
+        "maxItemsPerPage": 10,
+        "queryField": "142",
+        "hideUnavailableItems": true,
+        "mapField": "productClusterIds",
+        "orderByField": "OrderByReleaseDateDESC",
+        "skusFilter": "ALL_AVAILABLE"
+      },
+      "full-width": true
+    },
+    "blocks": [
+      "search-result-layout.desktop#collection",
+      "search-not-found-layout"
+    ]
+  },
+  "search-result-layout.desktop#collection": {
+    "title": "Pesquisa - Desktop",
+    "children": [
+        "list-context.image-list#banner-full",
+        "flex-layout.row#searchbread",
+        "flex-layout.row#searchTitleCustom",
+        "flex-layout.row#searchDescriptionCustom",
+        "flex-layout.row#result",
+        "trigger-pagination"
+    ],
+    "props": {
+        "pagination": "show-more",
+        "preventRouteChange": false,
+        "defaultGalleryLayout": "grid",
+        "blockClass": "search--wrapper"
+    }
+  },
+  "flex-layout.row#searchTitleCustom": {
+    "title": "Título Busca",
+    "children": ["rich-text#titulo"],
+    "props": {
+      "fullWidth": true,
+      "blockClass": "search-title"
+    }
+  },
+  "flex-layout.row#searchDescriptionCustom": {
+    "title": "Descrição Busca",
+    "children": ["rich-text#descricao"],
+    "props": {
+      "fullWidth": true,
+      "blockClass": "search-title"
+    }
+  },
+  "rich-text#titulo": {
+    "props": {
+      "text": "Título busca",
+      "blockClass": "searchCustomTitle"
+    }
+  },
+  "rich-text#descricao": {
+    "props": {
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut at fringilla est. Nulla euismod purus neque, at interdum erat condimentum ut. Vestibulum id nisl ipsum. Sed vehicula auctor interdum. Proin a sagittis nibh.",
+      "blockClass": "searchCustomDescription"
+    }
+  }
+}

@@ -1,0 +1,14 @@
+.form {
+  &--footer__newsletter,
+  &--modal__newsletter {
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 0;
+
+    @media (min-width: $l) {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+}

@@ -1,0 +1,66 @@
+.wrapper {
+  &--order-sub-title{
+    font-size: 20px;
+    color: $text-color-1-500;
+    text-transform: uppercase;
+    .paragraph{
+      margin: 0;
+    }
+  }
+  &--info-entrega, &--info-pagamento, &--info-resumo{
+    .paragraph{
+      margin: 0;
+      font-size: 22px;
+      font-weight: $bold;
+      color: $text-color-1-500;
+    }
+  }
+  &--info-entrega{
+    .paragraph{
+      padding-left: 50px;
+      position: relative;
+      &::before{
+        content: '';
+        background: url(/arquivos/icon-addres-checkout.png);
+        height: 31px;
+        width: 26px;
+        background-size: cover;
+        left: 0;
+        position: absolute;
+      }
+    }
+  }
+  &--info-pagamento{
+    .paragraph{
+      padding-left: 50px;
+      position: relative;
+      &::before{
+        content: '';
+        background: url(/arquivos/icon-pagamento-order-placed.png);
+        height: 37px;
+        width: 39px;
+        background-size: cover;
+        left: 0;
+        position: absolute;
+      }
+    }
+  }
+  .paragraph {
+    &--order-title{
+      font-size: 32px;
+      color: $color-1-500;
+      font-weight: $bold;
+      margin: 0;
+
+      @include mobile {
+        font-size: 21px;
+      }
+    }
+
+    &--order-sub-title {
+      @include mobile {
+        font-size: 14px;
+      }
+    }
+  }
+}

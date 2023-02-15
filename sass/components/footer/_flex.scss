@@ -1,0 +1,176 @@
+.flex {
+  &Row {
+      &--fixed-whtsapp{
+        position: fixed;
+        right: 2%;
+        bottom: 2%;
+      }
+      &--principais-buscas-row{
+          padding: 25px 0;
+      }
+      &--principais-buscas-row--wrapper{
+          overflow: auto;
+          @include desktop {
+              overflow:initial;
+          }
+      }
+
+      &--social-footer-wrapper {
+          :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+              width: auto!important;
+              margin-right: 20px;
+
+              @include mobile {
+                margin: 5px 30px 25px;
+              }
+          }
+      }
+    &--row-newsletter, &--credits{
+      background: $color-1-500;
+      :global(.vtex-store-components-3-x-container){
+        @include container;
+        @include desktop{
+          max-width: 100%;
+        }
+      }
+    }
+    &--credits{
+      margin-top: 70px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      :global(.vtex-store-components-3-x-logoLink){
+        @include mobile{
+          justify-content: center;
+        }
+      }
+    }
+    &--buttons {
+      padding: 0 16px;
+      :global(.vtex-store-components-3-x-container){
+        @include container;
+        @include desktop{
+          max-width: 1300px;
+        }
+        @include notebook{
+          max-width: 1120px;
+        }
+        @include mobile {
+          width: 100%;
+        }
+      }
+    }
+    &--menu-row{
+      :global(.vtex-store-components-3-x-container){
+        @include container;
+        @include desktop{
+          //max-width: 100%;
+          max-width: 1300px;
+        }
+        @include notebook{
+          max-width: 1120px;
+        }
+      }
+    }
+    &--row-footer{
+      .flexRowContent{
+        display: block;
+
+      }
+      .stretchChildrenWidth{
+        justify-content: flex-start;
+      }
+      :global(.vtex-store-components-3-x-imageElement--footer__developers){
+        @include mobile{
+          margin: auto;
+        }
+      }
+    }
+
+    &Content {
+      &--row-newsletter{
+        display: block;
+      }
+      &--credits{
+        align-items: center;
+        max-width: 1300px;
+        margin: 0 auto;
+        @include notebook{
+          max-width: 1120px;
+        }
+      }
+      &--menu-row {
+          padding-top: 60px;
+      }
+
+      &--principais-buscas-row{
+          display:flex;
+          flex-direction:column;
+          :global(.vtex-rich-text-0-x-heading) {
+              color: #009180;
+              text-align: center;
+              font-size: 18px;
+              margin: 0;
+              margin-bottom: 30px;
+              padding-left: 30px;
+          }
+
+          @include desktop {
+              :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+                  width: 100%!important;
+                  max-width: 1300px;
+                  margin: 0 auto;
+                  @include notebook{
+                    max-width: 1120px;
+                  }
+              }
+          }
+      }
+      &--principais-buscas-row--wrapper {
+          display: flex;
+          overflow: auto;
+          width: max-content;
+          @include desktop {
+              width: auto;
+          }
+      }
+      &--social-footer-wrapper {
+        :global(.vtex-store-components-3-x-imageElementLink){
+          &:hover{
+            :global(.vtex-store-components-3-x-imageElement){
+              opacity: .7;
+            }
+          }
+        }
+          @include mobile {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+          }
+      }
+    }
+
+
+
+  }
+  &Col{
+    &--payment-wrap{
+      .flexColChild{
+        height: unset !important;
+      }
+    }
+    &--principais-buscas-col {
+        margin: 0 30px;
+        :global(.vtex-rich-text-0-x-link) {
+            color: #424242;
+            text-decoration: none;
+            font-size: 16px;
+            width: max-content;
+            display: block;
+        }
+
+        :global(.vtex-rich-text-0-x-paragraph) {
+            margin: 5px 0;
+        }
+    }
+  }
+}
