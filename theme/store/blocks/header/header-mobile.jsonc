@@ -1,6 +1,7 @@
 {
   "header-layout.mobile": {
     "children": [
+      "global-style",
       "flex-layout.row#2-desktop",
       "sticky-layout#1-mobile"
     ]
@@ -139,7 +140,8 @@
   },
   "logo#mobile": {
     "props": {
-      "title": "Logo",
+      "title": "Prati",
+      "alt": "Prati",
       "href": "/",
       "url": "assets/svg/logo-prati-mobile.svg",
       "width": "120"

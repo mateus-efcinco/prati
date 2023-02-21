@@ -3,6 +3,7 @@
     "blocks": [
       "list-context.image-list#banner-full-top",
       "flex-layout.row#Tipbar",
+      "rich-text#h1",
       "__fold__.experimentalLazyAssets",
       //"flex-layout.row#banner-mosaico-6",
       //"flex-layout.row#banner-mosaico-6-slider",
@@ -23,6 +24,15 @@
       //"flex-layout.row#news-popup"
       //"responsive-layout.desktop#modal"
     ]
+  },
+
+  "rich-text#h1": {
+    "props": {
+      "blockClass": "head-tag-h1",
+      "text": "# Pratí - Marmitas Fitness Congeladas Prontas",
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER"
+    }
   },
 
   "responsive-layout.desktop#modal": {

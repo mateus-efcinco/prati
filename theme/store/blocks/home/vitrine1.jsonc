@@ -1,0 +1,46 @@
+{
+    // vitrine 2
+    "rich-text#shelf-title1": {
+        "title": "Titulo Vitrine 1",
+        "props": {
+            "text": "## Summer",
+            "blockClass": "shelfTitle",
+            "textPosition": "CENTER"
+        }
+    },
+    "flex-layout.row#shelf1": {
+        "title": "Vitrine 2",
+        "children": ["list-context.product-list#shelf1"],
+        "props": {
+            "blockClass": "home-shelf2",
+            "showNavigationArrows": "always"
+        }
+    },
+    "list-context.product-list#shelf1": {
+        "blocks": ["product-summary.shelf"],
+        "children": ["slider-layout#shelf1"],
+        "props": {
+            "collection": "196",
+            "orderBy": "OrderByTopSaleDESC",
+            "hideUnavailableItems":true
+        }
+    },
+    "slider-layout#shelf1": {
+        "props": {
+            "itemsPerPage": {
+            "desktop": 4,
+            "tablet": 2,
+            "phone": 2
+        },
+        "infinite": true,
+        "fullWidth": false,
+        "blockClass": "shelf",
+        "showPaginationDots": "never",
+        "showNavigationArrows": "always",
+            "autoplay":{
+                "timeout": 4000,
+                "stopOnHover": true
+            }
+        }
+    }
+}

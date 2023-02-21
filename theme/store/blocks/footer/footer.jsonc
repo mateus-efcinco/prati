@@ -183,7 +183,8 @@
   },
   "logo#footer": {
     "props": {
-      "title": "Logo",
+      "title": "Prati",
+      "alt": "Prati",
       "href": "/",
       "url": "assets/svg/logo-extendido-mobile.svg",
       "width": "112px"
