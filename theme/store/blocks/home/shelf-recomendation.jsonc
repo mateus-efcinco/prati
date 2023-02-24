@@ -1,0 +1,35 @@
+{
+    "flex-layout.row#top-slider": {
+        "title": "Vitrine 2",
+        "children": ["slider-layout#top-slider"],
+        "props": {
+            "blockClass": "top-slider",
+            "showNavigationArrows": "always"
+        }
+    },
+    "slider-layout#top-slider": {
+        "title": "Slider - Categorias",
+        "props": {
+          "itemsPerPage": {
+            "desktop": 3,
+            "tablet": 2,
+            "phone": 1
+          },
+          "infinite": true,
+          "showNavigationArrows": "always",
+          "blockClass": "top-slider",
+          "fullWidth": true,
+          "width": "100%"
+        },
+        "children": [
+          "flex-layout.row#category-item1",
+          "flex-layout.row#category-item2",
+          "flex-layout.row#category-item3",
+          "flex-layout.row#category-item4",
+          "flex-layout.row#category-item5",
+          "experimental__visibility-layout#category-6",
+          "experimental__visibility-layout#category-7",
+          "experimental__visibility-layout#category-8"
+        ]
+    }
+}

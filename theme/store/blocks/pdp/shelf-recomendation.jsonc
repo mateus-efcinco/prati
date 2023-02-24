@@ -1,0 +1,55 @@
+{
+  "flex-layout.col#similars":{
+    "children": [
+      "rich-text#title-shelf-three",
+      "flex-layout.row#shelf-three"
+    ],
+    "props": {
+      "blockClass": "section-shelf"
+    }
+  },
+
+  "flex-layout.row#shelf-three": {
+    "children": [
+      "shelf.relatedProducts#similars"
+    ]
+  },
+
+  "rich-text#title-shelf-three":{
+    "props":{
+      "blockClass": "title-shelf",
+      "text": "###### OUTRAS OPÇÕES"
+    }
+  },
+
+  "shelf.relatedProducts#similars":{
+    "props":{
+      "blockClass": "shelf-one",
+      "recommendation": "similars",
+      "productList": {
+        "maxItems": 4,
+        "itemsPerPage": 4,
+        "minItemsPerPage": 1,
+        "autoplay": false,
+        "infinite": false,
+        "showTitle": false,
+        "arrows": false,
+        "dots": false,
+        "gap": "ph7"
+      }
+    },
+    "blocks": ["product-summary.shelf#shelf-three"]
+  },
+
+  "product-summary.shelf#shelf-three": {
+    "children": ["product-summary-image#shelf-three"]
+  },
+
+  "product-summary-image#shelf-three": {
+    "props": {
+      "width": "80px",
+      "height": "80px",
+      "arrows": false
+    }
+  }
+}
