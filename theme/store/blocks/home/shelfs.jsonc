@@ -1,64 +1,5 @@
 {
-
-
-
   // vitrine 1
-  "rich-text#shelf-title1": {
-      "title": "Titulo Vitrine 1",
-    "props": {
-      "text": "## Os Queridinhos",
-      "blockClass": "shelfTitle",
-      "textPosition": "CENTER"
-    }
-  },
-  "flex-layout.row#shelf1": {
-    "title": "Vitrine 1",
-    "children": ["list-context.product-list#shelf1"],
-    "props": {
-        "blockClass": "home-shelf1"
-    }
-  },
-  "list-context.product-list#shelf1": {
-    "blocks": ["product-summary.shelf"],
-    "children": ["slider-layout#dshelf1"],
-    "props": {
-      "collection": "196",
-      "orderBy": "OrderByTopSaleDESC",
-      "hideUnavailableItems":true
-    }
-  },
-  "slider-layout#dshelf1": {
-    "props": {
-      "itemsPerPage": {
-        "desktop": 4,
-        "tablet": 3,
-        "phone": 2
-      },
-      "infinite": true,
-      "fullWidth": false,
-      "blockClass": "shelf",
-      "showPaginationDots": "never",
-      "showNavigationArrows": "desktopOnly",
-      "autoplay":{
-        "timeout": 4000,
-        "stopOnHover": true
-      }
-    }
-  },
-
-
-  //"vtex.product-highlights@2.x:product-highlights": {
-  //    "children": ["product-highlight-text"]
-  //},
-  //"product-highlight-text": {
-  //    "props": {
-  //        "message": "{highlightName}",
-  //          "link": "/collection/{highlightId}"
-  //    }
-  //},
-
-
-
 
 
   // vitrine 2
@@ -74,7 +15,8 @@
     "title": "Vitrine 2",
     "children": ["list-context.product-list#shelf2"],
     "props": {
-    "blockClass": "home-shelf2"
+      "blockClass": "home-shelf2",
+      "showNavigationArrows": "always"
     }
   },
   "list-context.product-list#shelf2": {
@@ -90,25 +32,20 @@
     "props": {
       "itemsPerPage": {
         "desktop": 4,
-        "tablet": 3,
+        "tablet": 2,
         "phone": 2
       },
       "infinite": true,
       "fullWidth": false,
       "blockClass": "shelf",
       "showPaginationDots": "never",
-      "showNavigationArrows": "desktopOnly",
+      "showNavigationArrows": "always",
       "autoplay":{
         "timeout": 4000,
         "stopOnHover": true
       }
     }
   },
-
-
-
-
-
 
   // vitrine 3
   "rich-text#shelf-title3": {
@@ -139,14 +76,14 @@
     "props": {
       "itemsPerPage": {
         "desktop": 4,
-        "tablet": 3,
+        "tablet": 2,
         "phone": 2
       },
       "infinite": true,
       "fullWidth": false,
       "blockClass": "shelf",
       "showPaginationDots": "never",
-      "showNavigationArrows": "desktopOnly",
+      "showNavigationArrows": "always",
       "autoplay":{
         "timeout": 4000,
         "stopOnHover": true

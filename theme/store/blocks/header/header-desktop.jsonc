@@ -7,6 +7,7 @@
   },
   "header-layout.desktop": {
     "children": [
+      "global-style",
       "flex-layout.row#1-desktop",
       "flex-layout.row#2-desktop",
       "sticky-layout#4-desktop"
@@ -29,6 +30,7 @@
   },
   "notification.bar#home": {
     "props": {
+      "blockClass": "content-bar",
       "content": "PARA COMPRAS ACIMA DE R$ 250,00 O FRETE É POR NOSSA CONTA. VÁLIDO PARA O RIO DE JANEIRO E SÃO PAULO!"
     }
   },
@@ -83,7 +85,8 @@
 
   "logo#desktop": {
     "props": {
-      "title": "Logo",
+      "title": "Prati",
+      "alt": "Prati",
       "blockClass": "header--logo",
       "href": "/",
       "url": "assets/svg/logo-prati-mobile.svg",

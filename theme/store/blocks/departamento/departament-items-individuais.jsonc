@@ -35,6 +35,9 @@
             "rich-text#departament-title10",
             "flex-layout.row#shelf-departament10",
 
+            "rich-text#departament-title-promo",
+            "flex-layout.row#shelf-departament-promo",
+
             "flex-layout.row#faq"
             //"rich-text#titulo-mosaico-department",
             //"flex-layout.row#banner-mosaico-department",

@@ -170,6 +170,7 @@
             //"condition-show#kit-unit",
             "product-quantity",
             "add-to-cart-button#pdp",
+            "flex-layout.col#similars",
             //"flex-layout.row#buy-button",
             "flex-layout.row#buy-button-hide",
             "availability-subscriber",

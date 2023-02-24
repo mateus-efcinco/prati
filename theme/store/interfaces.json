@@ -30,5 +30,11 @@
     },
     "show-descontos": {
         "component": "Descontos"
+    },
+    "global-style": {
+        "component": "GlobalStyle"
+    },
+    "slider-top-kits": {
+        "component": "SliderTopKits"
     }
 }

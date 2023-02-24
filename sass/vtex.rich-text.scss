@@ -11,5 +11,10 @@
 @import 'components/search/rich';
 @import 'components/product/rich';
 
+:global(.vtex-rich-text-0-x-wrapper--head-tag-h1) :global(.vtex-rich-text-0-x-heading-level-1) {
+    font-size: 18px;
+    margin-top: 30px;
+}
+
 // NOT FOUND
 @import 'components/not-found/text';

@@ -1,0 +1,126 @@
+.slider--top {
+    margin: 30px auto;
+    max-width: 1300px;
+    padding: 0 40px;
+    overflow: hidden;
+}
+
+.slider--top h2 {
+    font-size: 34px;
+    color: #009180;
+    font-weight: 700;
+    text-align: center;
+}
+
+.slider--top--content {
+    display: flex!important;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider--top--content__item {
+    display: flex;
+    width: 700px;
+    justify-content: space-between;
+}
+
+.slider--top--content__item img {
+    max-width: 400px;
+}
+
+.slider--top_item--text {
+    width: 280px;
+}
+
+.slider--top_item--text--points {
+    display: flex;
+    width: 180px;
+    height: 30px;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-transform: uppercase;
+}
+
+.slider--top_item--text--points span {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    font-weight: 400;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider--top_item--text--points--item1 {
+    color: #fff;
+    background: #009280;
+    max-width: 65px;
+}
+
+.slider--top_item--text--points--item2 {
+    color: #009280;
+    background: #EDEDED;
+}
+
+.slider--top_item--text h3 {
+    display: flex;
+    color: #000;
+    font-weight: 300;
+    font-size: 24px;
+    text-transform: uppercase;
+    flex-direction: column;
+}
+.slider--top_item--text b {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.slider--top_item--text p {
+    color: #000;
+    font-weight: 300;
+    font-size: 22px;
+}
+
+.slider--top_item--text--off {
+    display: inline-flex;
+    padding: 4px 7px;
+    color: #009280;
+    font-size: 16px;
+    font-weight: 600;
+    border: 2px solid #009280;
+    text-transform: uppercase;
+}
+
+.slider--top_item--text--precoDe {
+    color: #979797;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: line-through;
+    margin-top: 20px;
+}
+
+.slider--top_item--text--precoPor {
+    color: #009280;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.slider--top_item--text a {
+    display: inline-flex;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    background: #FF7400;
+    border-radius: 3px;
+    padding: 13px 30px;
+    margin-top: 25px;
+}
+
+.slider--top_item--text a:hover {
+    background: #009280;
+}

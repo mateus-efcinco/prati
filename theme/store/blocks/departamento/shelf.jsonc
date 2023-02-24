@@ -523,5 +523,49 @@
                 "stopOnHover": true
             }
         }
+    },
+
+    // Promo
+    "flex-layout.row#shelf-departament-promo": {
+        "title": "Vitrine 10",
+        "children": ["list-context.product-list#departament10"],
+        "props": {
+            "blockClass": "home-shelf1"
+        }
+    },
+    "rich-text#departament-title-promo": {
+        "title": "Titulo Vitrine Promo",
+        "props": {
+            "text": "## Vitrine Promo",
+            "blockClass": "shelfTitle",
+            "textPosition": "CENTER"
+        }
+    },
+    "list-context.product-list#departament-promo": {
+        "blocks": ["product-summary.shelf"],
+        "children": ["slider-layout#departament10"],
+        "props": {
+            "collection": "196",
+            "orderBy": "OrderByTopSaleDESC",
+            "hideUnavailableItems": true
+        }
+    },
+    "slider-layout#departament-promo": {
+        "props": {
+            "itemsPerPage": {
+                "desktop": 4,
+                "tablet": 3,
+                "phone": 2
+            },
+            "infinite": true,
+            "fullWidth": false,
+            "blockClass": "shelf",
+            "showPaginationDots": "never",
+            "showNavigationArrows": "always",
+            "autoplay":{
+                "timeout": 4000,
+                "stopOnHover": true
+            }
+        }
     }
 }

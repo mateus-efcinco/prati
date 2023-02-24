@@ -16,6 +16,11 @@
   .paragraph {
     &--Tipbar{
       font-size: $font-size-sm;
+
+      :global(.vtex-rich-text-0-x-link--Tipbar) {
+        color: $text-color-1;
+        text-decoration: none;
+      }
     }
       &--popup-text {
           font-size: 18px;
