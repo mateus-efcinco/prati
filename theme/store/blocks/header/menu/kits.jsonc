@@ -22,10 +22,10 @@
         "tagTitle": "kits",
         "text": "kits"
       }
-    },
-    "blocks": [
+    }
+    /*"blocks": [
       "vtex.menu@2.x:submenu#kits"
-    ]
+    ]*/
   },
   "vtex.menu@2.x:submenu#kits": {
     "props": {

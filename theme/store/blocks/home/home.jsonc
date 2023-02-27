@@ -5,6 +5,7 @@
       "flex-layout.row#Tipbar",
       "rich-text#h1",
       "__fold__.experimentalLazyAssets",
+      "slider-top-kits",
       //"flex-layout.row#banner-mosaico-6",
       //"flex-layout.row#banner-mosaico-6-slider",
       //"rich-text#shelf-title4",
@@ -17,7 +18,6 @@
       //"flex-layout.row#home-newsletter-home",
       "rich-text#shelf-title3",
       "flex-layout.row#shelf3",
-      "slider-top-kits",
       //"rich-text#titulo-mosaico-8",
       //"flex-layout.row#banner-mosaico-8",
       "flex-layout.row#entenda-processo"

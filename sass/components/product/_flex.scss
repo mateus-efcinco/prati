@@ -201,7 +201,7 @@
 .flexColChild--product--rightCol :global(.vtex-button){
   height: 64px;
   max-width: 320px;
-  margin: 10px 0 50px;
+  margin: 10px 0 0;
   font-size: 26px;
   letter-spacing: 2px;
   padding-top: 6px;
@@ -249,4 +249,27 @@
       content: "Selecione a ";
     }
   }
+}
+
+.flexCol--section-shelf {
+  width: 65%;
+  max-width: 420px;
+  margin-bottom: 30px;
+}
+
+:global(.vtex-shelf-1-x-slide--shelf-one) {
+  padding: 0;
+}
+
+.flexCol--section-shelf  :global(.vtex-slider-0-x-dotsContainer) {
+  display: none;
+}
+
+.flexColChild--section-shelf {
+  margin: 0;
+  height: auto !important;
+}
+
+:global(.vtex-slider-0-x-sliderFrame) {
+  margin-left: -11px;
 }

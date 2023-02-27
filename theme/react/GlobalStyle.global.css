@@ -1,3 +1,7 @@
 @media (min-width: 1024px) {
     .space-bar { margin: 0 50px; }
+
+    .vtex-store-components-3-x-notificationBarInner span {
+        margin: 0 40px;
+    }
 }

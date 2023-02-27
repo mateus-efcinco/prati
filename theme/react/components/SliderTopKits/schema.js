@@ -1,6 +1,6 @@
 export const schema = {
-  title: `Carousel Component`,
-  description: 'A Carousel Component',
+  title: `Top Kits Component`,
+  description: 'Top Kits Component',
   type: 'object',
   properties: {
     title: {
@@ -63,7 +63,7 @@ export const schema = {
     },
     showComponent: {
       type: 'boolean',
-      title: 'Show Component',
+      title: 'Mostrar componente?',
       default: true
     }
   }

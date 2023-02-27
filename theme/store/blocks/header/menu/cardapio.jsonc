@@ -22,10 +22,10 @@
         "tagTitle": "Cardápio",
         "text": "Cardápio"
       }
-    },
-    "blocks": [
+    }
+    /*"blocks": [
       "vtex.menu@2.x:submenu#cardapio"
-    ]
+    ]*/
   },
   "vtex.menu@2.x:submenu#cardapio": {
     "props": {
