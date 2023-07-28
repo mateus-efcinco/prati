@@ -46,6 +46,11 @@
       color: $white;
       background: #ff7300;
       border-radius: 14px;
+
+      &:hover{
+        background-color: #da6200;
+      }
+
       @include notebook {
         margin-right: 10px !important;
       }

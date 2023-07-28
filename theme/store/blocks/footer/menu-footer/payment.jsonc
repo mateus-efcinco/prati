@@ -23,84 +23,96 @@
     "props": {
       "src": "assets/svg/visa.svg",
       "blockClass": "footer__payment",
-      "width": "79px"
+      "width": "79px",
+      "alt": "Visa"
     }
   },
   "image#mastercard": {
     "props": {
       "src": "assets/svg/mastercard.svg",
       "blockClass": "footer__payment",
-      "width": "79px"
+      "width": "79px",
+      "alt": "Mastercard"
     }
   },
   "image#elo": {
     "props": {
       "src": "assets/svg/elo.svg",
       "blockClass": "footer__payment",
-      "width": "79px"
+      "width": "79px",
+      "alt": "Elo"
     }
   },
   "image#diners": {
     "props": {
       "src": "assets/svg/diners.svg",
       "blockClass": "footer__payment",
-      "width": "79px"
+      "width": "79px",
+      "alt": "Diners"
     }
   },
   "image#amex": {
     "props": {
       "src": "assets/svg/american express.svg",
       "blockClass": "footer__payment",
-      "width": "79px"
+      "width": "79px",
+      "alt": "Amex"
     }
   },
   "image#verocard": {
     "props": {
       "src": "assets/svg/verocard.svg",
       "blockClass": "footer__payment",
-      "width": "79px"
+      "width": "79px",
+      "alt": "Verocard"
     }
   },
   "image#pix": {
     "props": {
       "src": "assets/svg/pix.svg",
       "blockClass": "footer__payment",
-      "width": "79px"
+      "width": "79px",
+      "alt": "PIX"
     }
   },
   "image#sodexo": {
     "props": {
       "src": "assets/svg/sodexo.svg",
       "blockClass": "footer__payment",
-      "width": "79px"
+      "width": "79px",
+      "alt": "Sodexo"
     }
   },
   "image#vr": {
     "props": {
       "src": "assets/svg/vr.svg",
       "blockClass": "footer__payment",
-      "width": "79px"
+      "width": "79px",
+      "alt": "VR"
     }
   },
   "image#ticket":{
     "props": {
       "src": "assets/svg/ticket.svg",
       "blockClass": "footer__payment",
-      "width": "79px"
+      "width": "79px",
+      "alt": "Ticket"
     }
   },
   "image#alelo": {
     "props": {
       "src": "assets/svg/alelo.svg",
       "blockClass": "footer__payment",
-      "width": "79px"
+      "width": "79px",
+      "alt": "Alelo"
     }
   },
   "image#ben": {
     "props": {
       "src": "assets/svg/ben.svg",
       "blockClass": "footer__payment",
-      "width": "79px"
+      "width": "79px",
+      "alt": "BEN"
     }
   }
 }

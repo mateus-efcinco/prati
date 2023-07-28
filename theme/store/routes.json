@@ -14,14 +14,12 @@
     "store.custom#contato":{
         "path": "/contato"
     },
-    "store.custom#departament-kit": {
-        "path": "/kit"
-    },
+
     "store.custom#departament-cardapio": {
         "path": "/cardapio"
     },
     "store.custom#departament-itens-individuais": {
-        "path": "/itens-individuas"
+        "path": "/itens-individuais"
     },
     "store.custom#departament-emporio": {
         "path": "/emporio"

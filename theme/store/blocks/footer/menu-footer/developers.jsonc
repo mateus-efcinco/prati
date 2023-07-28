@@ -11,14 +11,8 @@
     "props": {
       "src": "assets/svg/vtex.svg",
       "blockClass": "footer__developers",
-      "width": "92px"
-    }
-  },
-  "image#maeztra": {
-    "props": {
-      "src": "https://pratidev--luccofit.myvtex.com/arquivos/logo-maeztra-black.png",
-      "blockClass": "footer__developers",
-      "width": "92px"
+      "width": "92px",
+      "alt": "VTEX"
     }
   }
 }

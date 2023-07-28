@@ -17,9 +17,10 @@
     },
     "list-context.product-list#departament1": {
         "blocks": ["product-summary.shelf"],
-        "children": ["slider-layout#departament1"],
+        "children": ["slider-layout"],
         "props": {
-            "collection": "196",
+            "categoria": "4",
+            //"collection": "196",
             "orderBy": "OrderByTopSaleDESC",
             "hideUnavailableItems": true
         }
@@ -28,18 +29,14 @@
         "props": {
             "itemsPerPage": {
                 "desktop": 4,
-                "tablet": 3,
-                "phone": 2
+                "tablet": 4,
+                "phone": 4
             },
             "infinite": true,
             "fullWidth": false,
             "blockClass": "shelf",
             "showPaginationDots": "never",
-            "showNavigationArrows": "always",
-            "autoplay":{
-                "timeout": 4000,
-                "stopOnHover": true
-            }
+            "showNavigationArrows": "never"
         }
     },
 
@@ -72,18 +69,14 @@
         "props": {
             "itemsPerPage": {
                 "desktop": 4,
-                "tablet": 3,
-                "phone": 2
+                "tablet": 4,
+                "phone": 4
             },
             "infinite": true,
             "fullWidth": false,
             "blockClass": "shelf",
             "showPaginationDots": "never",
-            "showNavigationArrows": "always",
-            "autoplay":{
-                "timeout": 4000,
-                "stopOnHover": true
-            }
+            "showNavigationArrows": "never"
         }
     },
 

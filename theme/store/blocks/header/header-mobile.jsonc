@@ -1,6 +1,7 @@
 {
   "header-layout.mobile": {
     "children": [
+      "flex-layout.row#whatsapp-button",
       "global-style",
       "flex-layout.row#2-desktop",
       "sticky-layout#1-mobile"
@@ -28,7 +29,7 @@
   "drawer#menu": {
     "children": [
       "flex-layout.row#dada"
-      
+
     ],
     "blocks":[
       "drawer-header#menu-header"

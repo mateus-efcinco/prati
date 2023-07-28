@@ -5,7 +5,7 @@
       "visible": true
     },
     "children":[
-      "menu-item#itens-individuais"   
+      "menu-item#itens-individuais"
     ]
   },
   "menu-item#itens-individuais": {
@@ -24,7 +24,7 @@
       }
     },
     "blocks": [
-      "vtex.menu@2.x:submenu#itens-individuais"
+      //"vtex.menu@2.x:submenu#itens-individuais"
     ]
   },
   "vtex.menu@2.x:submenu#itens-individuais": {
@@ -74,7 +74,7 @@
       "visible": true
     },
     "children":[
-      "menu-item#carboidratos"   
+      "menu-item#carboidratos"
     ]
   },
   "menu-item#carboidratos": {
@@ -99,12 +99,12 @@
       "visible": true
     },
     "children":[
-      "menu-item#proteinas"   
+      "menu-item#proteinas"
     ]
   },
   "menu-item#proteinas": {
     "props": {
-      "id": "menu-item-proteinas",      
+      "id": "menu-item-proteinas",
       "type": "custom",
       "iconId": null,
       "highlight": false,
@@ -123,12 +123,12 @@
       "visible": true
     },
     "children":[
-      "menu-item#vegetais"   
+      "menu-item#vegetais"
     ]
   },
   "menu-item#vegetais": {
     "props": {
-      "id": "menu-item-vegetais",      
+      "id": "menu-item-vegetais",
       "type": "custom",
       "iconId": null,
       "highlight": false,
@@ -147,12 +147,12 @@
       "visible": true
     },
     "children":[
-      "menu-item#farofa-molhos"   
+      "menu-item#farofa-molhos"
     ]
   },
   "menu-item#farofa-molhos": {
     "props": {
-      "id": "menu-item-farofa-molhos",      
+      "id": "menu-item-farofa-molhos",
       "type": "custom",
       "iconId": null,
       "highlight": false,
@@ -171,12 +171,12 @@
       "visible": true
     },
     "children":[
-      "menu-item#massas-panquecas"   
+      "menu-item#massas-panquecas"
     ]
   },
   "menu-item#massas-panquecas": {
     "props": {
-      "id": "menu-item-massas-panquecas",      
+      "id": "menu-item-massas-panquecas",
       "type": "custom",
       "iconId": null,
       "highlight": false,
@@ -195,12 +195,12 @@
       "visible": true
     },
     "children":[
-      "menu-item#todos-pratos"   
+      "menu-item#todos-pratos"
     ]
   },
   "menu-item#todos-pratos": {
     "props": {
-      "id": "menu-item-todos-pratos",      
+      "id": "menu-item-todos-pratos",
       "type": "custom",
       "iconId": null,
       "highlight": false,
@@ -245,7 +245,7 @@
       "flex-layout.col#destaque-kit2"
     ],
     "props":{
-      
+
     }
   },
   "flex-layout.col#destaque-kit1":{
@@ -295,7 +295,7 @@
       "visible": true
     },
     "children":[
-      "menu-item#itens-individuais-mobile"   
+      "menu-item#itens-individuais-mobile"
     ]
   },
   "menu-item#itens-individuais-mobile": {

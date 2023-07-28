@@ -11,14 +11,16 @@
     "props": {
       "src": "assets/svg/eureciclo.svg",
       "blockClass": "footer__seguranca",
-      "width": "114px"
+      "width": "114px",
+      "alt": "Reciclo"
     }
   },
   "image#confianca": {
     "props": {
       "src": "assets/svg/LOJA_CONFIAVEL.svg",
       "blockClass": "footer__seguranca",
-      "width": "50px"
+      "width": "50px",
+      "alt": "Site Seguro"
     }
   }
 }

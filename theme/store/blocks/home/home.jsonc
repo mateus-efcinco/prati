@@ -12,7 +12,7 @@
       //"flex-layout.row#shelf4",
       "rich-text#shelf-title1",
       "flex-layout.row#shelf1",
-      "slider-layout#category-slider",
+      //"slider-layout#category-slider",
       "rich-text#shelf-title2",
       "flex-layout.row#shelf2",
       //"flex-layout.row#home-newsletter-home",
@@ -20,7 +20,8 @@
       "flex-layout.row#shelf3",
       //"rich-text#titulo-mosaico-8",
       //"flex-layout.row#banner-mosaico-8",
-      "flex-layout.row#entenda-processo"
+      "flex-layout.row#entenda-processo",
+      "flex-layout.row#seo"
       //"flex-layout.row#banner-mosaico-8-slider"
       //"flex-layout.row#news-popup"
       //"responsive-layout.desktop#modal"
@@ -133,4 +134,5 @@
       "blockClass": "link"
     }
   }
+
 }

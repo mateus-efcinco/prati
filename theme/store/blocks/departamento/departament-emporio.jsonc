@@ -38,10 +38,10 @@
             "rich-text#departament-title-promo",
             "flex-layout.row#shelf-departament-promo",
 
-            "flex-layout.row#faq"
+            "flex-layout.row#faq",
+            "flex-layout.row#seo"
             //"rich-text#titulo-mosaico-department",
             //"flex-layout.row#banner-mosaico-department",
-            //"flex-layout.row#seo"
         ]
     },
 

@@ -20,6 +20,11 @@
       }
     }
 
+    :global(.vtex-menu-2-x-styledLinkContent):hover{
+      border-radius: 20px;
+      background-color: #e5e5e5;
+    }
+
     &Nav {
       &--menu-footer{
         margin-left: 0;
@@ -120,7 +125,7 @@
                 transform: rotate(270deg);
               }
             }
-            
+
           }
           .submenuAccordion{
             .menuItem{

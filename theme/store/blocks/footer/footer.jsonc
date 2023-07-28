@@ -4,7 +4,6 @@
   },
   "footer-layout.desktop": {
     "children": [
-      "flex-layout.row#whatsapp-button",
       "flex-layout.row#footer-newsletter",
       "flex-layout.row#buscas",
       "flex-layout.row#footer-1-desktop",
